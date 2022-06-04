@@ -11,7 +11,7 @@ const RunnigLine = () => {
   return (
     <div className="relative mt-[170px] border-t border-b border-white-1 py-6 font-Grotesk text-xl font-medium text-white-1">
       
-        <div id="running" className="flex gap-x-5">{renderCommingSoon}</div>
+        <div id="running" className="flex gap-x-5 overflow-x-clip">{renderCommingSoon}</div>
      
     </div>
   );
