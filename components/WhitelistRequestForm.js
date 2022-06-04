@@ -20,23 +20,23 @@ const WhitelistRequestForm = () => {
             </p>
 
             <form>
-              <label for="fwallet"></label>
+              <label htmlFor="fwallet"></label>
               <input
                 className="w-[547px] rounded-full border bg-black-1 py-[15px] pl-[22px] font-Plus text-sm font-normal text-gray-1"
                 type="text"
                 id="fname"
                 name="fwallet"
-                value="Enter Wallet Address"
+                placeholder="Enter Wallet Address"
               ></input>
             </form>
             <form>
-              <label for="email"></label>
+              <label htmlFor="email"></label>
               <input
-                className="mt-5 w-[547px] rounded-full border bg-black-1 py-[15px] pl-[22px] font-Plus text-sm font-normal text-gray-1"
+                className="mt-5 w-[547px] rounded-full border bg-black-1 py-[15px] pl-[22px] font-Plus text-sm font-normal text-gray-1 hover:outline-none"
                 type="text"
                 id="lname"
                 name="email"
-                value="Enter Email Address"
+                placeholder="Enter Email Address"
               ></input>
             </form>
 

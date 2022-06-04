@@ -1,15 +1,11 @@
 const RunnigLine = () => {
   const renderCommingSoon = Array(100)
     .fill(null)
-    .map((element) => (
-      <>
+    .map((element, index) => (
+      <div className="flex p-2" key={index}>
         <span>ART COMING SOON</span>
-        <img
-          className="w-5"
-          src="/images/movingLineImg.svg"
-          alt="element"
-        ></img>
-      </>
+        <img className="w-5 " src="/images/movingLineImg.svg" alt="element" />
+      </div>
     ));
 
   return (
