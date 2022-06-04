@@ -7,8 +7,8 @@ const FAQ = () => {
         What you need to know
       </p>
 
-      <div className="mt-[110px] flex flex-col">
-        <div className="relative left-[250px] flex w-[796px] flex-col">
+      <div className="mt-[110px] flex justify-center">
+        <div className="relative flex w-[796px] flex-col">
           <FAQitem
             question="What do I get as a YCLUB Member?"
             answer="Here at YCLUB, we unlock these experiences, giving unique access to

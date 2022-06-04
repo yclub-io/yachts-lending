@@ -5,7 +5,7 @@ const FAQitem = ({question, answer}) => {
 
   return (
     <div className="border-b border-gray-1 border-opacity-30">
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row justify-between pt-5 pb-5">
         <p className="font-Plus text-2xl font-semibold">
           {question}
         </p>
@@ -24,7 +24,7 @@ const FAQitem = ({question, answer}) => {
         )}
       </div>
       {isOpen && (
-        <p className="w-[675px] pt-5 pb-4 font-Grotesk text-xl font-normal text-gray-1">
+        <p className="w-[675px] pb-4 font-Grotesk text-xl font-normal text-gray-1">
             {answer}
         </p>
       )}
