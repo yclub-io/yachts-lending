@@ -22,7 +22,7 @@ const WhitelistRequestForm = () => {
             <form>
               <label htmlFor="fwallet"></label>
               <input
-                className="w-[547px] rounded-full border bg-black-1 py-[15px] pl-[22px] font-Plus text-sm font-normal text-gray-1"
+                className="w-[547px] rounded-full border bg-black-1 py-[15px] pl-[22px] font-Plus text-sm font-normal text-gray-1 hover:outline-none outline-none"
                 type="text"
                 id="fname"
                 name="fwallet"
@@ -32,7 +32,7 @@ const WhitelistRequestForm = () => {
             <form>
               <label htmlFor="email"></label>
               <input
-                className="mt-5 w-[547px] rounded-full border bg-black-1 py-[15px] pl-[22px] font-Plus text-sm font-normal text-gray-1 hover:outline-none"
+                className="mt-5 w-[547px] rounded-full border bg-black-1 py-[15px] pl-[22px] font-Plus text-sm font-normal text-gray-1 hover:outline-none outline-none"
                 type="text"
                 id="lname"
                 name="email"
@@ -40,13 +40,13 @@ const WhitelistRequestForm = () => {
               ></input>
             </form>
 
-            {/*BUTTON2 COMPONENT_START*/}
-            <div className=" relative mt-5 flex text-white-1">
-              <button className="text-black-2 relative w-[547px] rounded-full border  border-pink-1 bg-black-1 py-4 px-12 font-Grotesk text-base font-medium tracking-wider shadow-inner shadow-pink-1 transition-all duration-700 hover:py-4 hover:px-14 disabled:bg-opacity-5">
+            <div className="relative mt-5 flex"> 
+              <button style={{background: "radial-gradient(#000000,#000000,#000000,#F5129C"}}
+              className="w-[547px] absolute text-white-1 border border-pink-1 py-4 px-12 rounded-full font-Grotesk text-base shadow-btnGlow hover:shadow-btnGlowHover font-medium tracking-wider transition-all duration-700 hover:py-5"> 
                 APPLY FOR WHITELIST
               </button>
             </div>
-            {/*BUTTON2 COMPONENT_END*/}
+           
           </div>
         </div>
       </div>
