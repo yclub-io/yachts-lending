@@ -1,6 +1,6 @@
 const Team = () => {
   return (
-    <div className="mx-14 text-white-1">
+    <div id='team' className="mx-14 text-white-1">
       <p className="mb-[125px] flex justify-center text-center font-Plus text-5xl font-extrabold">
         Team
       </p>

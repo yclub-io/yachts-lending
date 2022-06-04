@@ -14,26 +14,26 @@ const Header = () => {
           <div className="flex  pl-36 space-x-8 font-Grotesk text-sm">
             <a
               className="hover:text-white-1 transition-all duration-700"
-              href="#howItworks"
+              href="#roadmap"
             >
               RoadMap
             </a>
             <a
               className="hover:text-white-1 transition-all duration-700"
-              href="#faq"
+              href="#team"
             >
               Team
             </a>
             <a
-              target="_blank"
-              href="https://docs.algem.io/"
+              target=""
+              href=""
               className="hover:text-white-1 transition-all duration-700"
             >
               Whitepaper
             </a>
             <a
-              target="_blank"
-              href="https://medium.com/@algem"
+              target=""
+              href=""
               className="pr-7 hover:text-white-1 transition-all duration-700"
             >
               Tokonomics
@@ -43,19 +43,19 @@ const Header = () => {
           <div className="flex space-x-8 font-Grotesk text-sm">
             <a
               className="hover:text-white-1 transition-all duration-700"
-              href="#howItworks"
+              href=""
             >
               Discord
             </a>
             <a
               className="hover:text-white-1 transition-all duration-700"
-              href="#faq"
+              href=""
             >
               Twitter
             </a>
             <a
-              target="_blank"
-              href="https://docs.algem.io/"
+              target=""
+              href=""
               className="hover:text-white-1 transition-all duration-700"
             >
               Instagram

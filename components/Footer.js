@@ -11,7 +11,7 @@ const Footer = () => {
         </a>
         {/*--menu-items--*/}
         <div className="flex animate-bounce space-x-8 pl-36 font-Grotesk text-sm">
-          <a href="/">
+          <a href='#hero'>
             <img
               className="cursor-pointer"
               src="/images/footerArrow.svg"
