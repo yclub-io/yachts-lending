@@ -13,7 +13,7 @@ import YclubCommunity from "../components/YclubCommunity";
 
 const Index = () => {
   return (
-    <div className="max-w-[1440px]">
+    <div className="m-auto max-w-[1440px]">
       <Header />
       <Hero />
       <RunnigLine />

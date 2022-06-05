@@ -1,10 +1,39 @@
+import { useEffect, useRef } from "react";
+
 const Roadmap = () => {
+  const useHorizontalScroll = () => {
+    const elRef = useRef();
+    useEffect(() => {
+      const el = elRef.current;
+      if (el) {
+        const onScroll = (e) => {
+          if (e.deltaY == 0) return;
+          if (
+            (el.scrollLeft + el.clientWidth < el.scrollWidth && e.deltaY > 0) ||
+            (el.scrollLeft > 0 && e.deltaY < 0)
+          ) {
+            e.preventDefault();
+            el.scrollTo({
+              left: el.scrollLeft + e.deltaY,
+            });
+          }
+        };
+        el.addEventListener("wheel", onScroll);
+        return () => el.removeEventListener("wheel", onScroll);
+      }
+    }, []);
+    return elRef;
+  };
+
   return (
-    <div id='roadmap' className="lg:mt-52 mt-[90px]">
-      <p className=" lg:ml-14 ml-4 text-left font-Plus lg:text-8xl text-4xl lg:font-semibold font-extrabold text-white-1">
+    <div id="roadmap" className="mt-[90px] lg:mt-52">
+      <p className=" ml-4 text-left font-Plus text-4xl font-extrabold text-white-1 lg:ml-14 lg:text-8xl lg:font-semibold">
         The Roadmap
       </p>
-      <div className="relative mt-10 lg:h-[800px] h-[700px] overflow-y-hidden overflow-x-scroll">
+      <div
+        ref={useHorizontalScroll()}
+        className="relative mt-10 h-[700px] overflow-y-hidden overflow-x-scroll lg:h-[800px]"
+      >
         <div>
           <img
             className="absolute z-50 mt-10 min-w-[2594px]"
