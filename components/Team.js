@@ -1,13 +1,13 @@
 const Team = () => {
   return (
-    <div id='team' className="mx-14 text-white-1">
-      <p className="mb-[125px] flex justify-center text-center font-Plus text-5xl font-extrabold">
+    <div id='team' className="lg:mx-14 mx-4 text-white-1">
+      <p className="lg:mb-[125px] mb-[68px] flex justify-center text-center font-Plus lg:text-5xl text-[26px] font-extrabold">
         Team
       </p>
-
-      <div className="flex flex-row">
+       {/* Desktop version */}
+      <div className="hidden lg:flex flex-row">
         <div className="flex basis-2/3 flex-col">
-          <div className="flex justify-between border-t border-gray-1 p-10">
+          <div className="flex flex-row justify-between border-t border-gray-1 p-10">
             <p className="font-Plus text-2xl font-semibold">NEPTUNE</p>
             <p className="font-Grotesk text-xl font-normal text-gray-1">
               Founder
@@ -111,6 +111,112 @@ const Team = () => {
           ></img>
         </div>
       </div>
+{/* Mobile version */}
+        <div className="lg:hidden flex flex-col justify-center"> 
+          <div className="border-t border-white-1 pb-[31px]"> 
+            <div className="mt-[30px] font-Plus font-semibold text-xl"> 
+              BER MITCHELL  
+            </div>
+                <div className="mt-[10px] flex flex-row justify-between text-gray-1 font-normal font-base"> 
+                  <p> 
+                    The CEO 
+                  </p> 
+                  <p className="flex"> 
+                  <span className="pr-2">
+                    @ bermitchell 
+                  </span>
+                    <img
+                   className="w-8 flex align-top relative top-[-10px]"
+                    src="/images/teamSectionArrow.svg"
+                    alt="arrow_up"
+                  />  
+                  </p> 
+          </div>
+        </div>
+        <div className="border-t border-white-1 pb-[31px]"> 
+            <div className="mt-[30px] font-Plus font-semibold text-xl"> 
+              BER MITCHELL  
+            </div>
+                <div className="mt-[10px] flex flex-row justify-between text-gray-1 font-normal font-base"> 
+                  <p> 
+                    The CEO 
+                  </p> 
+                  <p className="flex"> 
+                  <span className="pr-2">
+                    @ bermitchell 
+                  </span>
+                    <img
+                   className="w-8 flex align-top relative top-[-10px]"
+                    src="/images/teamSectionArrow.svg"
+                    alt="arrow_up"
+                  />  
+                  </p> 
+          </div>
+        </div>
+        <div className="border-t border-white-1 pb-[31px]"> 
+            <div className="mt-[30px] font-Plus font-semibold text-xl"> 
+              BER MITCHELL  
+            </div>
+                <div className="mt-[10px] flex flex-row justify-between text-gray-1 font-normal font-base"> 
+                  <p> 
+                    The CEO 
+                  </p> 
+                  <p className="flex"> 
+                  <span className="pr-2">
+                    @ bermitchell 
+                  </span>
+                    <img
+                   className="w-8 flex align-top relative top-[-10px]"
+                    src="/images/teamSectionArrow.svg"
+                    alt="arrow_up"
+                  />  
+                  </p> 
+          </div>
+        </div>
+        <div className="border-t border-white-1 pb-[31px]"> 
+            <div className="mt-[30px] font-Plus font-semibold text-xl"> 
+              BER MITCHELL  
+            </div>
+                <div className="mt-[10px] flex flex-row justify-between text-gray-1 font-normal font-base"> 
+                  <p> 
+                    The CEO 
+                  </p> 
+                  <p className="flex"> 
+                  <span className="pr-2">
+                    @ bermitchell 
+                  </span>
+                    <img
+                   className="w-8 flex align-top relative top-[-10px]"
+                    src="/images/teamSectionArrow.svg"
+                    alt="arrow_up"
+                  />  
+                  </p> 
+          </div>
+        </div>
+        <div className="border-t border-b border-white-1 pb-[31px]"> 
+            <div className="mt-[30px] font-Plus font-semibold text-xl"> 
+              BER MITCHELL  
+            </div>
+                <div className="mt-[10px] flex flex-row justify-between text-gray-1 font-normal font-base"> 
+                  <p> 
+                    The CEO 
+                  </p> 
+                  <p className="flex"> 
+                  <span className="pr-2">
+                    @ bermitchell 
+                  </span>
+                    <img
+                   className="w-8 flex align-top relative top-[-10px]"
+                    src="/images/teamSectionArrow.svg"
+                    alt="arrow_up"
+                  />  
+                  </p> 
+          </div>
+        </div>
+       
+
+
+       </div>
     </div>
   );
 };

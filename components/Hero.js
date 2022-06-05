@@ -5,33 +5,38 @@ const Hero = () => {
     <>
       <div id='hero' className="relative">
         <img
-          className="absolute top-[-110px] h-[900px] w-max max-w-[1440px] object-cover"
+          className="lg:flex hidden absolute top-[-110px] h-[900px] max-w-[1440px] bg-clip-content bg-contain"
           src="/images/heroSectionWaves.png"
           alt="hero-bg"
         ></img>
       </div>
 
-      <div className="flex flex-row px-14 pt-9 font-Grotesk text-white-1">
+      <div className="flex lg:flex-row  flex-col lg:px-14 px-4 pt-9 font-Grotesk text-white-1">
         <div className="z-50 flex basis-1/2 flex-col">
-          <p className="text-[180px] font-bold">YCLUB</p>
-          <span className="text-base">NFT PROJECT</span>
+          <p className="lg:text-[180px] text-[100px] font-bold md:text-center">YCLUB</p>
+          <span className="lg:text-base text-xs md:text-center font-normal">NFT PROJECT</span>
         </div>
-        <div className="z-50 flex basis-1/2 flex-col pl-20">
-          <p className="flex flex-col pt-[50px] text-[180px] font-bold leading-[180px]">
+        <div className="z-50 flex lg:basis-1/2 flex-col lg:pl-20">
+          <p className="flex flex-col lg:pt-[50px] pt-[60px] lg:text-[180px] text-[100px] font-bold lg:leading-[180px] leading-[100px] md:text-center">
             JULY
-            <span className=" bg-gradient-to-t from-blue-1 to-purple-1 bg-clip-text text-black-1 text-opacity-0">
+            <span className=" bg-gradient-to-t from-blue-1 to-purple-1 bg-clip-text text-black-1 text-opacity-0 md:text-center">
               2022
             </span>
           </p>
-          <p className="w-[400px] pt-8 text-lg">
+          <p className="lg:w-[400px] min-w-[319px] lg:pt-8 pt-4 lg:text-lg text-base lg:ml-[80px] lg:text-left md:text-center text-left">
             Your charter into a world of extravagance both in the Metaverse and
             beyond.
           </p>
         </div>
       </div>
       
-      <div className="relative flex justify-center mt-[85px]"> 
-      <Button > APPLY FOR WHITELIST </Button>
+      <div className="relative flex justify-center lg:mt-[85px] mt-[70px]"> 
+      <button
+        style={{background:"radial-gradient(#000000,#000000,#000000,#F5129C"}}
+       className="lg:w-auto w-[342px]  absolute z-40 text-white-1 border border-pink-1 py-3 px-12 rounded-full font-Grotesk text-base shadow-btnGlow
+        hover:shadow-btnGlowHover font-medium tracking-wider transition-all duration-700 hover:py-4 hover:px-14"> 
+    APPLY FOR WHITELIST
+    </button>
       </div>
       
     </>

@@ -1,10 +1,10 @@
 const Roadmap = () => {
   return (
-    <div id='roadmap' className="mt-52">
-      <p className=" ml-14 text-left font-Plus text-8xl font-semibold text-white-1">
+    <div id='roadmap' className="lg:mt-52 mt-[90px]">
+      <p className=" lg:ml-14 ml-4 text-left font-Plus lg:text-8xl text-4xl lg:font-semibold font-extrabold text-white-1">
         The Roadmap
       </p>
-      <div className="relative mt-10 h-[800px] overflow-y-hidden overflow-x-scroll">
+      <div className="relative mt-10 lg:h-[800px] h-[700px] overflow-y-hidden overflow-x-scroll">
         <div>
           <img
             className="absolute z-50 mt-10 min-w-[2594px]"

@@ -2,12 +2,12 @@ import FAQitem from "./FAQitem";
 
 const FAQ = () => {
   return (
-    <div className="mx-14 mt-[185px] mb-[150px] text-white-1">
-      <p className="mb-[125px] flex justify-center text-center font-Plus text-5xl font-extrabold">
+    <div className="lg:mx-14 mx-4 lg:mt-[185px] mt-[100px] lg:mb-[150px] mb-[100px]  text-white-1">
+      <p className="lg:mb-[125px] mb-[40px] flex justify-center text-center font-Plus lg:text-5xl text-[26px] font-extrabold">
         What you need to know
       </p>
 
-      <div className="mt-[110px] flex justify-center">
+      <div className="lg:mt-[110px] flex justify-center">
         <div className="relative flex w-[796px] flex-col">
           <FAQitem
             question="What do I get as a YCLUB Member?"
