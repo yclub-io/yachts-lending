@@ -1,3 +1,4 @@
+import Script from "next/script";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -10,10 +11,19 @@ import WhatYouNeedToKnow from "../components/WhatYouNeedToKnow";
 import WhitelistRequestForm from "../components/WhitelistRequestForm";
 import YclubCommunity from "../components/YclubCommunity";
 
-
 const Index = () => {
   return (
     <div className="m-auto max-w-[1440px]">
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-9NXP8WEGK8" />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-9NXP8WEGK8');
+        `}
+      </Script>
       <Header />
       <Hero />
       <RunnigLine />
