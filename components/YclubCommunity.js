@@ -1,7 +1,7 @@
 const YclubCommunity = () => {
   return (
     <div className="lg:mx-14 mx-4 lg:mt-[900px] mt-[100px] flex flex-col text-white-1">
-      <p className=" z-50 lg:mb-[45px] mb-[35px] font-Plus lg:text-8xl text-4xl lg:font-semibold font-extrabold  lg:text-left text-center">
+      <p className=" z-40 lg:mb-[45px] mb-[35px] font-Plus lg:text-8xl text-4xl lg:font-semibold font-extrabold  lg:text-left text-center">
         YClub Community
       </p>
 
