@@ -7,7 +7,7 @@ const BackgroundVideo = () => {
       loop
       muted
     >
-      <source src="images/heroSectionWebmVideo.webm" type="video/webm"/>
+      <source src="video/background.mp4" type="video/webm"/>
       Your browser does not support the video tag.
     </video>
       </div>
