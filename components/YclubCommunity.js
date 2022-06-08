@@ -12,19 +12,25 @@ const YclubCommunity = () => {
           <p>Join our discord</p>
         </div>
         <div className="flex w-[290px]  justify-center">
-          <p className="border-l border-r py-[65px] px-[88px] font-Grotesk text-4xl font-normal">
-            twitter
-          </p>
+          <a href="https://twitter.com/yclub_io" target="_blank">
+            <p className="border-l border-r py-[65px] px-[88px] font-Grotesk text-4xl font-normal">
+              twitter
+            </p>
+          </a>
         </div>
         <div className="flex w-[290px]  justify-center">
-          <p className=" border-r py-[65px] px-[88px] font-Grotesk text-4xl font-normal">
-            discord
-          </p>
+          <a href="https://discord.gg/MYfrX4Cu" target="_blank">
+            <p className=" border-r py-[65px] px-[88px] font-Grotesk text-4xl font-normal">
+              discord
+            </p>
+          </a>
         </div>
         <div className="flex w-[290px]  justify-center">
-          <p className="py-[65px] px-[88px] font-Grotesk text-4xl font-normal">
-            contact
-          </p>
+          <a href="https://t.me/yachtsnftclub" target="_blank">
+            <p className="py-[65px] ml-10 font-Grotesk text-4xl font-normal">
+              telegram
+            </p>
+          </a>
         </div>
       </div>
 
@@ -36,17 +42,22 @@ const YclubCommunity = () => {
      </div>
      <div className="flex flex-row text-center justify-center border-t border-white-1"> 
      <div className=" py-[30px] flex basis-1/2 border-r justify-center font-Grotesk text-[26px] font-normal">  
+     <a href="https://twitter.com/yclub_io" target="_blank">
         <p> 
            twitter </p>
-          
+    </a>
         </div> 
         
       <div className="py-[30px] flex basis-1/2 justify-center font-Grotesk text-[26px] font-normal">  
+      <a href="https://discord.gg/MYfrX4Cu" target="_blank">
         <p> discord </p>
+      </a>
       </div>
      </div>
      <div className="py-[30px] flex text-center justify-center font-Grotesk text-[26px] font-normal border-t border-b border-white-1">
-          <p> contact </p>
+     <a href="https://t.me/yachtsnftclub" target="_blank">
+          <p> telegram </p>
+      </a>
      </div>
 
 
