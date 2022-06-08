@@ -19,18 +19,18 @@ const WhitelistRequestForm = ({status, message, onValidated}) => {
   };
 
   return (
-    <div className="mx-4 lg:mx-0">
-      {/* Desktop version */}
+    <div id="whitelist" className="mx-4 lg:mx-0">
+      {/* Desktop image version */}
       <div className="relative flex">
         <img
-          className="absolute top-[-110px] hidden h-[900px] w-max min-w-[1440px] bg-contain bg-clip-content object-cover lg:flex"
+          className="absolute lg:top-[-110px] top-[10px] lg:h-[900px] right-[0px] lg:w-max lg:min-w-[1440px] min-w-[375px] bg-contain bg-clip-content object-cover flex"
           src="/images/whitelistSectionWavesBg.png"
           alt="hero-bg"
         ></img>
       </div>
 
-      <div className="z-50 flex justify-center lg:relative">
-        <div className="right-[150px] top-[200px] flex h-[460px] flex-col rounded-3xl border border-white-1 bg-black-1 text-white-1 lg:absolute lg:h-[520px] lg:w-[666px] lg:pl-[57px]">
+      <div className="z-20 flex justify-center relative lg:mt-0 mt-[200px]">
+        <div className="right-[150px] top-[200px] flex h-[460px] flex-col rounded-3xl border border-white-1 bg-black-1 text-white-1 lg:absolute lg:h-[500px] lg:w-[666px] lg:pl-[57px]">
           <p className="pt-[50px] text-center font-Plus text-[26px] font-extrabold lg:pt-[70px] lg:text-left lg:text-5xl">
             Whitelist Request
           </p>
@@ -63,30 +63,31 @@ const WhitelistRequestForm = ({status, message, onValidated}) => {
                 onChange={(event) => setEmail(event.target.value)}
               />
             </div>
-
+            <div className="flex lg:justify-start justify-center"> 
             <button
               type="submit"
               style={{
                 background: "radial-gradient(#000000,#000000,#000000,#F5129C",
               }}
-              className="absolute bottom-20 w-[303px] rounded-full border border-pink-1 py-4 px-12 font-Grotesk text-base font-medium
+              className="w-[303px]  flex justify-center rounded-full border border-pink-1 py-4 px-12 mt-5 font-Grotesk text-base font-medium
                tracking-wider text-white-1 shadow-btnGlow transition-all duration-700 hover:py-5 hover:shadow-btnGlowHover lg:w-[547px]"
             >
               APPLY FOR WHITELIST
             </button>
+            </div>
           </form>
-
-          {/* <div className="relative mt-5 flex lg:justify-start justify-center"> 
-              <button style={{background: "radial-gradient(#000000,#000000,#000000,#F5129C"}}
-              className="lg:w-[547px] w-[303px] absolute text-white-1 border border-pink-1 py-4 px-12 rounded-full font-Grotesk
-               text-base shadow-btnGlow hover:shadow-btnGlowHover font-medium tracking-wider transition-all duration-700 hover:py-5"> 
-                APPLY FOR WHITELIST
-              </button>
-            </div> */}
         </div>
       </div>
+        {/* THANK YOU POP-UP */}
+        <div className="hidden text-white-1 mx-auto text-center border border-black-1 rounded-[20px] pt-[80px] pb-[60px]"> 
+              <p className="mb-[35px] font-Plus text-[26px] font-extrabold"> 
+                Thank you
+              </p>
+              <p className="font-Grotesk text-xl font-normal"> 
+                We will be in touch via
+              </p>
+        </div>
 
-      {/* Mobile version */}
     </div>
   );
 };
