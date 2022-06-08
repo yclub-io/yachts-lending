@@ -23,7 +23,7 @@ const Header = () => {
             <a
               href="#roadmap"
             >
-              RoadMap
+              Roadmap
             </a>
             <a
               href="#team"
