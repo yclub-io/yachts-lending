@@ -25,13 +25,14 @@ const Footer = () => {
             className="transition-all duration-700 hover:text-white-1"
             href="#howItworks"
           >
-            Privacy Policy
+            YCLUB.IO™ 
           </a>
+          <p className="lg:flex hidden"> | </p>
           <a
             className="transition-all duration-700 hover:text-white-1"
             href="#faq"
           >
-            Terms &amp; Conditions
+            ALL RIGHT RESERVED 2022
           </a>
         </div>
       </div>
