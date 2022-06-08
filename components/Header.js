@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex items-center lg:justify-between justify-center p-8 lg:px-14 px-4 border-white-1 border-opacity-50 border-b font-Grotesk text-white-1 "> 
           <a href="/">
             <img
-              className="cursor-pointer"
+              className="cursor-pointer lg:w-[96px] w-[70px]"
               src="/images/yClubLogo.svg"
               alt="logotype"
             ></img>
