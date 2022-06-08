@@ -3,7 +3,7 @@ const Vision = () => {
     <div className="lg:mx-14 mx-4 lg:mt-[190px] mt-[100px] mb-[75px] text-left text-white-1">
       <div className="lg:flex flex-col ">
         <p id="vision" className="font-Plus lg:text-8xl text-4xl lg:font-semibold font-extrabold ">The Vision</p>
-        <p className="lg:mt-[135px] mt-[60px] lg:w-[888px] font-Plus lg:text-[28px] text-lg font-semibold leading-[40px]">
+        <p className="lg:mt-[135px] mt-[60px] lg:w-[888px] font-Plus lg:text-[28px] text-lg font-semibold lg:leading-[40px] leading-snug">
           The world of luxury has evolved passed the physical and the material.
           To experience the full breath of luxury today is to enter a curated
           world; a world that understands one’s desires to be serviced in
