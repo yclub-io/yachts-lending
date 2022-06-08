@@ -6,7 +6,7 @@ const BackgroundVideo = () => {
       autoPlay
       loop
       muted
-      playsinline
+      playsInline
       disablePictureInPicture
     >
       <source src="video/background.mp4" type="video/mp4"/>
