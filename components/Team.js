@@ -23,11 +23,11 @@ const Team = () => {
                       ></img>
                     
                         <p className="w-[245px] mx-auto text-base text-gray-1 leading-[20px] pb-[60px]"> 
-                          Basically born on a Super Yacht, 
-                          years of experience in helping 
-                          to curate and market extravagant 
-                          experiences for those chartering 
-                          these vessels of extravagance.  
+                        Basically born on a Super Yacht,
+                        years of experience in helping 
+                        to curate and market extravagant 
+                        experiences for those chartering 
+                        and owning these vessels of extravagance.
                         </p>
             </div>
 
