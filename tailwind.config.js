@@ -45,7 +45,7 @@ module.exports = {
       },
       boxShadow: {
         'btnGlow': '0 0 10px #F5129C',
-        'btnGlowHover': '0 0 20px #F5129C',
+        'btnGlowHover': 'inset 0 0 20px #F5129C',
         'btnGlowInit': 'inset 0 0px 10px #F5129C'
       },
       animation: {
