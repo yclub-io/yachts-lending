@@ -1,7 +1,7 @@
 const RunnigLineAdvanced = () => {
     return (
-<div>
-<div className="flex justify-evenly  border-t bg-black-1 border-b border-white-1 mt-[180px]">
+      
+<div className="w-a justify-evenly mt-[180px] border-t bg-black-1 border-b border-white-1 whitespace-no-wrap overflow-x-hidden">
   <div className="relative py-6 font-Grotesk text-xl font-medium text-white-1">
     <ul className="flex animate-marquee">
       <li className="flex"><p className="w-[200px] ">ART COMING SOON</p></li>
@@ -28,7 +28,6 @@ const RunnigLineAdvanced = () => {
       <li className="flex"><img className="w-5" src="/images/movingLineImg.svg" alt="element" /></li>
     </ul>
   </div>
-</div>
 </div>
     );
   };
