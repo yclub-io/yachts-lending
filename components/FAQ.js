@@ -11,15 +11,29 @@ const FAQ = () => {
         <div className="relative flex w-[796px] flex-col">
           <FAQitem
             question="What do I get as a YCLUB Member?"
-            answer="Here at YCLUB, we unlock these experiences, giving unique access to
-          worlds of luxury that most people couldn't fathom without first hand
-          knowledge."
+            answer="Fractional ownership in Mega Yachts that are built
+             in the Metaverse + IRL rewards to continue the
+            extravagant experiences offline"
           />
-          <FAQitem question="How do I get WL?" answer="" />
-          <FAQitem question="Why the Metaverse?" answer="" />
-          <FAQitem question="What Revenue Share?" answer="" />
-          <FAQitem question="Why did you make YCLUB?" answer="" />
-          <FAQitem question="What can you leak about YCLUB?" answer="" />
+          <FAQitem question="How do I get WL?" answer="We’ll be releasing the collection
+           in tiers while providing select WL opportunities per tier. 
+           The best way to stay updated on WL opportunities is by joining
+          our Telegram and Twitter" />
+          <FAQitem question="Why the Metaverse?" answer="The Metaverse is where business
+           and entertainment of all kinds will be when
+          not being experienced IRL. We want our community
+           to be able to take advantage of the business opportunities
+          available because of this, and share in the revenue that will be generated" />
+          <FAQitem question="What Revenue Share?" answer="As a YCLUB NFT holder, you receive
+           a share of the revenue generated from the Mega Yacht we’ve built in the Metaverse" />
+          <FAQitem question="Why did you make YCLUB?" answer="We made YCLUB to give the everyday
+          person access to Mega Yacht experiences and business 
+          opportunities that would have normally been reserved for the 1% of the 1%. We also see YCLUB
+          as a resource that can help in the cleaning of our oceans and carrying
+          the need for this to larger platforms. " />
+          <FAQitem question="What can you leak about YCLUB?" answer="Our ambition is in building a brand
+          with unparalleled luxury and extravagance that doesn’t stop in just the real world by using aligned incentives.
+          We are going to build the most extravagant NFT project in the world…" />
         </div>
       </div>
     </div>
