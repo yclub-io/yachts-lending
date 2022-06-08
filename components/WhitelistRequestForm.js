@@ -72,9 +72,7 @@ const WhitelistRequestForm = ({ status, message, onValidated }) => {
             <div className="flex justify-center lg:justify-start">
               <button
                 type="submit"
-                style={{
-                  background: "radial-gradient(#000000,#000000,#000000,#F5129C",
-                }}
+
                 className="mt-5  flex w-[303px] justify-center rounded-full border border-pink-1 py-4 px-12 font-Grotesk text-base font-medium
                tracking-wider text-white-1 shadow-btnGlow transition-all duration-700 hover:py-5 hover:shadow-btnGlowHover lg:w-[547px]"
               >
