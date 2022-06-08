@@ -32,16 +32,16 @@ const MobileMenu = (props) => {
             Team
           </a>
           <a
-            target=""
-            href=""
+            href="#vision"
+            onClick={() => props.setMobileMenuVisible(false)}
           >
-            Whitepaper
+            The Vision
           </a>
           <a
-            target=""
-            href=""
+            href="#faq"
+            onClick={() => props.setMobileMenuVisible(false)}
           >
-            Tokonomics
+            FAQ
           </a>
         </div>
 

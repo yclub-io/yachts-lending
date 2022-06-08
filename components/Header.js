@@ -21,30 +21,24 @@ const Header = () => {
           {/*--menu-items--*/}
           <div className="hidden lg:flex  pl-36 space-x-8 font-Grotesk text-sm">
             <a
-              className="hover:text-white-1 transition-all duration-700"
               href="#roadmap"
             >
               RoadMap
             </a>
             <a
-              className="hover:text-white-1 transition-all duration-700"
               href="#team"
             >
               Team
             </a>
             <a
-              target=""
-              href=""
-              className="hover:text-white-1 transition-all duration-700"
+              href="#vision"
             >
-              Whitepaper
+              The Vision
             </a>
             <a
-              target=""
-              href=""
-              className="pr-7 hover:text-white-1 transition-all duration-700"
+              href="#faq"
             >
-              Tokonomics
+              FAQ
             </a>
           </div>
 
