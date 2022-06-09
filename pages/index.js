@@ -17,7 +17,7 @@ const Index = () => {
   return (
     <div className="m-auto max-w-[1440px]">
       <Head>
-        <title>YCLUB - Chartering The Metaverse On A Super Yachts</title>
+        <title>YCLUB - Cruising The Metaverse on a Superyacht</title>
       </Head>
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-9NXP8WEGK8" />
       <Script id="google-analytics" strategy="afterInteractive">
