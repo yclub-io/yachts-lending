@@ -8,7 +8,7 @@ const Team = () => {
         <div className="flex lg:flex-row flex-col items-center lg:gap-[15px] gap-y-[45px]">
 
           {/*member 1*/}
-            <div className="flex w-[285px] border border-white-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
+            <div className="flex w-[285px] border border-purple-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
                 <p className="font-bold text-[28px] pt-[50px]"> 
                   Neptune
                 </p>
@@ -32,7 +32,7 @@ const Team = () => {
             </div>
 
           {/*member 2*/}
-          <div className="flex w-[285px] border border-white-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
+          <div className="flex w-[285px] border border-purple-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
                 <p className="font-bold text-[28px] pt-[50px]"> 
                   Mega Skipper
                 </p>
@@ -54,7 +54,7 @@ const Team = () => {
             </div>
 
           {/*member 3*/}
-          <div className="flex w-[285px] border border-white-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
+          <div className="flex w-[285px] border border-purple-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
                 <p className="font-bold text-[28px] pt-[50px]"> 
                   Blade
                 </p>
@@ -77,7 +77,7 @@ const Team = () => {
             </div>
 
           {/*member 4*/}
-          <div className="flex w-[285px] border border-white-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
+          <div className="flex w-[285px] border border-purple-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
                 <p className="font-bold text-[28px] pt-[50px]"> 
                   Cobra
                 </p>
@@ -99,7 +99,7 @@ const Team = () => {
             </div>
 
           {/*member 5*/}
-          <div className="flex w-[285px] border border-white-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
+          <div className="flex w-[285px] border border-purple-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
                 <p className="font-bold text-[28px] pt-[50px]"> 
                   Poseidon
                 </p>
