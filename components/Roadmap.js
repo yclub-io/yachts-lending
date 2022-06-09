@@ -47,7 +47,7 @@ const Roadmap = () => {
           ></img>
           <div className="absolute top-[-150px] mx-28 flex flex-row">
             {/*one*/}
-            <div className="flex basis-[14.2%] flex-col pt-[300px] pl-[10px] text-white-1">
+            <div className="flex basis-[14.2%] flex-col pt-[300px] pr-[70px] text-white-1">
               <p className="pb-8 font-Grotesk text-sm font-normal text-gray-1">
                 QUARTER 1 OF 2022
               </p>
@@ -59,7 +59,7 @@ const Roadmap = () => {
             </div>
 
             {/*two*/}
-            <div className="pl-[60px] flex basis-[14.2%] flex-col pt-[300px] text-white-1">
+            <div className="flex basis-[14.2%] flex-col pt-[300px] pr-[70px] text-white-1">
               <p className="pb-8 font-Grotesk text-sm font-normal text-gray-1">
                 QUARTER 2 OF 2022
               </p>
@@ -77,12 +77,12 @@ const Roadmap = () => {
               </ul>
             </div>
             {/*three*/}
-            <div className="pl-[65px] flex flex-col pt-[300px]  text-white-1">
+            <div className="flex basis-[14.2%] flex-col pt-[300px] pr-[70px] text-white-1">
               <p className="pb-8 font-Grotesk text-sm font-normal text-gray-1">
                 QUARTER 3 OF 2022
               </p>
               <p className="pb-4 font-Grotesk text-[32px] font-bold">Caravel</p>
-              <ul className="pl-8 w-[300px] font-Grotesk list-outside list-disc text-xl font-normal text-gray-1">
+              <ul className="pl-8 w-[300px] font-Grotesk list-outside list-disc pl-3 text-xl font-normal text-gray-1">
                 <li> Lana Collection Mint</li>
                 <li> Token Launch </li>
                 <li> Decentraland YCLUB </li>
@@ -93,7 +93,7 @@ const Roadmap = () => {
               </ul>
             </div>
             {/*four*/}
-            <div className="pl-[60px] flex flex-col pt-[300px] text-white-1">
+            <div className="flex basis-[14.2%] flex-col pt-[300px] pr-[70px] text-white-1">
               <p className="pb-8 font-Grotesk text-sm font-normal text-gray-1">
                 QUARTER 4 OF 2022
               </p>
@@ -111,7 +111,7 @@ const Roadmap = () => {
               </ul>
             </div>
             {/*five*/}
-            <div className="pl-[65px] flex flex-col pt-[300px] text-white-1">
+            <div className="flex basis-[14.2%] flex-col pt-[300px] pr-[70px] text-white-1">
               <p className="pb-8 font-Grotesk text-sm font-normal text-gray-1">
                 QUARTER 1 OF 2023
               </p>
@@ -124,7 +124,7 @@ const Roadmap = () => {
               </ul>
             </div>
             {/*six*/}
-            <div className="pl-[65px] flex flex-col pt-[300px]  text-white-1">
+            <div className="flex basis-[14.2%] flex-col pt-[300px] pr-[70px] text-white-1">
               <p className="pb-8 font-Grotesk text-sm font-normal text-gray-1">
                 QUARTER 2 OF 2023
               </p>
@@ -136,12 +136,12 @@ const Roadmap = () => {
               </ul>
             </div>
             {/*seven*/}
-            <div className="pl-[65px] flex flex-col pt-[300px] text-white-1">
+            <div className="flex basis-[14.2%] flex-col pt-[300px] pr-[70px] text-white-1">
               <p className="pb-8 font-Grotesk text-sm font-normal text-gray-1">
                 QUARTER 3-4 OF 2023
               </p>
               <p className="pb-4 font-Grotesk text-[32px] font-bold">Clipper</p>
-              <ul className="pl-8 w-[300px] list-outside list-disc text-xl font-normal text-gray-1">
+              <ul className="pl-8 w-[300px] list-outside list-disc pl-3 text-xl font-normal text-gray-1">
                 <li>
                   {" "}
                   Mega Party For Launching IRL the first Crowdfunded Yacht
