@@ -18,6 +18,10 @@ const Index = () => {
     <div className="m-auto max-w-[1440px]">
       <Head>
         <title>YCLUB - Cruising The Metaverse on a Superyacht</title>
+        <meta
+          name="description"
+          content="YCLUB is a project that builds Super Yachts in the Metaverse to be chartered and experienced by different brands with revenue share going directly to YCLUB NFT holders."
+        />
       </Head>
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-9NXP8WEGK8" />
       <Script id="google-analytics" strategy="afterInteractive">
