@@ -10,48 +10,71 @@ const WhatYouNeedToKnow = () => {
         </h1>
       </div>
 
-      <div className="lg:mt-28 mt-[80px] lg:overflow-x-hidden  lg:snap-none  snap-mandatory snap-x overflow-x-scroll overflow-y-hidden xl:flex grid grid-flow-col-dense lg:flex-row lg:gap-[30px] gap-[40px] lg:px-14 px-4 font-Grotesk leading-tight text-white-1">
-        <div className=" snap-center w-[307px] flex-col rounded-xl border border-white-1 pt-[50px] pl-[20px] text-left text-[28px] font-semibold">
-          Community first, Exclusivity by Necessity
-          <img
-            className="flex w-[160px] pt-[315px]"
-            src="/images/Vector.svg"
+      <div className="lg:mt-28 mt-[80px] lg:overflow-x-hidden  lg:snap-none  snap-mandatory snap-x overflow-x-scroll overflow-y-hidden xl:flex grid grid-flow-col-dense lg:flex-row lg:gap-[30px] gap-[40px] lg:px-14 px-4 font-Grotesk leading-[28px] text-white-1">
+        <div className=" snap-center w-[307px] flex-col  pt-[25px] pl-[20px] text-left text-[22px] font-bold">
+        <img
+            className="w-[295px] mb-[20px]"
+            src="/images/whatYouNeedIcon1.png"
             alt="pic"
           ></img>
+          YCLUB community members will gain access to an immersive Metaverse.
+          
+          <p className="font-normal text-[20px] w-[248px] pt-[40px] leading-[25px]">
+          This Metaverse will provide extravagant
+          user experiences of the Superyacht NFTs
+          and act as a hub for the community that
+          provides support for an eCommerce marketplace and more.
+          </p>
         </div>
 
-        <div className=" snap-center flex w-[307px] flex-col rounded-xl border border-white-1 pt-[50px] pl-[20px] text-[28px] font-semibold">
-          Lana Super Yacht Collection Supply:
-          <span className="mt-[18px] font-normal">7000</span>
-          <img
-            className="mx-14 mb-5 flex w-[140px]  justify-center pt-[250px]"
-            src="/images/Frame 16.svg"
+        <div className=" snap-center flex w-[307px] flex-col  pl-[20px] text-[22px] font-bold">
+
+        <img
+            className="w-[260px] mb-[20px]"
+            src="/images/whatYouNeedIcon2.png"
             alt="pic"
           ></img>
+        <p className="w-[273px]"> 
+        YCLUB NFTs are keys allowing the holders to enter
+        the YCLUB Metaverse community and engage in exclusive
+        DeFi investment opportunities. 
+        </p>
+
+        <p className="font-normal text-[20px] w-[248px] pt-[40px] leading-[25px]">
+        Holders of NFTs can profit from revenue 
+        generated from events and other Metaverse
+        activities.
+        </p>
+      
+         
         </div>
-        <div className=" snap-center flex flex-col w-[307px] rounded-xl border border-white-1 pt-[50px] pl-[20px] text-[28px] font-semibold">
-          PFP Allocation:
-          <span className="mt-[18px] font-normal">
-            WL access will be given to
-          </span>
-          <img
-            className="mb-5 flex justify-center pt-[270px]"
-            src="/images/Frame 17.svg"
+        <div className=" snap-center flex flex-col w-[307px] pt-[35px] pl-[20px] text-[22px] font-bold">
+        <img
+            className="w-[273px] mb-[20px]"
+            src="/images/whatYouNeedIcon3.png"
             alt="pic"
           ></img>
+          <p className="w-[273px]">
+            YCLUB community members will be able to benefit
+            from a suite of DeFi products including a decentralized
+            exchange, NFT Marketplace, Non-Custodial Staking Rewards, 
+            to better leverage their Web3 experience.
+          </p>
         </div>
         
-        <div className=" snap-center flex flex-col w-[307px] rounded-xl border border-white-1 pt-[50px] pl-[25px] pr-[5px] text-[28px] font-semibold">
-          Fractional Ownership:
-          <span className="mt-[18px] font-normal">
-            Each NFT gives you fractional ownership of the Metaverse Mega Yacht
-            including a share of all revenue generated.
-          </span>
+        <div className="snap-center flex flex-col w-[307px] pt-[30px] pl-[25px] pr-[5px] text-[22px] font-bold">
           <img
-            className="mb-5 ml-16 flex w-[200px] justify-center pt-[40px]"
-            src="/images/Frame 18.svg"
+            className="w-[309px] mb-[20px]"
+            src="/images/whatYouNeedIcon4.png"
             alt="pic"
           ></img>
+          <p className="w-[273px]">
+          YCLUB leverages passive income generation;
+          by holding NFTs in the YCLUB crypto wallet,
+          community members gain “cash back” rewards
+          for their loyalty in SYC, while also receiving
+          revenue generated from community owned Superyachts. 
+          </p>
         </div>
       </div>
     </>
