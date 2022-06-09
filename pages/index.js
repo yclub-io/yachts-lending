@@ -31,8 +31,17 @@ const Index = () => {
       </Script>
       <BackgroundVideo />
       <Header />
+      <div className="relative"> 
+      <div className="xl:flex hidden absolute h-[1px]  left-[-800px]   w-[3000px] bg-white-1 inset-0 opacity-50"></div>
+      </div>
       <Hero />
+      <div className="relative"> 
+      <div className="xl:flex top-[180px] hidden absolute h-[1px]  left-[-800px]   w-[3000px] bg-white-1 inset-0 "></div>
+      </div>
       <RunnigLineAdvanced />
+      <div className="relative"> 
+      <div className="xl:flex hidden absolute h-[1px]  left-[-800px]   w-[3000px] bg-white-1 inset-0 "></div>
+      </div>
       <WhatYouNeedToKnow />
       <Roadmap />
       <Team />
