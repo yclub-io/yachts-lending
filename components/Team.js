@@ -5,10 +5,10 @@ const Team = () => {
         Team
       </p>
 
-        <div className="flex lg:flex-row flex-col items-center lg:gap-[15px] gap-y-[45px]">
+        <div className="grid grid-flow-col-dense overflow-x-scroll overflow-y-hidden lg:gap-[50px] gap-[20px]">
 
           {/*member 1*/}
-            <div className="flex w-[285px] border border-purple-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
+            <div className="flex w-[285px] border border-purple-1 rounded-[20px] flex-col font-Grotesk text-center h-[355px] px-1"> 
                 <p className="font-bold text-[28px] pt-[50px]"> 
                   Neptune
                 </p>
@@ -32,7 +32,7 @@ const Team = () => {
             </div>
 
           {/*member 2*/}
-          <div className="flex w-[285px] border border-purple-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
+          <div className="flex w-[285px] border border-purple-1 rounded-[20px] flex-col font-Grotesk text-center h-[355px] px-1"> 
                 <p className="font-bold text-[28px] pt-[50px]"> 
                   Mega Skipper
                 </p>
@@ -54,7 +54,7 @@ const Team = () => {
             </div>
 
           {/*member 3*/}
-          <div className="flex w-[285px] border border-purple-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
+          <div className="flex w-[285px] border border-purple-1 rounded-[20px] flex-col font-Grotesk text-center h-[355px] px-1"> 
                 <p className="font-bold text-[28px] pt-[50px]"> 
                   Blade
                 </p>
@@ -77,7 +77,7 @@ const Team = () => {
             </div>
 
           {/*member 4*/}
-          <div className="flex w-[285px] border border-purple-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
+          <div className="flex w-[285px] border border-purple-1 rounded-[20px] flex-col font-Grotesk text-center h-[355px] px-1"> 
                 <p className="font-bold text-[28px] pt-[50px]"> 
                   Cobra
                 </p>
@@ -99,7 +99,7 @@ const Team = () => {
             </div>
 
           {/*member 5*/}
-          <div className="flex w-[285px] border border-purple-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
+          <div className="flex w-[285px] border border-purple-1 rounded-[20px] flex-col font-Grotesk text-center h-[355px] px-1"> 
                 <p className="font-bold text-[28px] pt-[50px]"> 
                   Poseidon
                 </p>
@@ -118,10 +118,68 @@ const Team = () => {
                         I always say there is no bad business there is a bad operation. 
                         </p>
             </div>
+          
+          {/*member 6*/}
+          <div className="flex w-[285px] border border-purple-1 rounded-[20px] flex-col font-Grotesk text-center h-[355px] px-1"> 
+                <p className="font-bold text-[28px] pt-[50px]"> 
+                  Lipek
+                </p>
+                    <p className="text-sm text-gray-1 pt-[25px]"> 
+                    Community manager
+                    </p>
+                      
+                      <img
+                        className="w-8 mx-auto py-[20px]"
+                        src="/images/teamSectionInfDivider.svg"
+                        alt="divider"
+                      ></img>
+                    
+                        <p className="w-[245px] mx-auto text-base text-gray-1 leading-[20px] lg:pb-0 pb-[60px]"> 
+                        10 years of experience in growing communities on social media. 
+                        Since 2012 grew over 15m followers  and reached over 300m users.
+                        </p>
+            </div>
+              {/*member 7*/}
+          <div className="flex w-[285px] border border-purple-1 rounded-[20px] flex-col font-Grotesk text-center h-[355px] px-1"> 
+                <p className="font-bold text-[28px] pt-[50px]"> 
+                  Carrara
+                </p>
+                    <p className="text-sm text-gray-1 pt-[25px]"> 
+                     UI/UX
+                    </p>
+                      
+                      <img
+                        className="w-8 mx-auto py-[20px]"
+                        src="/images/teamSectionInfDivider.svg"
+                        alt="divider"
+                      ></img>
+                    
+                        <p className="w-[245px] mx-auto text-base text-gray-1 leading-[20px] lg:pb-0 pb-[60px]"> 
+                        Years of experience specializing in designing web &amp;
+                        mobile apps, websites and admin portals. Believes that 
+                        design is not about beautiful pixels but about solving 
+                        problems &amp; achieving business and user goals.
+                        </p>
+            </div>
 
   
         </div>
-     
+
+        {/*Mobile version arrows control
+        <div className="lg:hidden flex justify-center mt-[55px]">
+                      <img
+                        className=""
+                        src="/images/teamArrowScrollToLeft.svg"
+                        alt="arrow"
+                      />
+          <p className="font-Grotesk font-normal text-lg mx-[27px] pt-2"> 1/8 </p>
+                      <img
+                        className=""
+                        src="/images/teamArrowScrollToRight.svg"
+                        alt="arrow"
+                      />
+        </div>
+        */}
     </div>
   );
 };

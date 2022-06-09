@@ -4,16 +4,7 @@ const Hero = () => {
   return (
     <>
       <div id='hero' className="relative">
-        {/*
-        <img
-          className="lg:flex hidden absolute top-[-110px] h-[900px] max-w-[1440px] bg-clip-content bg-contain"
-          src="/images/heroSectionWaves.png"
-          alt="hero-bg"
-        ></img>
-        */}
       </div>
-      
-
       <div className="flex lg:flex-row  flex-col lg:px-14 px-4 pt-9 font-Grotesk text-white-1">
         <div className="z-10 flex basis-1/2 flex-col">
           <p className="lg:text-[180px] text-[100px] font-bold md:text-center">YCLUB</p>
