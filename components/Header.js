@@ -5,7 +5,7 @@ const Header = () => {
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
     return ( 
 <nav className="relative z-50">
-        <div className="flex items-center lg:justify-between justify-center p-8 lg:px-14 px-4 border-white-1 border-opacity-50 border-b xl:border-none font-Grotesk text-white-1 "> 
+        <div className="flex items-center lg:justify-between justify-center p-8 lg:px-14 px-4 border-white-1 border-opacity-50 border-b font-Grotesk text-white-1 "> 
           <a href="/">
             <img
               className="cursor-pointer lg:w-[96px] w-[70px]"

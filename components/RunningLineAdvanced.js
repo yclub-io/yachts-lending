@@ -1,6 +1,6 @@
 const RunnigLineAdvanced = () => {
     return (
-<div className="w-auto flex justify-evenly mt-[180px] bg-black-1 border-t border-b border-white-1  xl:border-none whitespace-no-wrap overflow-x-hidden">
+<div className="w-auto flex justify-evenly mt-[180px] bg-black-1 border-t border-b border-white-1 whitespace-no-wrap overflow-x-hidden">
   <div className="relative py-6 font-Grotesk text-xl font-medium text-white-1">
     <ul className="flex animate-marquee">
       <li className="flex"><p className="w-[200px] ">ART COMING SOON</p></li>
