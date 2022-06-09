@@ -7,6 +7,7 @@ const BackgroundVideo = () => {
       loop
       muted
       playsInline
+      disablePictureInPicture
     >
       <source src="video/background.mp4" type="video/mp4"/>
       Your browser does not support the video tag.
