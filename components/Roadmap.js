@@ -99,7 +99,7 @@ const Roadmap = () => {
               </p>
               <p className="pb-4 font-Grotesk text-[32px] font-bold">Carrack</p>
               <ul className="pl-8 w-[300px] list-outside list-disc text-xl font-normal text-gray-1">
-                <li> Superyacht Crowdfunding Mint </li>
+                <li> $100 Million Mega Yacht Crowdfunding Mint  </li>
                 <li> Live From Monaco Yacht Show </li>
                 <li> Monaco YCLUB Megaparty </li>
                 <li> DEX </li>
