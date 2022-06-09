@@ -11,7 +11,7 @@ const FAQ = () => {
         <div className="relative flex w-[796px] flex-col">
           <FAQitem
             question="What do I get as a YCLUB Member?"
-            answer="Fractional ownership in Mega Yachts that are built
+            answer="Fractional ownership in Super Yachts that are built
              in the Metaverse + IRL rewards to continue the
             extravagant experiences offline"
           />
