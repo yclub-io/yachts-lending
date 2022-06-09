@@ -82,8 +82,8 @@ const Roadmap = () => {
                 QUARTER 3 OF 2022
               </p>
               <p className="pb-4 font-Grotesk text-[32px] font-bold">Caravel</p>
-              <ul className="pl-8 w-[300px] font-Grotesk list-outside list-disc pl-3 text-xl font-normal text-gray-1">
-                <li> Lana Collection Mint</li>
+              <ul className="w-[300px] font-Grotesk list-outside list-disc pl-3 text-xl font-normal text-gray-1">
+                <li> 1ST dNFT Collection Mint</li>
                 <li> Token Launch </li>
                 <li> Decentraland YCLUB </li>
                 <li> NFT Airdrop </li>
@@ -98,15 +98,13 @@ const Roadmap = () => {
                 QUARTER 4 OF 2022
               </p>
               <p className="pb-4 font-Grotesk text-[32px] font-bold">Carrack</p>
-              <ul className="pl-8 w-[300px] list-outside list-disc text-xl font-normal text-gray-1">
-                <li> $100 Million Mega Yacht Crowdfunding Mint  </li>
-                <li> Live From Monaco Yacht Show </li>
+              <ul className="pl-8 w-[270px] list-outside list-disc text-xl font-normal text-gray-1">
+                <li> Super Yacht Crowdfunding Mint </li>
                 <li> Monaco YCLUB Megaparty </li>
                 <li> DEX </li>
                 <li> Liquidity Pools </li>
                 <li> NFT Marketplace </li>
                 <li> Yacht charter/sales Marketplace launch </li>
-                <li> PFP Collection Airdrop </li>
                 <li> Web3.0 eCommerce marketplace launch </li>
               </ul>
             </div>
@@ -118,9 +116,9 @@ const Roadmap = () => {
               <p className="pb-4 font-Grotesk text-[32px] font-bold">Galleon</p>
               <ul className="pl-8 w-[300px] list-outside list-disc text-xl font-normal text-gray-1">
                 <li> YCLUB Wallet </li>
-                <li> Debit Visa to cash rewards </li>
-                <li> Mega Yacht Collection Mint </li>
-                <li> PFP Collection Airdrop </li>
+                <li> Debit Visa</li>
+                <li> 2ND dNFT Collection Mint  </li>
+                <li> YCLUB Metaverse BETA </li>
               </ul>
             </div>
             {/*six*/}
@@ -130,7 +128,7 @@ const Roadmap = () => {
               </p>
               <p className="pb-4 font-Grotesk text-[32px] font-bold">Frigate</p>
               <ul className="pl-8 w-[300px] list-outside list-disc text-xl font-normal text-gray-1">
-                <li> 2nd Mega Yacht Crowdfunding mint </li>
+                <li> 2ND Super Yacht Crowdfunding mint</li>
                 <li> YCLUB Metaverse Beta launch </li>
                 <li> PFP Collection Airdrop </li>
               </ul>
@@ -141,7 +139,7 @@ const Roadmap = () => {
                 QUARTER 3-4 OF 2023
               </p>
               <p className="pb-4 font-Grotesk text-[32px] font-bold">Clipper</p>
-              <ul className="pl-8 w-[300px] list-outside list-disc pl-3 text-xl font-normal text-gray-1">
+              <ul className="w-[300px] list-outside list-disc pl-3 text-xl font-normal text-gray-1">
                 <li>
                   {" "}
                   Mega Party For Launching IRL the first Crowdfunded Yacht
