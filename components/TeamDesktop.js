@@ -36,8 +36,8 @@ const TeamDesktop = ({ teamData }) => {
       key={index}
       className="m-auto flex h-[355px] w-[285px] flex-col rounded-[20px] border border-purple-1 px-1 text-center font-Grotesk"
     >
-      <p className="pt-[50px] text-[28px] font-bold">{membber.name}</p>
-      <p className="pt-[25px] text-sm text-gray-1">{membber.meta}</p>
+      <p className="pt-[20px] text-[28px] font-bold">{membber.name}</p>
+      <p className="pt-[10px] text-sm text-gray-1">{membber.meta}</p>
 
       <img
         className="mx-auto w-8 py-[20px]"
