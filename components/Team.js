@@ -1,127 +1,64 @@
+import TeamDesktop from "./TeamDesktop";
+import TeamMobile from "./TeamMobile";
+
+const teamData = [
+  {
+    name: "Neptune",
+    meta: "Founder",
+    desc: "Basically born on a Super Yacht, years of experience in helping to curate and market extravagant experiences for those chartering and owning these vessels of extravagance.",
+  },
+  {
+    name: "Mega Skipper",
+    meta: "Campaigns",
+    desc: "Ex VP of digital in largest Israeli advertising agency with 25 years of experience in online advertising.",
+  },
+  {
+    name: "Blade",
+    meta: "Strategies",
+    desc: "Engineered for several Fortune 500 companies in a variety of technology related roles while building his website into the top 1000 most visited websites in the world.",
+  },
+  {
+    name: "Cobra",
+    meta: "Marketing",
+    desc: "10 years of experience helping E-commerce brands launch and scale while generating over a billion dollars in sales for some of the world's retail giants.",
+  },
+  {
+    name: "Poseidon",
+    meta: "Operations",
+    desc: "Chief Operations Officer in many successful start ups. I always say there is no bad business there is a bad operation.",
+  },
+  {
+    name: "Lipek",
+    meta: "Community manager",
+    desc: "10 years of experience in growing communities on social media. Since 2012 grew over 15m followers and reached over 300m users.",
+  },
+  {
+    name: "Carrara",
+    meta: "UI/UX",
+    desc: "Years of experience specializing in designing web & mobile apps, websites and admin portals. Believes that design is not about beautiful pixels but about solving problems & achieving business and user goals.",
+  },
+  {
+    name: "Polo Marco",
+    meta: "Brand Strategists & Communications",
+    desc: "Photographer and Strategist, with over 5 years of helping brands strengthen their communications, communities, and lifestyle experiences.",
+  },
+];
+
 const Team = () => {
+ 
+
+
+
   return (
-    <div id='team' className="lg:mx-14 mx-4 text-white-1">
-      <p className="lg:mb-[125px] mb-[68px] flex justify-center text-center font-Plus lg:text-5xl text-[26px] font-extrabold">
+    <div id="team" className=" text-white-1 lg:mx-14">
+      <p className="mb-[68px] flex justify-center text-center font-Plus text-[26px] font-extrabold lg:mb-[125px] lg:text-5xl">
         Team
       </p>
 
-        <div className="flex lg:flex-row flex-col items-center lg:gap-[15px] gap-y-[45px]">
+      <TeamDesktop teamData={teamData}/>
+      <TeamMobile teamData={teamData}/>
 
-          {/*member 1*/}
-            <div className="flex w-[285px] border border-purple-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
-                <p className="font-bold text-[28px] pt-[50px]"> 
-                  Neptune
-                </p>
-                    <p className="text-sm text-gray-1 pt-[25px]"> 
-                      Founder
-                    </p>
-                      
-                      <img
-                        className="w-8 mx-auto py-[20px]"
-                        src="/images/teamSectionInfDivider.svg"
-                        alt="divider"
-                      ></img>
-                    
-                        <p className="w-[245px] mx-auto text-base text-gray-1 leading-[20px] pb-[60px]"> 
-                        Basically born on a Super Yacht,
-                        years of experience in helping 
-                        to curate and market extravagant 
-                        experiences for those chartering 
-                        and owning these vessels of extravagance.
-                        </p>
-            </div>
 
-          {/*member 2*/}
-          <div className="flex w-[285px] border border-purple-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
-                <p className="font-bold text-[28px] pt-[50px]"> 
-                  Mega Skipper
-                </p>
-                    <p className="text-sm text-gray-1 pt-[25px]"> 
-                      Campaigns
-                    </p>
-                      
-                      <img
-                        className="w-8 mx-auto py-[20px]"
-                        src="/images/teamSectionInfDivider.svg"
-                        alt="divider"
-                      ></img>
-                    
-                        <p className="w-[245px] mx-auto text-base text-gray-1 leading-[20px] pb-[60px]"> 
-                        Ex VP of digital in largest Israeli
-                        advertising agency with 25 years of
-                        experience in online advertising.   
-                        </p>
-            </div>
-
-          {/*member 3*/}
-          <div className="flex w-[285px] border border-purple-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
-                <p className="font-bold text-[28px] pt-[50px]"> 
-                  Blade
-                </p>
-                    <p className="text-sm text-gray-1 pt-[25px]"> 
-                      Strategies
-                    </p>
-                      
-                      <img
-                        className="w-8 mx-auto py-[20px]"
-                        src="/images/teamSectionInfDivider.svg"
-                        alt="divider"
-                      ></img>
-                    
-                        <p className="w-[245px] mx-auto text-base text-gray-1 leading-[20px] pb-[60px]"> 
-                        Engineered for several Fortune 500 companies
-                        in a variety of technology related roles while
-                        building his website into the top 1000 most
-                        visited websites in the world. 
-                        </p>
-            </div>
-
-          {/*member 4*/}
-          <div className="flex w-[285px] border border-purple-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
-                <p className="font-bold text-[28px] pt-[50px]"> 
-                  Cobra
-                </p>
-                    <p className="text-sm text-gray-1 pt-[25px]"> 
-                      Marketing
-                    </p>
-                      
-                      <img
-                        className="w-8 mx-auto py-[20px]"
-                        src="/images/teamSectionInfDivider.svg"
-                        alt="divider"
-                      ></img>
-                    
-                        <p className="w-[245px] mx-auto text-base text-gray-1 leading-[20px] pb-[60px]"> 
-                        10 years of experience helping E-commerce brands
-                        launch and scale while generating over a billion
-                        dollars in sales for some of the world's retail giants. 
-                        </p>
-            </div>
-
-          {/*member 5*/}
-          <div className="flex w-[285px] border border-purple-1 rounded-[20px] basis-1/5 flex-col font-Grotesk text-center h-[355px] px-1"> 
-                <p className="font-bold text-[28px] pt-[50px]"> 
-                  Poseidon
-                </p>
-                    <p className="text-sm text-gray-1 pt-[25px]"> 
-                      Operations
-                    </p>
-                      
-                      <img
-                        className="w-8 mx-auto py-[20px]"
-                        src="/images/teamSectionInfDivider.svg"
-                        alt="divider"
-                      ></img>
-                    
-                        <p className="w-[245px] mx-auto text-base text-gray-1 leading-[20px] lg:pb-0 pb-[60px]"> 
-                        Chief Operations Officer in many successful start ups.
-                        I always say there is no bad business there is a bad operation. 
-                        </p>
-            </div>
-
-  
-        </div>
-     
     </div>
   );
 };
