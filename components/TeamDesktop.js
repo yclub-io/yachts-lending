@@ -11,20 +11,9 @@ const TeamDesktop = ({ teamData }) => {
     useEffect(() => {
       el = elRef.current;
       el.scrollTo({ left: scrollPosition });
-      console.log("el.scrollLeft: ", el.scrollLeft);
-      console.log("el.clientWidth: ", el.clientWidth);
-      console.log("el.scrollWidth: ", el.scrollWidth);
-      console.log(
-        "isEndOfrightScroll: ",
-        el.scrollLeft + el.clientWidth === el.scrollWidth
-      );
       setEndOfrightScroll(el.scrollLeft + el.clientWidth === el.scrollWidth);
       if (el) {
         const onScroll = (e) => {
-          // e.preventDefault();
-          console.log("el.scrollLeft: ", el.scrollLeft);
-          console.log("el.clientWidth: ", el.clientWidth);
-          console.log("el.scrollWidth: ", el.scrollWidth);
           setScrollPosition(el.scrollLeft);
         };
         el.addEventListener("wheel", onScroll);
