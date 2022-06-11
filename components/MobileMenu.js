@@ -14,8 +14,15 @@ const MobileMenu = (props) => {
           </a>
         </div>
         {/*--menu-items--*/}
-        <div className="mt-[75px] z-50 flex flex-col text-center font-Plus text-[26px] font-extrabold text-white-1">
+        <div className="z-50 mt-[75px] flex flex-col text-center font-Plus text-[26px] font-extrabold text-white-1">
           <div className="flex flex-col space-y-7">
+            <a
+              target="_blank"
+              href="https://docs.yclub.io/"
+              onClick={() => props.setMobileMenuVisible(false)}
+            >
+              Docs
+            </a>
             <a
               href="#roadmap"
               onClick={() => props.setMobileMenuVisible(false)}
