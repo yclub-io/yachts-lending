@@ -23,7 +23,7 @@ const teamData = [
     desc: "Engineered for several Fortune 500 companies in a variety of technology related roles while building his website into the top 1000 most visited websites in the world.",
   },
   {
-    name: "De VIchi",
+    name: "De Vinchi",
     meta: "Financial Analyst",
     desc: "has over 10 years of consulting and building working relationships between customers and their brand partners. Through years of experience in banking, and financial services, David’s managed to institute financial systems to strengthen portfolio health.",
   },
@@ -46,6 +46,16 @@ const teamData = [
     name: "Polo Marco",
     meta: "Brand Strategists & Communications",
     desc: "Photographer and Strategist, with over 5 years of helping brands strengthen their communications, communities, and lifestyle experiences.",
+  },
+  {
+    name: "Yacht Mogul",
+    meta: "Advisor",
+    desc: "All passion and love for yachts and their ability to inspire people all around the world. A chosen “Influencial figure in the yachting world” by some of the press such as Forbes,CNN,BOAT,Robb Report.",
+  },
+  {
+    name: "CryptoDon",
+    meta: "Advisor",
+    desc: "Early investor in many projects like BAYC and in the ethereum blockchain. Dedicated curator in owned Web3 investment communities.",
   },
 ];
 

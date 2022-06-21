@@ -1,79 +1,74 @@
 const WhatYouNeedToKnow = () => {
   return (
     <>
-      <div className="lg:mt-[150px] mt-[100px] text-white-1">
-        <h1 className="flex justify-center text-center font-Plus lg:text-5xl text-[26px] font-extrabold">
+      <div className="mt-[100px] text-white-1 lg:mt-[150px]">
+        <h1 className="flex justify-center text-center font-Plus text-[26px] font-extrabold lg:text-5xl">
           What you need to know
         </h1>
-        <h1 className="flex justify-center text-center font-Plus lg:text-5xl text-[26px] font-extrabold">
+        <h1 className="flex justify-center text-center font-Plus text-[26px] font-extrabold lg:text-5xl">
           about YCLUB
         </h1>
       </div>
 
-      <div className="lg:mt-28 mt-[80px] lg:overflow-x-hidden  lg:snap-none  snap-mandatory snap-x overflow-x-scroll overflow-y-hidden xl:flex grid grid-flow-col-dense lg:flex-row lg:gap-[30px] gap-[40px] lg:px-14 px-4 font-Grotesk leading-[28px] text-white-1">
-        <div className=" snap-center w-[307px] flex-col  pt-[25px] pl-[20px] text-left text-[22px] font-bold">
-        <img
-            className="w-[295px] mb-[20px]"
+      <div className="mt-[80px] grid snap-x  snap-mandatory  grid-flow-col-dense gap-[40px] overflow-y-hidden overflow-x-scroll px-4 font-Grotesk leading-[28px] text-white-1 lg:mt-28 lg:snap-none lg:flex-row lg:gap-[30px] lg:overflow-x-hidden lg:px-14 xl:flex">
+        <div className=" w-[307px] snap-center flex-col  pt-[25px] pl-[20px] text-left text-[22px] font-bold">
+          <img
+            className="mb-[20px] w-[295px]"
             src="/images/whatYouNeedIcon1.png"
             alt="pic"
           ></img>
-          YCLUB community members will gain access to an immersive Metaverse.
-          
-          <p className="font-normal text-[20px] w-[248px] pt-[40px] leading-[25px]">
-          This Metaverse will provide extravagant
-          user experiences of the Superyacht NFTs
-          and act as a hub for the community that
-          provides support for an eCommerce marketplace and more.
+          Fractional Ownership
+          <p className="w-[248px] pt-[40px] text-[20px] font-normal leading-[25px]">
+            Enjoy factional ownership of Super Yachts in the Metaverse and IRL
+            when holding YCLUB dNFTs and pNFTs. As a holder, benefit from
+            ownership perks including revenue shares from e-comm, events, and
+            super yacht charters.
           </p>
         </div>
 
-        <div className=" snap-center flex w-[307px] flex-col  pl-[20px] text-[22px] font-bold">
-
-        <img
-            className="w-[260px] mb-[20px]"
+        <div className=" flex w-[307px] snap-center flex-col  pl-[20px] text-[22px] font-bold">
+          <img
+            className="mb-[20px] w-[260px]"
             src="/images/whatYouNeedIcon2.png"
             alt="pic"
           ></img>
-        <p className="w-[273px]"> 
-        YCLUB NFTs are keys allowing the holders to enter
-        the YCLUB Metaverse community and engage in exclusive
-        DeFi investment opportunities. 
-        </p>
+          <p className="w-[273px]">Dedicated Ecosystem</p>
 
-        <p className="font-normal text-[20px] w-[248px] pt-[40px] leading-[25px]">
-        Holders of NFTs can profit from revenue 
-        generated from events and other Metaverse
-        activities.
-        </p>
-      
-         
+          <p className="w-[248px] pt-[40px] text-[20px] font-normal leading-[25px]">
+            Leisurely experience Web3 through the YCLUB dedicated ecosystem
+            where collecting is just as exciting as it is convenient. Including
+            our native wallet, experience lower transaction fees and a seamless
+            Web3 experiences with our NFTs.
+          </p>
         </div>
-        <div className=" snap-center flex flex-col w-[307px] pt-[35px] pl-[20px] text-[22px] font-bold">
-        <img
-            className="w-[273px] mb-[20px]"
+        <div className=" flex w-[307px] snap-center flex-col pt-[35px] pl-[20px] text-[22px] font-bold">
+          <img
+            className="mb-[20px] w-[273px]"
             src="/images/whatYouNeedIcon3.png"
             alt="pic"
           ></img>
-          <p className="w-[273px]">
-            YCLUB community members will be able to benefit
-            from a suite of DeFi products including a decentralized
-            exchange, NFT Marketplace, Non-Custodial Staking Rewards, 
-            to better leverage their Web3 experience.
+          <p className="w-[273px]">DeFi Investments</p>
+
+          <p className="w-[248px] pt-[40px] text-[20px] font-normal leading-[25px]">
+            Benefit from our native token as you trust YCLUB to charter your
+            Web3 experience. Leverage the benefits of compounded interest
+            through our auto staking mechanisms and get the most value from your
+            collected passive income.
           </p>
         </div>
-        
-        <div className="snap-center flex flex-col w-[307px] pt-[30px] pl-[25px] pr-[5px] text-[22px] font-bold">
+
+        <div className="flex w-[307px] snap-center flex-col pt-[30px] pl-[25px] pr-[5px] text-[22px] font-bold">
           <img
-            className="w-[309px] mb-[20px]"
+            className="mb-[20px] w-[309px]"
             src="/images/whatYouNeedIcon4.png"
             alt="pic"
           ></img>
-          <p className="w-[273px]">
-          YCLUB leverages passive income generation;
-          by holding NFTs in the YCLUB crypto wallet,
-          community members gain “cash back” rewards
-          for their loyalty in SYC, while also receiving
-          revenue generated from community owned Superyachts. 
+          <p className="w-[273px]">Community of Innovators</p>
+          <p className="w-[248px] pt-[40px] text-[20px] font-normal leading-[25px]">
+            Build beyond the initial experiences and create new opportunities
+            with fellow community members through non-experiable passive income.
+            Don’t miss the opportunity to invest with others who are changing
+            our way of engaging in Web3.
           </p>
         </div>
       </div>
