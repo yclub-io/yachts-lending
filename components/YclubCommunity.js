@@ -19,7 +19,7 @@ const YclubCommunity = () => {
           </a>
         </div>
         <div className="flex w-[290px]  justify-center">
-          <a href="https://discord.gg/MYfrX4Cu" target="_blank">
+          <a href="https://discord.gg/yclub" target="_blank">
             <p className=" border-r py-[65px] px-[88px] font-Grotesk text-4xl font-normal">
               discord
             </p>
@@ -49,7 +49,7 @@ const YclubCommunity = () => {
         </div> 
         
       <div className="py-[30px] flex basis-1/2 justify-center font-Grotesk text-[26px] font-normal">  
-      <a href="https://discord.gg/MYfrX4Cu" target="_blank">
+      <a href="https://discord.gg/yclub" target="_blank">
         <p> discord </p>
       </a>
       </div>

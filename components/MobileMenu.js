@@ -45,7 +45,7 @@ const MobileMenu = (props) => {
           </div>
 
           <div className="mt-[55px] flex flex-col space-y-[35px] font-Grotesk  text-base font-normal">
-            <a target="_blank" href="https://discord.gg/MYfrX4Cu">
+            <a target="_blank" href="https://discord.gg/yclub">
               Discord
             </a>
             <a target="_blank" href="https://twitter.com/yclub_io">

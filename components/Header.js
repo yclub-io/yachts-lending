@@ -32,7 +32,7 @@ const Header = () => {
         <div className="hidden space-x-8 font-Grotesk text-sm lg:flex">
           <a
             className="transition-all duration-700 hover:text-white-1"
-            href="https://discord.gg/MYfrX4Cu"
+            href="https://discord.gg/yclub"
             target="_blank"
           >
             Discord
