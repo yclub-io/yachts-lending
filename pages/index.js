@@ -9,6 +9,7 @@ import MailchimpFormContainer from "../components/MailchimpFormContainer";
 import Roadmap from "../components/Roadmap";
 import RunnigLineAdvanced from "../components/RunningLineAdvanced";
 import Team from "../components/Team";
+import Tokonomics from "../components/Tokonomics";
 import Vision from "../components/Vision";
 import WhatYouNeedToKnow from "../components/WhatYouNeedToKnow";
 import YclubCommunity from "../components/YclubCommunity";
@@ -36,12 +37,11 @@ const Index = () => {
       <BackgroundVideo />
       <Header />
       <Hero />
-      <RunnigLineAdvanced />
       <WhatYouNeedToKnow />
       <Roadmap />
+      <Tokonomics />
       <Team />
       <Vision />
-      <MailchimpFormContainer />
       <YclubCommunity />
       <FAQ />
       <Footer />
