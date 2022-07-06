@@ -1,7 +1,7 @@
 const WhatYouNeedToKnow = () => {
   return (
     <>
-      <div className="mt-[100px] text-white-1 lg:mt-[150px]">
+      <div className="mt-[200px] text-white-1 lg:mt-[150px] relative">
         <h1 className="flex justify-center text-center font-Plus text-[26px] font-extrabold lg:text-5xl">
           What you need to know
         </h1>
