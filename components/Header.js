@@ -4,8 +4,10 @@ import MobileMenu from "./MobileMenu";
 const Header = () => {
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
   return (
-    <nav className="relative z-50">
-      <div className="flex items-center justify-center border-b border-white-1 border-opacity-50 p-8 px-4 font-Grotesk text-white-1 lg:justify-between lg:px-14 ">
+    <nav className="relative z-50 font-Grotesk  text-white-1">
+      <div className="flex justify-center lg:justify-between items-center
+                      py-8 px-4 lg:px-14
+                      border-b border-white-1 border-opacity-50">
         <a href="/">
           <img
             className="w-[70px] cursor-pointer lg:w-[96px]"
@@ -19,38 +21,20 @@ const Header = () => {
           onClick={() => setMobileMenuVisible(true)}
         />
         {/*--menu-items--*/}
-        <div className="hidden space-x-8  pl-36 font-Grotesk text-sm lg:flex">
-          <a target="_blank" href="https://docs.yclub.io/">
-            Docs
-          </a>
+        <div className="hidden space-x-8 pl-[40px] text-sm lg:flex">
           <a href="#roadmap">Roadmap</a>
           <a href="#team">Team</a>
-          <a href="#vision">The Vision</a>
-          <a href="#faq">FAQ</a>
+          <a href="">Whitepaper</a>
+          <a href="">Tokonomics</a>
         </div>
 
-        <div className="hidden space-x-8 font-Grotesk text-sm lg:flex">
-          <a
-            className="transition-all duration-700 hover:text-white-1"
-            href="https://discord.gg/yclub"
-            target="_blank"
-          >
-            Discord
-          </a>
-          <a
-            className="transition-all duration-700 hover:text-white-1"
-            href="https://twitter.com/yclub_io"
-            target="_blank"
-          >
-            Twitter
-          </a>
-          <a
-            target="_blank"
-            href="https://www.instagram.com/yclub.io/"
-            className="transition-all duration-700 hover:text-white-1"
-          >
-            Instagram
-          </a>
+        {/*MINT button*/}
+        <div className="hidden lg:flex text-[16px] font-semibold">
+          <button className="px-[51px] py-[16px]
+                             bg-pink-1 border border-pink-1 rounded-[50px] shadow-headerButton">
+            Mint
+
+          </button>
         </div>
 
         {isMobileMenuVisible && (
