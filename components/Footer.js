@@ -1,7 +1,8 @@
 const Footer = () => {
   return (
-    <footer className="relative z-50 lg:pb-0 pb-10">
-      <div className="flex items-center justify-between border-t border-white-1 border-opacity-50 p-8 lg:px-14 px-4 font-Grotesk text-gray-1">
+    <footer className="relative lg:pb-0 pb-10">
+      <div className="flex flex-col items-center justify-between border-t border-white-1 border-opacity-50 p-8 lg:px-14 px-4 font-Grotesk text-gray-1">
+        {/*LOGOTYPE*/}
         <a href="/">
           <img
             className="cursor-pointer"
@@ -9,8 +10,9 @@ const Footer = () => {
             alt="logotype"
           ></img>
         </a>
+
         {/*--menu-items--*/}
-        <div className="lg:flex hidden animate-bounce space-x-8 pl-36 font-Grotesk">
+        <div className="absolute right-[20px] top-[50px]">
           <a href='#hero'>
             <img
               className="cursor-pointer"
@@ -20,19 +22,19 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="flex lg:flex-row flex-col lg:space-x-8 lg:space-y-0  space-y-7 font-Grotesk lg:text-sm text-xs">
+        <div className="mt-[30px] flex lg:flex-row flex-col lg:space-x-8 lg:space-y-0  space-y-7 font-Grotesk lg:text-sm text-xs">
           <a
             className="transition-all duration-700 hover:text-white-1"
-            href="#howItworks"
+            href=""
           >
-            YCLUB.IO™ 
+            Privacy Policy 
           </a>
-          <p className="lg:flex hidden"> | </p>
+          
           <a
             className="transition-all duration-700 hover:text-white-1"
             href="#faq"
           >
-            ALL RIGHT RESERVED 2022
+            Terms &#38; Conditions
           </a>
         </div>
       </div>
