@@ -28,10 +28,13 @@ module.exports = {
         1: '#AEB2BA'
       },
       blue: {
-        1: '#490CFF'
+        1: '#490CFF',
+        2: '#008AFF'
       },
       purple: {
-        1: '#5625A6'
+        1: '#5625A6',
+        2: '#3321B1',
+        3: '#852A98'
       },
     },
 
@@ -46,7 +49,8 @@ module.exports = {
       boxShadow: {
         'btnGlow': '0 0 10px #F5129C',
         'btnGlowHover': 'inset 0 0 20px #F5129C',
-        'btnGlowInit': 'inset 0 0px 10px #F5129C'
+        'btnGlowInit': 'inset 0 0px 10px #F5129C',
+        'headerButton': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'
       },
       animation: {
         marquee: 'marquee 15s linear infinite',
