@@ -2,10 +2,10 @@ import teamData from "../../data/teamData";
 
 const TeamInMint = () => {
   const renderTeam = teamData.map((membber, index) => (
-    <div key={index} className="m-auto mb-[50px]  text-white-1">
-      <p className="pt-[20px] text-[28px] font-bold ">{membber.name}</p>
-      <p className="pt-[10px] text-sm ">{membber.meta}</p>
-      <p className="w mx-auto text-base leading-[20px]  ">{membber.desc}</p>
+    <div key={index} className="m-auto mx-[60px] mb-[50px] font-Grotesk  text-white-1">
+      <p className="pt-[20px] text-[24px] font-bold ">{membber.name}</p>
+      <p className="pt-[10px] text-sm font-normal mb-[38px] text-gray-1">{membber.meta}</p>
+      <p className="w mx-auto text-base font-normal leading-[20px] text-gray-1">{membber.desc}</p>
     </div>
   ));
 
