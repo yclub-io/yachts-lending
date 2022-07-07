@@ -59,7 +59,7 @@ const MintIndex = () => {
           </div>
           <div >{infos[currentInfo]}</div>
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2 mt-[30px]">
           <img
             src="./images/gif_test.png"
             className="max-h-[660px] max-w-[660px]"
