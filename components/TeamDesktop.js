@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef } from "react";
 
 const TeamDesktop = ({ teamData }) => {
   const renderTeam = teamData.map((membber, index) => (
