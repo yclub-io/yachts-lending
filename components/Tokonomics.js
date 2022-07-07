@@ -5,7 +5,7 @@ const Tokonomics = () => {
           {/*HEADING*/}
           
             <h1 className="flex flex-col font-semibold text-[96px] font-Plus"> 
-              Tokonomics
+              Tokenomics
               <span className="text-[36px] font-Plus">
                  SYC 
               </span>

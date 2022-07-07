@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 
@@ -5,9 +6,11 @@ const Header = () => {
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
   return (
     <nav className="relative z-50 font-Grotesk  text-white-1">
-      <div className="flex justify-center lg:justify-between items-center
-                      py-8 px-4 lg:px-14
-                      border-b border-white-1 border-opacity-50">
+      <div
+        className="flex items-center justify-center border-b
+                      border-white-1 border-opacity-50 py-8
+                      px-4 lg:justify-between lg:px-14"
+      >
         <a href="/">
           <img
             className="w-[70px] cursor-pointer lg:w-[96px]"
@@ -29,12 +32,15 @@ const Header = () => {
         </div>
 
         {/*MINT button*/}
-        <div className="hidden lg:flex text-[16px] font-semibold">
-          <button className="px-[51px] py-[16px]
-                             bg-pink-1 border border-pink-1 rounded-[50px] shadow-headerButton">
-            Mint
-
-          </button>
+        <div className="hidden text-[16px] font-semibold lg:flex">
+          <Link href="mint">
+            <button
+              className="rounded-[50px] border
+                             border-pink-1 bg-pink-1 px-[51px] py-[16px] shadow-headerButton"
+            >
+              Mint
+            </button>
+          </Link>
         </div>
 
         {isMobileMenuVisible && (
