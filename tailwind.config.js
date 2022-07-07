@@ -50,7 +50,9 @@ module.exports = {
         'btnGlow': '0 0 10px #F5129C',
         'btnGlowHover': 'inset 0 0 20px #F5129C',
         'btnGlowInit': 'inset 0 0px 10px #F5129C',
-        'headerButton': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'
+        'headerButton': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+        'mintGlow': ['inset 0px 0px 20px 0px #F5129C',
+                      '0px 0px 4px 0px #F5129C'] ,
       },
       animation: {
         marquee: 'marquee 15s linear infinite',
