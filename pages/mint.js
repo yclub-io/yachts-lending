@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import HeroMint from "../components/mint/HeroMint";
 import InfoInMint from "../components/mint/InfoInMint";
 import RoadmapInMint from "../components/mint/RoadmapInMint";
 import TeamInMint from "../components/mint/TeamInMint";
@@ -17,34 +18,43 @@ const MintIndex = () => {
   };
 
   return (
-    <div className="m-auto max-w-[1440px] ">
+    <div className="m-auto max-w-[1440px]">
       <Header />
       <div className="flex w-full">
         <div className="w-1/2">
-          <div >
+          {/*HERO MINT SECTION*/}
+          <HeroMint />
+
+          {/*MINT MENU*/}
+          <div className="mt-[42px] mb-[40px] mx-[60px] space-x-[65px]
+                         font-bold text-[18px] text-white-1 font-Grotesk">
             <span
-              className="text-white-1"
+              className="pb-[10px]
+                         hover:border-b-[3px] hover:border-b-pink-1"
               onClick={() => setCurrentInfo("whitelists")}
             >
-              whitelists{" "}
+              WHITELISTS
             </span>
             <span
-              className="text-white-1"
+              className="pb-[10px]
+                         hover:border-b-[3px] hover:border-b-pink-1"
               onClick={() => setCurrentInfo("info")}
             >
-              info{" "}
+              INFO
             </span>
             <span
-              className="text-white-1"
+              className="pb-[10px]
+                         hover:border-b-[3px] hover:border-b-pink-1"
               onClick={() => setCurrentInfo("roadmap")}
             >
-              roadmap{" "}
+              ROADMAP
             </span>
             <span
-              className="text-white-1"
+              className="pb-[10px]
+                         hover:border-b-[3px] hover:border-b-pink-1"
               onClick={() => setCurrentInfo("team")}
             >
-              team{" "}
+              TEAM
             </span>
           </div>
           <div >{infos[currentInfo]}</div>
