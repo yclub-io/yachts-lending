@@ -5,7 +5,7 @@ const Hero = () => {
     <>
       <div
         id="hero"
-        className="relative mx-8 mt-[824px] flex  font-Grotesk tracking-[-2%] text-white-1"
+        className="relative mx-8 mt-[853px] flex  font-Grotesk tracking-[-2%] text-white-1"
       >
         {/*DIV TEXT*/}
         <div className="mt-[-70px] flex basis-1/2 flex-col text-left">
@@ -23,7 +23,7 @@ const Hero = () => {
                 src="./images/HeroSection/discord_big_logo.svg"
                 className="mr-[15px]"
               />
-              <span className="bg-gradient-to-r from-blue-2 to-pink-2 bg-clip-text text-white-1 text-opacity-[0%]">
+              <span className="bg-gradient-to-r from-blue-2 to-pink-2 bg-clip-text bg-pos-0 hover:bg-pos-100 duration-700 bg-size-200 transition-all text-white-1 text-opacity-[0%]">
                 DISCORD
               </span>
             </a>
