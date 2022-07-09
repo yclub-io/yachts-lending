@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Script from "next/script";
 import BackgroundVideo from "../components/BackgroundVideo";
+import CrowdfundMint from "../components/CrowdfundMint";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -40,6 +41,7 @@ const Index = () => {
       <WhatYouNeedToKnow />
       <Roadmap />
       <Tokonomics />
+      <CrowdfundMint />
       <Team />
       <Vision />
       <YclubCommunity />
