@@ -5,7 +5,7 @@ const Hero = () => {
     <>
       <div
         id="hero"
-        className="relative lg:mx-8 mx-[16px] lg:mt-[853px] mt-[482px] flex font-Grotesk tracking-[-2%] text-white-1">
+        className="relative lg:mx-8 mx-[16px] xl:mt-[853px] md:mt-[1000px] sm2:mt-[800px] mt-[482px] flex font-Grotesk tracking-[-2%] text-white-1">
         
         {/*DIV TEXT*/}
         <div className="mt-[-70px] flex basis-1/2 flex-col text-left">
@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
 
         {/*DIV GIF DESKTOP*/}
-        <div className="lg:flex hidden basis-1/2">
+        <div className="xl:flex hidden basis-1/2">
           <img
             src="./images/gif_test.png"
             className="max-h-[660px] max-w-[660px]"
