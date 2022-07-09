@@ -25,10 +25,10 @@ const Header = () => {
         />
         {/*--menu-items--*/}
         <div className="hidden space-x-8 pl-[40px] text-sm lg:flex">
-          <a href="#roadmap">Roadmap</a>
-          <a href="#team">Team</a>
           <a href="">Whitepaper</a>
           <a href="">Tokonomics</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#team">Team</a>
         </div>
 
         {/*MINT button*/}
