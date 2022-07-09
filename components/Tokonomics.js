@@ -4,41 +4,47 @@ const Tokonomics = () => {
         <div id='hero' className="mx-8 mt-[140px] tracking-[-2%] font-Grotesk text-white-1">
           {/*HEADING*/}
           
-            <h1 className="flex flex-col font-semibold text-[96px] font-Plus"> 
+            <h1 className="flex flex-col lg:font-semibold font-extrabold lg:text-[96px] text-[36px] font-Plus"> 
               Tokenomics
-              <span className="text-[36px] font-Plus">
-                 SYC 
+              <span className="lg:text-[36px] text-[24px] font-semibold font-Plus">
+                 $SYC 
               </span>
             </h1>
         
-            <div className="flex">
+            <div className="flex lg:flex-row flex-col">
              {/*DIV STATS*/}
-              <div className="flex flex-col basis-1/2 mt-[74px] text-[14px] font-light">
+              <div className="flex flex-col basis-1/2 lg:mt-[74px] mt-[60px] lg:text-[14px] text-[12px] font-light">
                 <p>
                  MAXIMUM SUPPLY 
                 </p>
 
-                <p className="text-[64px] font-bold text-white-1 bg-gradient-to-r from-blue-2 to-pink-2 bg-clip-text text-opacity-[0%]">
+                <p className="lg:text-[64px] text-[48px] font-bold text-white-1 bg-gradient-to-r from-blue-2 to-pink-2 bg-clip-text text-opacity-[0%]">
                  100 000 000
                 </p>
 
-                <div className="mt-[80px]">
-                <p>
+                <div className="lg:mt-[80px] mt-[60px]">
+                <p className="lg:text-[14px] text-[12px]">
                  INITIAL SUPPLY
                 </p>
 
-                <p className="text-[64px] font-bold">
+                <p className="lg:text-[64px] text-[48px] font-bold">
                  13 100 000
                 </p>
                 </div>
 
               </div>
             
-            {/*DIV PIE*/}
-                <div className="flex basis-1/2">
+            {/*DESKTOP DIV PIE*/}
+                <div className="lg:flex hidden basis-1/2">
                     <img src="./images/Tokonomics/tokonomics_chart.svg"/>
 
-                </div>          
+                </div> 
+
+            {/*MOBILE DIV PIE*/}
+              <div className="flex lg:hidden mt-[47px]">
+                    <img src="./images/Tokonomics/pie_chart_plus_info.svg"/>
+
+              </div>            
              </div>
         </div>
       </>
