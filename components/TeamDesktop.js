@@ -1,4 +1,3 @@
-
 const TeamDesktop = ({ teamData }) => {
   const renderTeam = teamData.map((membber, index) => (
     <div
@@ -20,7 +19,7 @@ const TeamDesktop = ({ teamData }) => {
     </div>
   ));
 
-  return <div className="flex flex-wrap">{renderTeam}</div>;
+  return <div className="hidden flex-wrap lg:flex">{renderTeam}</div>;
 };
 
 export default TeamDesktop;
