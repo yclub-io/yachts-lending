@@ -12,8 +12,8 @@ const YclubCommunity = () => {
           Follow our twitter &#38; Join our discord
         </p>
 
-        <div className="flex flex-wrap
-                        lg:mt-[64px] mt-[30px] lg:space-x-[100px] space-x-[30px]
+        <div className="lg:flex flex-row grid grid-cols-2 grid-flow-row
+                        lg:mt-[64px] mt-[30px] lg:space-x-[100px] m-auto
                         font-Grotesk lg:text-4xl text-[26px] font-normal lg:justify-start justify-center">
           <a href="https://twitter.com/yclub_io" target="_blank">
             <p className="flex">
@@ -37,7 +37,7 @@ const YclubCommunity = () => {
             </p>
           </a>
           <a href="https://t.me/yachtsnftclub" target="_blank">
-            <p className="flex">
+            <p className="flex mr-[70px]">
               <img src="./images/YclubCommunity/share_arrow.svg"
                    className="lg:mr-[15px] mr-[10px]"/>
               reddit
