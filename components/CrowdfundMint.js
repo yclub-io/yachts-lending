@@ -1,7 +1,7 @@
 const CrowdfundMint = () => {
     return (
       <div className="flex lg:flex-row flex-col relative 
-                      lg:mt-[270px] mt-[110px]
+                      lg:mt-[270px] mt-[110px] lg:pb-[100px] pb-[200px]
                       text-white-1 font-Plus lg:m-none m-[16px]">
         {/*DESKTOP-PICTURE*/}
             <div className="lg:flex hidden basis-1/2"/> 
