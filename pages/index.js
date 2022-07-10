@@ -35,8 +35,8 @@ const Index = () => {
           gtag('config', 'G-9NXP8WEGK8');
         `}
       </Script>
-      <BackgroundVideo />
       <Header />
+      <BackgroundVideo />
       <Hero />
       <WhatYouNeedToKnow />
       <Roadmap />

@@ -5,10 +5,10 @@ const Hero = () => {
     <>
       <div
         id="hero"
-        className="relative lg:mx-8 mx-[16px] xl:mt-[853px] md:mt-[1000px] sm2:mt-[800px] mt-[482px] flex font-Grotesk tracking-[-2%] text-white-1">
+        className="relative lg:mx-8 mx-[16px] lg:mt-[146px] mt-[78px] flex font-Grotesk tracking-[-2%] text-white-1">
         
         {/*DIV TEXT*/}
-        <div className="mt-[-70px] flex basis-1/2 flex-col text-left">
+        <div className="mt-[-70px] mr-2 flex lg:basis-1/2 flex-col text-left">
           <h1 className="lg:text-[180px] text-[100px] font-bold">YCLUB</h1>
           <h2 className="lg:mt-[-20px] mt-[-10px] lg:text-[40px] text-[28px] font-bold">
             JULY 31 &#160;
@@ -18,7 +18,7 @@ const Hero = () => {
           </h2>
 
           {/*DIV GIF MOBILE*/}
-        <div className="flex">
+        <div className="flex justify-center">
           <img
             src="./images/gif_test.png"
             className="lg:hidden flex mt-[50px] min-w-screen"
@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
 
         {/*DIV GIF DESKTOP*/}
-        <div className="xl:flex hidden basis-1/2">
+        <div className="lg:flex hidden basis-1/2">
           <img
             src="./images/gif_test.png"
             className="max-h-[660px] max-w-[660px]"
