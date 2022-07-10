@@ -1,19 +1,22 @@
 const Tokonomics = () => {
     return (
       <>
-        <div id='hero' className="mx-8 mt-[140px] tracking-[-2%] font-Grotesk text-white-1">
+        <div id='hero' className="mx-8  mt-[140px] tracking-[-2%] font-Grotesk text-white-1">
           {/*HEADING*/}
           
-            <h1 className="flex flex-col lg:font-semibold font-extrabold lg:text-[96px] text-[36px] font-Plus"> 
+          <div className="flex flex-col">
+            <h1 className="md:m-auto lg:font-semibold font-extrabold lg:text-[96px] text-[36px] font-Plus"> 
               Tokenomics
-              <span className="lg:text-[36px] text-[24px] font-semibold font-Plus">
+              
+            </h1>
+            <span className="lg:text-[36px] md:m-auto text-[24px] font-semibold font-Plus">
                  $SYC 
               </span>
-            </h1>
+              </div>
         
             <div className="flex lg:flex-row flex-col">
              {/*DIV STATS*/}
-              <div className="flex flex-col basis-1/2 lg:mt-[74px] mt-[60px] lg:text-[14px] text-[12px] font-light">
+              <div className="flex md:m-auto flex-col lg:basis-1/2 lg:mt-[74px] mt-[60px] lg:text-[14px] text-[12px] font-light">
                 <p>
                  MAXIMUM SUPPLY 
                 </p>
@@ -41,7 +44,7 @@ const Tokonomics = () => {
                 </div> 
 
             {/*MOBILE DIV PIE*/}
-              <div className="flex lg:hidden mt-[47px]">
+              <div className="flex md:m-auto lg:hidden mt-[47px]">
                     <img src="./images/Tokonomics/pie_chart_plus_info.svg"/>
 
               </div>            
