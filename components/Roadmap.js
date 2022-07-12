@@ -36,8 +36,8 @@ const Roadmap = () => {
       >
         <div>
           <img
-            className="absolute z-50 mt-10 min-w-[2594px]"
-            src="/images/roadMapLineTest.svg"
+            className="absolute z-50 mt-[45px] min-w-[2594px]"
+            src="./images/RoadMap/road-map-line2.svg"
             alt="roadmap-line"
           ></img>
           <img

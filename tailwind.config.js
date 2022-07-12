@@ -8,9 +8,10 @@ module.exports = {
   {
     screens: {
       sm:'376px',
+      sm2: '550px',
       md: '786px',
       lg: '991px',
-      xl: '1900px'
+      xl: '1439px'
     },
 
     colors: {
@@ -28,10 +29,14 @@ module.exports = {
         1: '#AEB2BA'
       },
       blue: {
-        1: '#490CFF'
+        1: '#490CFF',
+        2: '#008AFF',
+        3: '#2491EB'
       },
       purple: {
-        1: '#5625A6'
+        1: '#5625A6',
+        2: '#3321B1',
+        3: '#852A98'
       },
     },
 
@@ -46,12 +51,20 @@ module.exports = {
       boxShadow: {
         'btnGlow': '0 0 10px #F5129C',
         'btnGlowHover': 'inset 0 0 20px #F5129C',
-        'btnGlowInit': 'inset 0 0px 10px #F5129C'
+        'btnGlowInit': 'inset 0 0px 10px #F5129C',
+        'headerButton': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+        'mintGlow': ['inset 0px 0px 20px 0px #F5129C',
+                      '0px 0px 4px 0px #F5129C'] ,
       },
       animation: {
         marquee: 'marquee 15s linear infinite',
         marquee2: 'marquee2 15s linear infinite'
       },
+      backgroundPosition: {
+        'pos-0': '0% 0%',
+        'pos-100': '100% 100%',},
+        backgroundSize: {
+          'size-200': '200% 200%',},
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(0%)' },
@@ -59,8 +72,9 @@ module.exports = {
         },
         marquee2: {
           '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0%)' }}}
+          '100%': { transform: 'translateX(0%)' }},}
     },
+        
   },
   plugins: [],
 }

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Script from "next/script";
 import BackgroundVideo from "../components/BackgroundVideo";
+import CrowdfundMint from "../components/CrowdfundMint";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -9,6 +10,7 @@ import MailchimpFormContainer from "../components/MailchimpFormContainer";
 import Roadmap from "../components/Roadmap";
 import RunnigLineAdvanced from "../components/RunningLineAdvanced";
 import Team from "../components/Team";
+import Tokonomics from "../components/Tokonomics";
 import Vision from "../components/Vision";
 import WhatYouNeedToKnow from "../components/WhatYouNeedToKnow";
 import YclubCommunity from "../components/YclubCommunity";
@@ -33,15 +35,15 @@ const Index = () => {
           gtag('config', 'G-9NXP8WEGK8');
         `}
       </Script>
-      <BackgroundVideo />
       <Header />
+      <BackgroundVideo />
       <Hero />
-      <RunnigLineAdvanced />
       <WhatYouNeedToKnow />
       <Roadmap />
+      <Tokonomics />
+      <CrowdfundMint />
       <Team />
       <Vision />
-      <MailchimpFormContainer />
       <YclubCommunity />
       <FAQ />
       <Footer />
