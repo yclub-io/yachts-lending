@@ -1,15 +1,15 @@
 const Tokonomics = () => {
     return (
       <>
-        <div id='hero' className="mx-8  mt-[140px] tracking-[-2%] font-Grotesk text-white-1">
+        <div id='hero' className="mx-8  lg:mt-[140px] tracking-[-2%] font-Grotesk text-white-1">
           {/*HEADING*/}
           
           <div className="flex flex-col">
-            <h1 className="md:m-auto lg:font-semibold font-extrabold lg:text-[96px] text-[36px] font-Plus"> 
+            <h1 className="lg:font-semibold font-extrabold lg:text-[96px] text-[36px] font-Plus"> 
               Tokenomics
               
             </h1>
-            <span className="lg:text-[36px] md:m-auto text-[24px] font-semibold font-Plus">
+            <span className="lg:text-[36px] text-[24px] font-semibold font-Plus">
                  $SYC 
               </span>
               </div>
