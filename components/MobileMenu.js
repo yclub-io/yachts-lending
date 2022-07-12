@@ -57,6 +57,18 @@ const MobileMenu = (props) => {
           </div>
         </div>
       </div>
+      {/*MINT button*/}
+      <div className="text-[16px] font-semibold flex justify-center mt-[40px]">
+          {/* <Link href="mint"> */}
+            <button
+              className="rounded-[50px] border
+                             border-pink-1 bg-pink-1 px-[100px] py-[16px] shadow-headerButton"
+            >
+              Mint
+            </button>
+          {/* </Link> */}
+        </div>
+
     </div>
   );
 };
