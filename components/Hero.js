@@ -20,7 +20,7 @@ const Hero = () => {
           {/*DIV GIF MOBILE*/}
         <div className="flex justify-center">
           <img
-            src="./images/gif_test.png"
+            src="./images/HeroSection/yachts_animation.gif"
             className="lg:hidden flex mt-[50px] min-w-screen"
           />
         </div>
@@ -39,7 +39,7 @@ const Hero = () => {
             </h2>
             <h2 className="flex lg:text-[64px] lg:mt-0 mt-[-15px] text-[36px] font-bold leading-[81.66px]">
              OR &#160;
-              <a target="_blank" href="" className="flex">
+              <a target="_blank" href="https://twitter.com/yclub_io" className="flex">
                 <img
                   src="./images/HeroSection/twitter_logo.svg"
                   className="lg:mr-[15px] mr-[10px] lg:w-full w-[27px]"
@@ -58,7 +58,7 @@ const Hero = () => {
         {/*DIV GIF DESKTOP*/}
         <div className="lg:flex hidden basis-1/2">
           <img
-            src="./images/gif_test.png"
+            src="./images/HeroSection/yachts_animation.gif"
             className="max-h-[660px] max-w-[660px]"
           />
         </div>
