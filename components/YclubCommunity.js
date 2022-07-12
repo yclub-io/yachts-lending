@@ -33,7 +33,7 @@ const YclubCommunity = () => {
               discord
             </p>
           </a>
-          <a href="https://t.me/yachtsnftclub" target="_blank">
+          <a href="https://www.instagram.com/yclub.io/" target="_blank">
             <p className="flex
                           duration-700 transition-all hover:text-gray-1">
               <img src="./images/YclubCommunity/share_arrow.svg"
