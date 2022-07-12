@@ -25,7 +25,7 @@ const Hero = () => {
           />
         </div>
 
-          <h2 className="lg:mt-[256px] mt-[52px] flex lg:text-[64px] text-[36px] font-bold leading-[81.66px]">
+          <h2 className="lg:mt-[170px] mt-[52px] flex lg:text-[64px] text-[36px] font-bold leading-[81.66px]">
             JOIN &#160;
             <a target="_blank" href="https://discord.gg/yclub" className="flex">
               <img
@@ -36,8 +36,21 @@ const Hero = () => {
                 DISCORD
               </span>
             </a>
-          </h2>
-          <h2 className="flex lg:text-[64px] text-[36px] mt-[-20px] font-bold lg:leading-[81.66px] lg:w-auto w-[350px]">
+            </h2>
+            <h2 className="flex lg:text-[64px] lg:mt-0 mt-[-15px] text-[36px] font-bold leading-[81.66px]">
+             OR &#160;
+              <a target="_blank" href="" className="flex">
+                <img
+                  src="./images/HeroSection/twitter_logo.svg"
+                  className="lg:mr-[15px] mr-[10px] lg:w-full w-[27px]"
+                />
+                <span className="bg-gradient-to-r from-blue-3 via-blue-2 to-pink-2 bg-clip-text bg-pos-0 hover:bg-pos-100 duration-700 bg-size-200 transition-all text-white-1 text-opacity-[0%]">
+                  TWITTER
+                </span>
+              </a>
+           </h2>
+
+          <h2 className="flex lg:text-[64px] text-[36px] mt-[-5px] font-bold lg:leading-[81.66px] lg:w-auto w-[350px]">
             FOR WHITELIST INFO
           </h2>
         </div>
