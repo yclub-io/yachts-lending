@@ -32,7 +32,7 @@ const Header = () => {
         </div>
 
         {/*MINT button*/}
-        <div className="flex text-[16px] font-semibold lg:flex">
+        <div className="hidden text-[16px] font-semibold lg:flex">
           {/* <Link href="mint"> */}
             <button
               className="rounded-[50px] border
