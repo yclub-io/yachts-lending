@@ -30,7 +30,8 @@ module.exports = {
       },
       blue: {
         1: '#490CFF',
-        2: '#008AFF'
+        2: '#008AFF',
+        3: '#2491EB'
       },
       purple: {
         1: '#5625A6',
