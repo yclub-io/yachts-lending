@@ -25,7 +25,7 @@ const Header = () => {
         />
         {/*--menu-items--*/}
         <div className="hidden space-x-8 pl-[40px] text-sm lg:flex">
-          <a href="">Whitepaper</a>
+          <a href="https://docs.yclub.io" target="_blank">Whitepaper</a>
           <a href="#tokonomics">Tokonomics</a>
           <a href="#roadmap">Roadmap</a>
           <a href="#team">Team</a>
