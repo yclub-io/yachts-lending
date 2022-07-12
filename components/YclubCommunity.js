@@ -77,7 +77,7 @@ const YclubCommunity = () => {
           </div>
 
           <div>
-          <a href="https://t.me/yachtsnftclub" target="_blank">
+          <a href="http://instagram.com/yclub.io" target="_blank">
             <p className="flex
                           mb-[30px]
                           duration-700 transition-all hover:text-gray-1">
@@ -86,7 +86,7 @@ const YclubCommunity = () => {
               instagram
             </p>
           </a>
-          <a href="https://t.me/yachtsnftclub" target="_blank">
+          <a href="https://www.reddit.com/r/YCLUB/" target="_blank">
             <p className="flex 
                           mr-[70px]
                           duration-700 transition-all hover:text-gray-1">
