@@ -6,12 +6,12 @@ const CrowdfundMint = () => {
         {/*DESKTOP-PICTURE*/}
             <div className="lg:flex hidden basis-1/2"/> 
             <div className="lg:flex hidden">
-                <img src="./images/Crowdfund/crowdfund_yacht_image.svg"
-                     className="absolute left-[-20px] top-[70px]"/>  
+                <img src="./images/Crowdfund/yacht_image.png"
+                     className="absolute left-[-20px] top-[-550px]"/>  
             </div>
 
          {/*TEXT*/}
-            <div className="flex relative flex-col lg:basis-auto
+            <div className="flex relative z-20 flex-col lg:basis-auto
                             lg:ml-[200px] space-y-[30px]"> 
                 <h1 className="lg:text-[96px] text-[36px] lg:font-semibold font-extrabold lg:leading-[120px] leading-[45px]"> 
                     Super Yacht Crowdfund Mint
@@ -28,8 +28,8 @@ const CrowdfundMint = () => {
             </div>
             {/*MOBILE-PICTURE*/}
             <div className="flex lg:hidden">
-                <img src="./images/Crowdfund/crowdfund_yacht_image.svg"
-                     className="absolute top-[220px] right-[40px]"/>  
+                <img src="./images/Crowdfund/yacht_image.png"
+                     className="absolute top-[160px] right-[20px]"/>  
             </div>
             
       </div>
