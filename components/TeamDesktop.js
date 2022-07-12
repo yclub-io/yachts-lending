@@ -2,7 +2,7 @@ const TeamDesktop = ({ teamData }) => {
   const renderTeam = teamData.map((membber, index) => (
     <div
       key={index}
-      className="m-auto mb-[50px] flex h-[355px] w-[285px] flex-col rounded-[20px] border border-purple-1 px-1 text-center font-Grotesk"
+      className="mx-[23px] mb-[50px] flex h-[355px] w-[285px] flex-col rounded-[20px] border border-purple-1 px-1 text-center font-Grotesk"
     >
       <p className="pt-[20px] text-[28px] font-bold">{membber.name}</p>
       <p className="pt-[10px] text-sm text-gray-1">{membber.meta}</p>
