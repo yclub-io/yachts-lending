@@ -1,7 +1,7 @@
 const Tokonomics = () => {
     return (
       <>
-        <div id='hero' className="mx-8  lg:mt-[140px] tracking-[-2%] font-Grotesk text-white-1">
+        <div id='tokonomics' className="mx-8 relative z-20 lg:mt-[140px] tracking-[-2%] font-Grotesk text-white-1">
           {/*HEADING*/}
           
           <div className="flex flex-col">
