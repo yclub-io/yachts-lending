@@ -14,9 +14,9 @@ const teamData = [
       desc: "Creative mastermind! She is the best there is in our eyes and we love what she does. She was the screen writer for FlixPatrol that reached the TOP 10 movies on Netflix in the World in 2021.",
     },
     {
-      name: "Carrara",
-      meta: "UI/UX",
-      desc: "Years of experience specializing in designing web & mobile apps, websites and admin portals. Believes that design is not about beautiful pixels but about solving problems & achieving business and user goals.",
+      name: "Mega Skipper",
+      meta: "Campaign Manager",
+      desc: "Ex VP of digital in largest Israeli advertising agency with 25 years of experience in online advertising.",
     },
     {
       name: "Polo Marco",
@@ -24,29 +24,9 @@ const teamData = [
       desc: "Photographer and Strategist, with over 5 years of helping brands strengthen their communications, communities, and lifestyle experiences.",
     },
     {
-      name: "Mega Skipper",
-      meta: "Campaign Manager",
-      desc: "Ex VP of digital in largest Israeli advertising agency with 25 years of experience in online advertising.",
-    },
-    {
-      name: "Poseidon",
-      meta: "Co-Founder / COO",
-      desc: "10 years of experience in growing communities on social media. Since 2012 grew over 15m followers and reached over 300m users.",
-    },
-    {
-      name: "CryptoDon",
-      meta: "Advisor / Influencer",
-      desc: "Early investor in many projects like BAYC and in the ethereum blockchain. Dedicated curator in owned Web3 investment communities.",
-    },
-    {
-      name: "Neptune",
-      meta: "Co-Founder",
-      desc: "Basically born on a Super Yacht, years of experience in helping to curate and market extravagant experiences for those chartering these vessels of extravagance.",
-    },
-    {
-      name: "Cobra",
-      meta: "Co-Founder / Strategy",
-      desc: "22 years of online marketing experience helping brands launch and scale while generating over a billion dollars in sales for some of the world's retail giants.",
+      name: "Carrara",
+      meta: "UI/UX",
+      desc: "Years of experience specializing in designing web & mobile apps, websites and admin portals. Believes that design is not about beautiful pixels but about solving problems & achieving business and user goals.",
     },
     {
       name: "Blade",
@@ -54,9 +34,9 @@ const teamData = [
       desc: "Engineered for several Fortune 500 companies in a variety of technology related roles while building his website into the top 1000 most visited websites in the world.",
     },
     {
-      name: "De Vinchi",
-      meta: "Co-Founder / Financial Analyst",
-      desc: "Over 10 years of consulting & building working relationships between customers and their brand partners. Through years of experience in banking, and financial services, managed to institute financial systems to strengthen portfolio health.",
+      name: "CryptoDon",
+      meta: "Advisor / Influencer",
+      desc: "Early investor in many projects like BAYC and in the ethereum blockchain. Dedicated curator in owned Web3 investment communities.",
     },
     {
       name: "King Arthur",
@@ -97,6 +77,26 @@ const teamData = [
       name: "Never Sleeper",
       meta: "Developers / Designers Team Lead",
       desc: "The non human who manages the teams 24/7. We can’t figure out where he has the energy from but we know its not from this planet.",
+    },
+    {
+      name: "Neptune",
+      meta: "Co-Founder",
+      desc: "Basically born on a Super Yacht, years of experience in helping to curate and market extravagant experiences for those chartering these vessels of extravagance.",
+    },
+    {
+      name: "Cobra",
+      meta: "Co-Founder / Strategy",
+      desc: "22 years of online marketing experience helping brands launch and scale while generating over a billion dollars in sales for some of the world's retail giants.",
+    },
+    {
+      name: "Poseidon",
+      meta: "Co-Founder / COO",
+      desc: "10 years of experience in growing communities on social media. Since 2012 grew over 15m followers and reached over 300m users.",
+    },
+    {
+      name: "De Vinchi",
+      meta: "Co-Founder / Financial Analyst",
+      desc: "Over 10 years of consulting & building working relationships between customers and their brand partners. Through years of experience in banking, and financial services, managed to institute financial systems to strengthen portfolio health.",
     },
   ];
 
