@@ -58,6 +58,46 @@ const teamData = [
       meta: "Co-Founder / Financial Analyst",
       desc: "Over 10 years of consulting & building working relationships between customers and their brand partners. Through years of experience in banking, and financial services, managed to institute financial systems to strengthen portfolio health.",
     },
+    {
+      name: "King Arthur",
+      meta: "Chief Technical Officer",
+      desc: "Artur is an industrial designer and a developer with a vast experience in algorithms and embedded systems, moving into the blockchain tech and tackling a multitude of projects ranging from NFTs to DeFi and beyond.",
+    },
+    {
+      name: "Cyrill",
+      meta: "Technical Project Manager",
+      desc: "Project manager with 4 years experience in crypto projects. Tutor in business development and finance.",
+    },
+    {
+      name: "SHR",
+      meta: "Art Director (NFT)",
+      desc: "Digital Art artist | Grafic designer | Matte Painting | CGI designer.",
+    },
+    {
+      name: "David",
+      meta: "CG Artist",
+      desc: "Our genius responsible for visual effects.",
+    },
+    {
+      name: "IT",
+      meta: "Full Stack Web3 Developer",
+      desc: "Web3 Developer, IT has been developing code since he remembers himself.",
+    },
+    {
+      name: "Gypspatonik",
+      meta: "Executive producer",
+      desc: "Former Head of TV production department, Executive producer Previous Clients: AliExpress, Ford, GSK, Unilever, Sony, Nutricia, Bayer, Harley-Davidson, Danone",
+    },
+    {
+      name: "Nodia",
+      meta: "Art Director (video)",
+      desc: "Art director and photographer. Worked at WayRay AG and Claustrophobia, worked with BBDO, Leo Burnett, Instinct, Fetish Film, Hype Production.",
+    },
+    {
+      name: "Never Sleeper",
+      meta: "Developers / Designers Team Lead",
+      desc: "The non human who manages the teams 24/7. We can’t figure out where he has the energy from but we know its not from this planet.",
+    },
   ];
 
   export default teamData;

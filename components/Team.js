@@ -10,6 +10,10 @@ const Team = () => {
       </p>
       <TeamDesktop teamData={teamData} />
       <TeamMobile teamData={teamData} />
+
+      <p className="m-auto text-center lg:mt-[140px] mt-[70px] font-semibold lg:w-[950px] w-[331px] lg:leading-[48px] leading-[36px] lg:text-[36px] text-[24px] lg:p-0 p-[22px]">
+      WE ARE MORE... WE JUST HAVE NO MORE SPACE... 😌 BUT WE ARE STILL HIRING...
+      </p>
     </div>
   );
 };
