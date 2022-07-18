@@ -1,14 +1,17 @@
 const BackgroundVideo = () => {
-    return (
-        <div className="relative flex w-screen m-auto">
-          {/*PLAY BUTTON*/}
-          <img src="./video/play-button.svg"
-             className="hidden absolute z-10 left-0 right-0 m-auto lg:w-[98px] w-[76px] lg:top-[280px] top-[261px]"/>
-          {/*VIDEO FILE*/}
-        <img src="./images/Background/hero_picture.png"
-             className="aspect-square lg:h-[725px] lg:min-w-[1440px]  object-cover"/>
-          
-    {/*<video
+  return (
+    <div className="relative m-auto flex w-screen">
+      {/*VIDEO FILE*/}
+      <img
+        src="./images/Background/hero_picture.png"
+        className="hidden aspect-square object-cover lg:block lg:h-[725px]  lg:min-w-[1440px]"
+      />
+      <img
+        src="./images/Background/hero_picture_mobile.png"
+        className=" m-auto aspect-square w-full lg:hidden "
+      />
+
+      {/*<video
       className="flex opacity-50 absolute top-[0px] right-[0px] object-cover h-[920px] min-w-[2000px] w-full"
       autoPlay
       loop
@@ -19,10 +22,8 @@ const BackgroundVideo = () => {
       <source src="video/background.mp4" type="video/mp4"/>
       Your browser does not support the video tag.
     </video>*/}
-      </div>
-    );
-  };
+    </div>
+  );
+};
 
-  export default BackgroundVideo;
-
-    
+export default BackgroundVideo;

@@ -31,14 +31,7 @@ const Footer = () => {
 
         <div className="mt-[30px] flex flex-col space-y-7 font-Grotesk text-xs  lg:flex-row lg:space-x-8 lg:space-y-0 lg:text-sm">
           <a className="transition-all duration-700 hover:text-white-1" href="">
-            Privacy Policy
-          </a>
-
-          <a
-            className="transition-all duration-700 hover:text-white-1"
-            href="#faq"
-          >
-            Terms &#38; Conditions
+            Disclaimers
           </a>
         </div>
       </div>

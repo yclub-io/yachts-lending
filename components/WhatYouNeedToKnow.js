@@ -10,7 +10,7 @@ const WhatYouNeedToKnow = () => {
         </h1>
       </div>
 
-      <div className="mt-[80px] grid snap-x  snap-mandatory  grid-flow-col-dense gap-[40px] overflow-y-hidden overflow-x-scroll px-4 font-Grotesk leading-[28px] text-white-1 lg:mt-28 lg:snap-none lg:flex-row lg:gap-[30px] lg:overflow-x-hidden lg:px-14 xl:flex">
+      <div className="mt-[80px] grid snap-x  snap-mandatory  grid-flow-col-dense gap-[0px] overflow-y-hidden overflow-x-scroll px-4 font-Grotesk leading-[28px] text-white-1 lg:mt-28 lg:snap-none lg:flex-row lg:gap-[30px] lg:overflow-x-hidden lg:px-14 xl:flex">
         <div className=" w-[307px] snap-center flex-col  pt-[25px] pl-[20px] text-left text-[22px] font-bold">
           <img
             className="mb-[20px] w-[295px]"

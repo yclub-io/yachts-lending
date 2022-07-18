@@ -35,7 +35,7 @@ const teamData = [
     },
     {
       name: "CryptoDon",
-      meta: "Advisor / Influencer",
+      meta: "Advisor",
       desc: "Early investor in many projects like BAYC and in the ethereum blockchain. Dedicated curator in owned Web3 investment communities.",
     },
     {
