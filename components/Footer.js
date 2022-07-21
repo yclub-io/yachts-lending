@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="relative pb-10 lg:pb-0">
@@ -30,9 +32,11 @@ const Footer = () => {
         </div>
 
         <div className="mt-[30px] flex flex-col space-y-7 font-Grotesk text-xs  lg:flex-row lg:space-x-8 lg:space-y-0 lg:text-sm">
-          <a className="transition-all duration-700 hover:text-white-1" href="">
+          <Link href="/disclaimers">
+          <a className="transition-all duration-700 hover:text-white-1">
             Disclaimers
           </a>
+          </Link>
         </div>
       </div>
     </footer>
