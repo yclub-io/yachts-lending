@@ -29,7 +29,7 @@ const BackgroundVideo = () => {
           />
           <img
             src="./images/Background/hero_picture.png"
-            className="hidden aspect-square object-cover lg:block lg:h-[725px]  lg:min-w-[1440px]"
+            className="hidden aspect-square object-cover lg:block lg:h-[925px]  lg:min-w-[1440px]"
           />
           <img
             src="./images/Background/hero_picture_mobile.jpg"
