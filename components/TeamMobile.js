@@ -88,7 +88,7 @@ const TeamMobile = ({ teamData }) => {
         </div>
       ) : (
         <div
-          className="mx-auto flex h-[559px] w-[337px] flex-col rounded-[20px] border border-purple-1 px-1 text-center font-Grotesk"
+          className="mx-auto flex h-[559px] w-[337px] flex-col rounded-[20px] border border-purple-1 p-5 text-center font-Grotesk"
         >
           <p className="mt-[140px] text-[28px] font-bold">{teamData[currentCardIndex].nickName}</p>
           <p className="pt-[10px] text-sm text-gray-1">{teamData[currentCardIndex].role}</p>
