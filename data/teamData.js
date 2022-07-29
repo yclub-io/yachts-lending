@@ -21,15 +21,21 @@ const teamData = [
     nickName: "ValTron",
     role: "Creative Producer",
     avatarSrc: "images/team/avatar/valentina_tronova.png",
+    pastProjectsLogosArr: ["./images/team/past_projects_logos/Netflix.png"],
     desc: "Creative mastermind! She is the best there is in our eyes and we love what she does. She was the screen writer for FlixPatrol that reached the TOP 10 movies on Netflix in the World in 2021.",
   },
   {
     fullName: "Yuval Hollander",
     nickName: "Mega Skipper",
     role: "Campaign Manager",
-    avatarSrc: "images/team/avatar/yuval_hollander.jpeg",
+    avatarSrc: "images/team/avatar/yuval_hollander.png",
     socialNetworkImageSrc: "images/team/social_networks/linkedin.svg",
     socialNetworkLink: "https://www.linkedin.com/in/yuvalhollander/",
+    pastProjectsLogosArr: [
+      "./images/team/past_projects_logos/nike.png",
+      "./images/team/past_projects_logos/ibm.png",
+      "./images/team/past_projects_logos/intel.png",
+    ],
     desc: "Ex VP of digital in largest Israeli advertising agency with 25 years of experience in online advertising.",
   },
   {
@@ -39,6 +45,10 @@ const teamData = [
     avatarSrc: "images/team/avatar/kennyatta_collins.jpeg",
     socialNetworkImageSrc: "images/team/social_networks/linkedin.svg",
     socialNetworkLink: "https://www.linkedin.com/in/kennyattacollins11/",
+    pastProjectsLogosArr: [
+      "./images/team/past_projects_logos/Diesel.png",
+      "./images/team/past_projects_logos/CC.png",
+    ],
     desc: "Photographer and Strategist, with over 5 years of helping brands strengthen their communications, communities, and lifestyle experiences.",
   },
   {
@@ -56,6 +66,11 @@ const teamData = [
     nickName: "Blade",
     role: "Advisor",
     avatarSrc: "images/team/avatar/michael_lawrence.jpeg",
+    socialNetworkImageSrc: "images/team/social_networks/linkedin.svg",
+    socialNetworkLink: "https://www.linkedin.com/in/michaellawrence319",
+    pastProjectsLogosArr: [
+      "./images/team/past_projects_logos/DirectLiquidation.png",
+    ],
     desc: "Engineered for several Fortune 500 companies in a variety of technology related roles while building his website into the top 1000 most visited websites in the world.",
   },
   {
@@ -75,7 +90,7 @@ const teamData = [
   {
     fullName: "Ber Mitchell",
     nickName: "Cobra",
-    role: "Co-Founder / Strategy",
+    role: "Product Advisor",
     avatarSrc: "images/team/avatar/ber_mitchell.jpeg",
     socialNetworkImageSrc: "images/team/social_networks/linkedin.svg",
     socialNetworkLink: "https://www.linkedin.com/in/bermitchell",
@@ -100,6 +115,9 @@ const teamData = [
     nickName: "Poseidon",
     role: "Co-Founder / COO",
     avatarSrc: "images/team/avatar/sagi_mazur.png",
+    pastProjectsLogosArr: [
+      "./images/team/past_projects_logos/IDF.png",
+    ],
     desc: "10 years of experience in growing communities on social media. Since 2012 grew over 15m followers and reached over 300m users.",
   },
   {

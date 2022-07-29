@@ -6,7 +6,7 @@ const CrowdfundMint = () => {
         {/*DESKTOP-PICTURE*/}
             <div className="lg:flex hidden basis-1/2"/> 
             <div className="lg:flex hidden">
-                <img src="./images/Crowdfund/yacht_image.png"
+                <img src="./images/Crowdfund/yacht_image.svg"
                      className="absolute left-[-20px] top-[-270px]"/>  
             </div>
 
@@ -28,7 +28,7 @@ const CrowdfundMint = () => {
             </div>
             {/*MOBILE-PICTURE*/}
             <div className="flex lg:hidden">
-                <img src="./images/Crowdfund/yacht_image.png"
+                <img src="./images/Crowdfund/yacht_image.svg"
                      className="absolute top-[280px] w-full right-[20px]"/>  
             </div>
             
