@@ -32,9 +32,9 @@ const teamData = [
     socialNetworkImageSrc: "images/team/social_networks/linkedin.svg",
     socialNetworkLink: "https://www.linkedin.com/in/yuvalhollander/",
     pastProjectsLogosArr: [
-      "./images/team/past_projects_logos/nike.png",
-      "./images/team/past_projects_logos/ibm.png",
-      "./images/team/past_projects_logos/intel.png",
+      "./images/team/past_projects_logos/Nike.png",
+      "./images/team/past_projects_logos/IBM.png",
+      "./images/team/past_projects_logos/Intel.png",
     ],
     desc: "Ex VP of digital in largest Israeli advertising agency with 25 years of experience in online advertising.",
   },
