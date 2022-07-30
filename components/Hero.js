@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="mt-[-70px] mr-2 flex lg:basis-1/2 flex-col text-left">
           <h1 className="lg:text-[180px] text-[100px] font-bold">YCLUB</h1>
           <h2 className="lg:mt-[-20px] mt-[-10px] lg:text-[40px] text-[28px] font-bold">
-          AUGUST 21 &#160;
+          AUGUST 16 &#160;
             <span className="bg-gradient-to-b from-purple-2 via-purple-3 to-purple-2 bg-clip-text text-white-1 text-opacity-[0%]">
               2022
             </span>
