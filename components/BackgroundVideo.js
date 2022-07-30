@@ -4,7 +4,7 @@ const BackgroundVideo = () => {
   const [isPlaying, setPlaing] = useState(false);
 
   const desc = `<iframe src="https://player.vimeo.com/video/731504910?h=5b573395d0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>`;
-  const desc2 = `<iframe src="https://player.vimeo.com/video/731504910?h=da13c4bfd8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width:100%;height:100%;" title="YCLUB.mov"></iframe>`;
+  const desc2 = `<iframe src="https://player.vimeo.com/video/731504910?h=da13c4bfd8&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&loop=1&autopause=0&muted=1:" allow="autoplay frameborder="0"; fullscreen; picture-in-picture" allowfullscreen style="width:100%;height:100%;" title="YCLUB.mov"></iframe>`;
   return (
     <div className=" m-auto flex w-screen">
       {/*VIDEO FILE*/}
