@@ -2,8 +2,8 @@ const contractsData = [
   {
     address: "11111111",
     name: "Legendary",
-    start: 1659607680,
-    end: 1659608680,
+    start: 1659709680,
+    end: 1659610680,
     whitelist: 150,
     max: 1,
     price: "1.50",
@@ -11,7 +11,7 @@ const contractsData = [
   {
     address: "22222222",
     name: "Epic + Super Rare",
-    start: 1659608680,
+    start: 1659609680,
     end: 1659609680,
     whitelist: 1850,
     max: 1,
@@ -30,7 +30,7 @@ const contractsData = [
     address: "4444444444444",
     name: "Rare + Common",
     start: 1,
-    end: 2659607680,
+    end: 1659646800,
     price: "0.30",
   },
 ];
