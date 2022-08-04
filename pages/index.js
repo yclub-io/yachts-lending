@@ -3,9 +3,8 @@ import Script from "next/script";
 import BackgroundVideo from "../components/BackgroundVideo";
 import CrowdfundMint from "../components/CrowdfundMint";
 import FAQ from "../components/FAQ";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Layout from "../components/Layout";
 import Roadmap from "../components/Roadmap";
 import Team from "../components/Team";
 import Tokonomics from "../components/Tokonomics";
@@ -15,7 +14,7 @@ import YclubCommunity from "../components/YclubCommunity";
 
 const Index = () => {
   return (
-    <div className="m-auto max-w-[1440px]">
+    <Layout>
       <Head>
         <title>YCLUB - Cruising The Metaverse on a Superyacht</title>
         <meta
@@ -33,7 +32,6 @@ const Index = () => {
           gtag('config', 'G-9NXP8WEGK8');
         `}
       </Script>
-      <Header />
       <BackgroundVideo />
       <Hero />
       <WhatYouNeedToKnow />
@@ -44,8 +42,7 @@ const Index = () => {
       <Vision />
       <YclubCommunity />
       <FAQ />
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 
