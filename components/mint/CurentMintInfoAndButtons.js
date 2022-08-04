@@ -1,4 +1,5 @@
 import { useState } from "react";
+import contractsData from "../../data/contractsData";
 
 const CurentMintInfoAndButtons = ({ currentMintContractIndex }) => {
   const [currentAccont, setCurrentAccount] = useState();
@@ -28,6 +29,14 @@ const CurentMintInfoAndButtons = ({ currentMintContractIndex }) => {
       console.error(error);
     }
   };
+
+  const handleMintClick = () => {
+    console.log(
+      "Mint with account ",
+      contractsData[currentMintContractIndex].address
+    );
+  };
+
   return (
     <div>
       <img
@@ -41,27 +50,45 @@ const CurentMintInfoAndButtons = ({ currentMintContractIndex }) => {
           <bold>0% </bold>(7000/7000)
         </span>
       </div>
-      <div className="flex w-[660px] flex-col">
-        <button
-          className={`mt-[30px] h-[52px] w-[660px] rounded-[26px]  text-base font-semibold text-white-1 ${
-            currentMintContractIndex >= 0 ? "bg-pink-1" : "bg-white-1 bg-opacity-20 disabled text-opacity-50"
-          }`}
-          onClick={
-            currentMintContractIndex >= 0 ? handleConnectWalletClick : null
-          }
-        >
-          Connect your wallet
-        </button>
-        <button className=" mx-auto mt-[30px] h-[72px] w-[304px] rounded-[36px] bg-blue-3">
-          <span className="text-2xl font-semibold text-white-1">
-            Pay with Credit Card
-          </span>
-          <br />
-          <span className="text-base font-light text-white-1">
-            No Wallet Needed
-          </span>
-        </button>
-      </div>
+      {currentAccont && currentMintContractIndex >= 0 ? (
+        <div className="mt-[30px] flex w-[660px] justify-between">
+          <div className=" flex h-[52px] w-[40%] items-center justify-between rounded-[26px] border border-white-1 border-opacity-40 text-base font-semibold text-white-1">
+            <span className="ml-10 cursor-pointer">-</span>
+            <span>1</span>
+            <span className="mr-10 cursor-pointer">+</span>
+          </div>
+          <button
+            className={`h-[52px] w-[55%] rounded-[26px] bg-pink-1 text-base font-semibold text-white-1`}
+            onClick={handleMintClick}
+          >
+            Mint
+          </button>
+        </div>
+      ) : (
+        <div className="mt-[30px] flex w-[660px] flex-col">
+          <button
+            className={`h-[52px] w-[660px] rounded-[26px]  text-base font-semibold text-white-1 ${
+              currentMintContractIndex >= 0
+                ? "bg-pink-1"
+                : "disabled bg-white-1 bg-opacity-20 text-opacity-50"
+            }`}
+            onClick={
+              currentMintContractIndex >= 0 ? handleConnectWalletClick : null
+            }
+          >
+            Connect your wallet
+          </button>
+          <button className=" mx-auto mt-[30px] h-[72px] w-[304px] rounded-[36px] bg-blue-3">
+            <span className="text-2xl font-semibold text-white-1">
+              Pay with Credit Card
+            </span>
+            <br />
+            <span className="text-base font-light text-white-1">
+              No Wallet Needed
+            </span>
+          </button>
+        </div>
+      )}
     </div>
   );
 };
