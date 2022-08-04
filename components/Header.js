@@ -5,7 +5,7 @@ import MobileMenu from "./MobileMenu";
 const Header = () => {
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
   return (
-    <nav className="bg-black-1 fixed w-[1440px] z-50 font-Grotesk  text-white-1">
+    <nav className="bg-black-1 w-full fixed  lg:w-[1440px] z-50 font-Grotesk  text-white-1">
       <div
         className="flex items-center justify-center border-b
                       border-white-1 border-opacity-50 py-8

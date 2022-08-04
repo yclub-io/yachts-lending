@@ -47,12 +47,9 @@ const MintIndex = () => {
   return (
     <div className="relative m-auto max-w-[1440px]">
       <Header />
-      <div className="relative flex w-full pt-10">
+      <div className="relative flex flex-col-reverse lg:flex-row w-full lg:pt-10">
         <div className="w-1/2">
-          {/*HERO MINT SECTION*/}
           <HeroMint />
-
-          {/*MINT MENU*/}
           <div
             className="mx-[60px] mt-[42px] mb-[40px] space-x-[65px]
                          font-Grotesk text-[18px] font-bold text-white-1"
@@ -73,7 +70,7 @@ const MintIndex = () => {
           </div>
           <div>{infos[currentInfo]}</div>
         </div>
-        <div className="fixed right-0 top-[120px] mt-[30px] w-1/2">
+        <div className="lg:fixed lg:right-0 lg:top-[120px] mt-[30px] w-1/2">
           <CurentMintInfoAndButtons
             currentMintContractIndex={currentMintContractIndex}
           />

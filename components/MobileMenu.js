@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const MobileMenu = (props) => {
   return (
     <div className="fixed top-[-1px] z-50 h-screen w-full bg-black-1">
@@ -59,14 +61,14 @@ const MobileMenu = (props) => {
       </div>
       {/*MINT button*/}
       <div className="text-[16px] font-semibold flex justify-center mt-[40px]">
-          {/* <Link href="mint"> */}
+          <Link href="mint">
             <button
               className="rounded-[50px] border
                              border-pink-1 bg-pink-1 px-[100px] py-[16px] shadow-headerButton"
             >
               Mint
             </button>
-          {/* </Link> */}
+          </Link>
         </div>
 
     </div>
