@@ -10,11 +10,16 @@ import contractsData from "../data/contractsData";
 
 const MintIndex = () => {
   const [currentInfo, setCurrentInfo] = useState("whitelists");
-  const [currentDate, setCurrentDate] = useState(0);
+  const [currentDate, setCurrentDate] = useState();
   const [currentMintContractIndex, setCurrentMintContractIndex] = useState(-1);
 
   const infos = {
-    whitelists: <MintsList currentDate={currentDate} currentMintContractIndex={currentMintContractIndex}/>,
+    whitelists: currentDate && (
+      <MintsList
+        currentDate={currentDate}
+        currentMintContractIndex={currentMintContractIndex}
+      />
+    ),
     info: <InfoInMint />,
     roadmap: <RoadmapInMint />,
     team: <TeamInMint />,
@@ -23,20 +28,18 @@ const MintIndex = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       const currentDate = Math.floor(new Date() / 1000);
-      console.log("currentDate ", currentDate);
-      console.log("currentMintContractIndex: ", currentMintContractIndex);
+      setCurrentDate(currentDate);
 
       if (currentDate > contractsData[contractsData.length - 1].end) {
         setCurrentMintContractIndex(-2);
         return;
       }
 
-      setCurrentDate(currentDate + 1);
-
-      if (currentDate < contractsData[0].start) {
-        setCurrentMintContractIndex(-1);
-        return;
-      }
+      contractsData.forEach((contract, index) => {
+        if (contract.start <= currentDate && contract.end > currentDate) {
+          setCurrentMintContractIndex(index);
+        }
+      });
     }, 1000);
     return () => clearTimeout(timeout);
   }, [currentDate]);
@@ -71,7 +74,9 @@ const MintIndex = () => {
           <div>{infos[currentInfo]}</div>
         </div>
         <div className="fixed right-0 top-[120px] mt-[30px] w-1/2">
-          <CurentMintInfoAndButtons />
+          <CurentMintInfoAndButtons
+            currentMintContractIndex={currentMintContractIndex}
+          />
         </div>
       </div>
     </div>
