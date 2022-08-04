@@ -33,14 +33,14 @@ const Header = () => {
 
         {/*MINT button*/}
         <div className="hidden text-[16px] font-semibold lg:flex">
-          {/* <Link href="mint"> */}
+          <Link href="mint">
             <button
               className="rounded-[50px] border
                              border-pink-1 bg-pink-1 px-[51px] py-[16px] shadow-headerButton"
             >
               Mint
             </button>
-          {/* </Link> */}
+          </Link>
         </div>
 
         {isMobileMenuVisible && (

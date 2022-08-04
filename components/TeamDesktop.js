@@ -1,9 +1,8 @@
 const TeamDesktop = ({ teamData }) => {
   const renderTeam = teamData.map((member, index) => (
-    <>
+    <div key={index}>
       {member.fullName ? (
         <div
-          key={index}
           className="mx-[23px] mb-[50px] flex h-[559px] w-[337px] flex-col justify-between rounded-[20px] border border-purple-1 p-5 text-center font-Grotesk"
         >
           <div>
@@ -68,7 +67,7 @@ const TeamDesktop = ({ teamData }) => {
           </p>
         </div>
       )}
-    </>
+    </div>
   ));
 
   return (
