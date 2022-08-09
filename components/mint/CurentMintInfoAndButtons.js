@@ -1,38 +1,11 @@
 import { useState } from "react";
 import contractsData from "../../data/contractsData";
+import connectMetamask from "../../utils/connectMetamask";
 
 const CurentMintInfoAndButtons = ({ currentMintContractIndex }) => {
   const [currentAccont, setCurrentAccount] = useState();
   const [mintAmount, setMintAmount] = useState(1);
   const contractInfo = contractsData[currentMintContractIndex];
-
-  const handleConnectWalletClick = async () => {
-    try {
-      const { ethereum } = window;
-      if (!ethereum) {
-        console.log("No metamask!");
-        return;
-      }
-      if (!ethereum.isConnected()) {
-        console.log("Metamask not conected!");
-        return;
-      }
-      const chainId = await ethereum.request({ method: "eth_chainId" });
-      if (chainId !== "0x1") {
-        await ethereum.request({
-          method: "wallet_switchEthereumChain",
-          params: [{ chainId: "0x1" }],
-        });
-      }
-      const accounts = await ethereum.request({
-        method: "eth_requestAccounts",
-      });
-      console.log("Account: ", accounts[0]);
-      setCurrentAccount(accounts[0]);
-    } catch (error) {
-      console.error(error);
-    }
-  };
 
   const handleMintClick = () => {
     console.log("Mint with account ", contractInfo.address);
@@ -80,14 +53,8 @@ const CurentMintInfoAndButtons = ({ currentMintContractIndex }) => {
       ) : (
         <div className="mt-[30px] flex w-[660px] flex-col">
           <button
-            className={`h-[52px] w-[660px] rounded-[26px]  text-base font-semibold text-white-1 ${
-              currentMintContractIndex >= 0
-                ? "bg-pink-1"
-                : "disabled bg-white-1 bg-opacity-20 text-opacity-50"
-            }`}
-            onClick={
-              currentMintContractIndex >= 0 ? handleConnectWalletClick : null
-            }
+            className={`h-[52px] w-[660px] rounded-[26px]  bg-pink-1 text-base font-semibold text-white-1 `}
+            onClick={() => connectMetamask(setCurrentAccount)}
           >
             Connect your wallet
           </button>

@@ -43,7 +43,7 @@ const MintsList = ({ currentDate, currentMintContractIndex }) => {
             : "PUBLIC MINT"}
         </div>
         <div className="rounded-[16.5px] bg-white-1 bg-opacity-[20%] px-[10px] py-[5px] text-[12px] font-medium tracking-[10%]">
-          {contract?.max ? `MAX ${contract.max} PER` : "NO MAX"}
+          {`MAX ${contract.max} PER`}
         </div>
         <div className="rounded-[16.5px] bg-white-1 bg-opacity-[20%] px-[10px] py-[5px] text-[12px] font-medium tracking-[10%]">
           {`PRICE ${contract.price} ETH`}

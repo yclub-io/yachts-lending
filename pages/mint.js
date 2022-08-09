@@ -35,9 +35,12 @@ const MintIndex = () => {
         return;
       }
 
+      setCurrentMintContractIndex(-1);
+
       contractsData.forEach((contract, index) => {
         if (contract.start <= currentDate && contract.end > currentDate) {
           setCurrentMintContractIndex(index);
+          return;
         }
       });
     }, 1000);
@@ -47,7 +50,7 @@ const MintIndex = () => {
   return (
     <div className="relative m-auto max-w-[1440px]">
       <Header />
-      <div className="relative flex flex-col-reverse lg:flex-row w-full lg:pt-10">
+      <div className="relative flex w-full flex-col-reverse lg:flex-row lg:pt-10">
         <div className="w-1/2">
           <HeroMint />
           <div
@@ -70,7 +73,7 @@ const MintIndex = () => {
           </div>
           <div>{infos[currentInfo]}</div>
         </div>
-        <div className="lg:fixed lg:right-0 lg:top-[120px] mt-[30px] w-1/2">
+        <div className="mt-[30px] w-1/2 lg:fixed lg:right-0 lg:top-[120px]">
           <CurentMintInfoAndButtons
             currentMintContractIndex={currentMintContractIndex}
           />
