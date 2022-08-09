@@ -18,7 +18,7 @@ const CurrentMintProgressBar = ({ contractInfo }) => {
         <div className="mt-2 flex w-[660px]  justify-between">
           <span className="text-sm font-light text-white-1">Total Minted</span>
           <span className="text-sm font-light text-white-1">
-            <bold>{Math.floor(progress)}% </bold>
+            <span className="font-semibold">{Math.floor(progress)}% </span>
             {contractInfo.paddingSupply} / {contractInfo.totalSupply}
           </span>
         </div>
