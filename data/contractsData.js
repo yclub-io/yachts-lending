@@ -1,4 +1,4 @@
-const start = 1660026400;
+const start = 1660030734;
 
 const contractsData = [
   {
@@ -7,6 +7,8 @@ const contractsData = [
     start: start + 10,
     end: start + 20,
     whitelist: 150,
+    totalSupply: 150,
+    paddingSupply: 145,
     max: 1,
     price: "1.50",
   },
@@ -16,6 +18,8 @@ const contractsData = [
     start: start + 30,
     end: start + 40,
     whitelist: 1850,
+    totalSupply: 1850,
+    paddingSupply: 370,
     max: 1,
     price: "0.40",
   },
@@ -25,6 +29,8 @@ const contractsData = [
     start: start + 50,
     end: start + 60,
     whitelist: 1850,
+    totalSupply: 1850,
+    paddingSupply: 370,
     max: 1,
     price: "0.40",
   },
@@ -34,6 +40,8 @@ const contractsData = [
     start: start + 70,
     end: start + 80,
     whitelist: 5000,
+    totalSupply: 5000,
+    paddingSupply: 1000,
     max: 2,
     price: "0.20",
   },
@@ -43,6 +51,8 @@ const contractsData = [
     start: start + 90,
     end: start + 100,
     whitelist: 5000,
+    totalSupply: 5000,
+    paddingSupply: 1000,
     max: 2,
     price: "0.20",
   },
@@ -51,6 +61,8 @@ const contractsData = [
     name: "Rare",
     start: start + 110,
     end: start + 120,
+    totalSupply: 5000,
+    paddingSupply: 100,
     max: 10,
     price: "0.20",
   },
@@ -60,6 +72,8 @@ const contractsData = [
     start: start + 130,
     end: start + 1000,
     max: 10,
+    totalSupply: 5000,
+    paddingSupply: 50,
     price: "0.20",
   },
 ];

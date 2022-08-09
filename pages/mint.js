@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "../components/Header";
-import CurentMintInfoAndButtons from "../components/mint/CurentMintInfoAndButtons";
+import CurentMintMainInfo from "../components/mint/CurentMintMainInfo";
 import HeroMint from "../components/mint/HeroMint";
 import InfoInMint from "../components/mint/InfoInMint";
 import RoadmapInMint from "../components/mint/RoadmapInMint";
@@ -74,8 +74,9 @@ const MintIndex = () => {
           <div>{infos[currentInfo]}</div>
         </div>
         <div className="mt-[30px] w-1/2 lg:fixed lg:right-0 lg:top-[120px]">
-          <CurentMintInfoAndButtons
+          <CurentMintMainInfo
             currentMintContractIndex={currentMintContractIndex}
+            currentDate={currentDate}
           />
         </div>
       </div>

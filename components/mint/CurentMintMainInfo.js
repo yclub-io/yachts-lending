@@ -1,0 +1,43 @@
+import { useState } from "react";
+import contractsData from "../../data/contractsData";
+import connectMetamask from "../../utils/connectMetamask";
+import CurrentMintButton from "./CurrentMintButton";
+import CurrentMintProgressBar from "./CurrentMintProgressBar";
+
+const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
+  const [currentAccont, setCurrentAccount] = useState();
+  const contractInfo = contractsData[currentMintContractIndex];
+
+  return (
+    <div>
+      <img
+        src="./images/HeroSection/yachts_animation.gif"
+        className="max-h-[660px] max-w-[660px]"
+      />
+      <CurrentMintProgressBar contractInfo={contractInfo} />
+      {currentAccont ? (
+        <CurrentMintButton contractInfo={contractInfo} currentDate={currentDate} />
+      ) : (
+        <div className="mt-[30px] flex w-[660px] flex-col">
+          <button
+            className={`h-[52px] w-[660px] rounded-[26px]  bg-pink-1 text-base font-semibold text-white-1 `}
+            onClick={() => connectMetamask(setCurrentAccount)}
+          >
+            Connect your wallet
+          </button>
+          <button className=" mx-auto mt-[30px] h-[72px] w-[304px] rounded-[36px] bg-blue-3">
+            <span className="text-2xl font-semibold text-white-1">
+              Pay with Credit Card
+            </span>
+            <br />
+            <span className="text-base font-light text-white-1">
+              No Wallet Needed
+            </span>
+          </button>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default CurentMintMainInfo;

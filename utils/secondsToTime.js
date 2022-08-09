@@ -13,7 +13,7 @@ const secondsToTime = (sec_num) => {
 
 
 
-    return `${days} : ${hours} : ${minutes} : ${seconds}`
+    return days !== 0 ? `${days} : ${hours} : ${minutes} : ${seconds}` : `${hours} : ${minutes} : ${seconds}`
 }
 
 export default secondsToTime;
