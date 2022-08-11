@@ -16,16 +16,25 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
       />
       <CurrentMintProgressBar contractInfo={contractInfo} />
       {currentAccont ? (
-        <CurrentMintButton contractInfo={contractInfo} currentDate={currentDate} />
+        <CurrentMintButton
+          contractInfo={contractInfo}
+          currentDate={currentDate}
+        />
       ) : (
         <div className="mt-[30px] flex w-[660px] flex-col">
           <button
+            disabled
+            style={{ backgroundColor: "gray" }}
             className={`h-[52px] w-[660px] rounded-[26px]  bg-pink-1 text-base font-semibold text-white-1 `}
             onClick={() => connectMetamask(setCurrentAccount)}
           >
             Connect your wallet
           </button>
-          <button className=" mx-auto mt-[30px] h-[72px] w-[304px] rounded-[36px] bg-blue-3">
+          <button
+            disabled
+            style={{ backgroundColor: "gray" }}
+            className=" mx-auto mt-[30px] h-[72px] w-[304px] rounded-[36px] bg-blue-3"
+          >
             <span className="text-2xl font-semibold text-white-1">
               Pay with Credit Card
             </span>
