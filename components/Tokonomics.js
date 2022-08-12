@@ -44,8 +44,8 @@ const Tokonomics = () => {
                 </div> 
 
             {/*MOBILE DIV PIE*/}
-              <div className="flex md:m-auto lg:hidden mt-[47px] relative mx-auto">
-                    <img className="absolute right-[-18px] top-[-24px] min-w-[390px]" src="./images/Tokonomics/tokenomics_chart_2.svg" />
+              <div className="flex md:m-auto lg:hidden mt-[47px] relative mx-auto min-w-[390px]">
+                    <img className="absolute right-[41px] top-[-25px] min-w-[395px]" src="./images/Tokonomics/tokenomics_chart_2.svg" />
                     <img src="./images/Tokonomics/pie_chart_plus_info.svg"/>
                     {/* <img src="./images/Tokonomics/chart_mobile.png"/> */}
 
