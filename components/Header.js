@@ -5,19 +5,21 @@ import MobileMenu from "./MobileMenu";
 const Header = () => {
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
   return (
-    <nav className="bg-black-1 w-full fixed  lg:w-[1440px] z-50 font-Grotesk  text-white-1">
+    <nav className="fixed z-50 w-full  bg-black-1 font-Grotesk text-white-1  lg:w-[1440px]">
       <div
         className="flex items-center justify-center border-b
                       border-white-1 border-opacity-50 py-8
                       px-4 lg:justify-between lg:px-14"
       >
-        <a href="/">
-          <img
-            className="w-[70px] cursor-pointer lg:w-[96px]"
-            src="/images/yClubLogo.svg"
-            alt="logotype"
-          ></img>
-        </a>
+        <Link href="/">
+          <a>
+            <img
+              className="w-[70px] cursor-pointer lg:w-[96px]"
+              src="/images/yClubLogo.svg"
+              alt="logotype"
+            ></img>
+          </a>
+        </Link>
         <img
           className="absolute right-[20px] w-[40px] cursor-pointer lg:hidden"
           src="/images/mobileMenu.svg"
@@ -25,10 +27,18 @@ const Header = () => {
         />
         {/*--menu-items--*/}
         <div className="hidden space-x-8 pl-[40px] text-sm lg:flex">
-          <a href="https://docs.yclub.io" target="_blank">Whitepaper</a>
-          <a href="#tokonomics">Tokenomics</a>
-          <a href="#roadmap">Roadmap</a>
-          <a href="#team">Team</a>
+          <a href="https://docs.yclub.io" target="_blank">
+            Whitepaper
+          </a>
+          <Link href="/#tokonomics">
+            <a>Tokenomics</a>
+          </Link>
+          <Link href="/#roadmap">
+            <a>Roadmap</a>
+          </Link>
+          <Link href="/team">
+            <a>Team</a>
+          </Link>
         </div>
 
         {/*MINT button*/}

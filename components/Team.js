@@ -4,10 +4,10 @@ import teamData from "../data/teamData";
 
 const Team = () => {
   return (
-    <div id="team" className=" text-white-1 lg:mx-14">
-      <p className="mb-[68px] lg:mt-[147px] md:mt-[5em] mt-[1em] flex justify-center text-center font-Plus font-extrabold lg:mb-[125px] lg:text-5xl text-[26px]">
+    <div className="py-[120px] lg:py-[150px] text-white-1 lg:mx-14">
+      {/* <p className="mb-[68px] lg:mt-[147px] md:mt-[5em] mt-[1em] flex justify-center text-center font-Plus font-extrabold lg:mb-[125px] lg:text-5xl text-[26px]">
         Team
-      </p>
+      </p> */}
       <TeamDesktop teamData={teamData} />
       <TeamMobile teamData={teamData} />
 

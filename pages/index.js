@@ -34,14 +34,15 @@ const Index = () => {
       </Script>
       <BackgroundVideo />
       <Hero />
-      <WhatYouNeedToKnow />
+      {/* <WhatYouNeedToKnow /> */}
+      <FAQ />
       <Roadmap />
       <Tokonomics />
       <CrowdfundMint />
-      <Team />
+      {/* <Team /> */}
       <Vision />
       <YclubCommunity />
-      <FAQ />
+
     </Layout>
   );
 };
