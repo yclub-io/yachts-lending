@@ -25,7 +25,7 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
           <button
             disabled
             style={{ backgroundColor: "gray" }}
-            className={`h-[52px] w-[660px] rounded-[26px]  bg-pink-1 text-base font-semibold text-white-1 `}
+            className={`h-[52px] lg:w-[660px] w-[342px] m-auto rounded-[26px]  bg-pink-1 text-base font-Grotesk font-semibold text-white-1 `}
             onClick={() => connectMetamask(setCurrentAccount)}
           >
             Connect your wallet
