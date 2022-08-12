@@ -12,7 +12,7 @@ const Vision = () => {
         </p>
       </div>
 
-      <div className="relative z-50 lg:mt-[115px] mt-[40px] lg:flex flex-row font-Grotesk text-xl font-normal text-gray-1">
+      <div className="relative z-40 lg:mt-[115px] mt-[40px] lg:flex flex-row font-Grotesk text-xl font-normal text-gray-1">
         <div className="flex lg:basis-1/2 lg:justify-end">
           <p className="lg:w-[420px] w-[344px]">
             Here at YCLUB, we unlock these experiences, giving unique access to
