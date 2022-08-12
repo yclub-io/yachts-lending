@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const MobileMenu = (props) => {
   return (
-    <div className="fixed top-[-1px] z-50 h-screen w-full bg-black-1">
+    <div className="fixed top-[-1px] z-50 h-[1000px] w-full bg-black-1">
       <div className=" text-white-1">
         <div className="flex justify-start">
           {/*--menu-close-button--*/}
