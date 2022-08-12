@@ -31,13 +31,12 @@ const MobileMenu = (props) => {
             >
               RoadMap
             </a>
-            <a
-              className="transition-all duration-700 hover:text-white-1"
-              href="#team"
-              onClick={() => props.setMobileMenuVisible(false)}
-            >
-              Team
-            </a>
+            
+              <Link href="/team" className="transition-all duration-700 hover:text-white-1"
+              onClick={() => props.setMobileMenuVisible(false)}>
+                 <a>Team</a>
+              </Link>
+
             <a href="#vision" onClick={() => props.setMobileMenuVisible(false)}>
               The Vision
             </a>
