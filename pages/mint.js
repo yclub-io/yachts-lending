@@ -51,7 +51,7 @@ const MintIndex = () => {
     <div className="relative m-auto max-w-[1440px]">
       <Header />
       <div className="relative flex w-full flex-col-reverse lg:flex-row lg:pt-10">
-        <div className="w-1/2">
+        <div className="lg:w-1/2 ">
           <HeroMint />
           <div
             className="mx-[60px] mt-[42px] mb-[40px] space-x-[65px]
