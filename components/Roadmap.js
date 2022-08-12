@@ -36,15 +36,15 @@ const Roadmap = () => {
       >
         <div>
           <img
-            className="absolute z-50 mt-[45px] min-w-[2594px]"
-            src="./images/RoadMap/road-map-line2.svg"
+            className="absolute z-40 mt-[45px] min-w-[2594px]"
+            src="./images/RoadMap/road_map_line_3.svg"
             alt="roadmap-line"
-          ></img>
-          <img
-            className="absolute mt-12 min-w-[2594px]"
-            src="/images/roadMapLineTestSecEl.svg"
+          />
+            <img
+            className="absolute left-[110px] z-40 mt-[40px] min-w-[2200px]"
+            src="./images/RoadMap/road_map_dots_3.svg"
             alt="roadmap-line"
-          ></img>
+          />
           <div className="absolute top-[-150px] mx-28 flex flex-row">
             {/*one*/}
             <div className="flex basis-[14.2%] flex-col pt-[300px] pr-[70px] text-white-1">
@@ -83,7 +83,7 @@ const Roadmap = () => {
               </p>
               <p className="pb-4 font-Grotesk text-[32px] font-bold">Caravel</p>
               <ul className="w-[300px] font-Grotesk list-outside list-disc pl-3 text-xl font-normal text-gray-1">
-                <li> 1ST dNFT Collection Mint</li>
+                <li> Lana Collection Mint </li>
                 <li> Token Launch </li>
                 <li> Decentraland YCLUB </li>
                 <li> NFT Airdrop </li>
@@ -99,7 +99,8 @@ const Roadmap = () => {
               </p>
               <p className="pb-4 font-Grotesk text-[32px] font-bold">Carrack</p>
               <ul className="pl-8 w-[270px] list-outside list-disc text-xl font-normal text-gray-1">
-                <li> Super Yacht Crowdfunding Mint </li>
+                <li> $100 Million Mega Yacht Crowdfunding Mint </li>
+                <li> Live From Monaco Yacht Show </li>
                 <li> Monaco YCLUB Megaparty </li>
                 <li> DEX </li>
                 <li> Liquidity Pools </li>
@@ -116,9 +117,14 @@ const Roadmap = () => {
               <p className="pb-4 font-Grotesk text-[32px] font-bold">Galleon</p>
               <ul className="pl-8 w-[300px] list-outside list-disc text-xl font-normal text-gray-1">
                 <li> YCLUB Wallet </li>
-                <li> Debit Visa</li>
+                <li> Debit Visa to cash rewards</li>
+                <li> Mega Yacht Collection Mint</li>
+                <li> PFP Collection Airdrop</li>
+                
+                {/* 
                 <li> 2ND dNFT Collection Mint  </li>
                 <li> YCLUB Metaverse BETA </li>
+                */}
               </ul>
             </div>
             {/*six*/}
