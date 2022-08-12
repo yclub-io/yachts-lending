@@ -19,7 +19,7 @@ const teamData = [
   {
     fullName: "Valentina Tronova",
     nickName: "ValTron",
-    role: "Creative Producer",
+    role: "Creative Director",
     avatarSrc: "images/team/avatar/valentina_tronova.png",
     pastProjectsLogosArr: ["./images/team/past_projects_logos/Netflix.png"],
     desc: "Creative mastermind! She is the best there is in our eyes and we love what she does. She was the screen writer for FlixPatrol that reached the TOP 10 movies on Netflix in the World in 2021.",
@@ -118,17 +118,24 @@ const teamData = [
     pastProjectsLogosArr: [
       "./images/team/past_projects_logos/IDF.png",
     ],
-    desc: "10 years of experience in growing communities on social media. Since 2012 grew over 15m followers and reached over 300m users.",
+    desc: "Chief Operations Officer in many successful start ups. I always say there is no bad business there is a bad operation.",
   },
   {
     nickName: "CryptoDon",
-    role: "Advisor / Influencer",
+    role: "Advisor",
     desc: "Early investor in many projects like BAYC and in the ethereum blockchain. Dedicated curator in owned Web3 investment communities.",
   },
   {
-    nickName: "King Arthur",
+    fullName: "Artur Makhnach",
+    nickName: "j00mb",
     role: "Chief Technical Officer",
-    desc: "Artur is an industrial designer and a developer with a vast experience in algorithms and embedded systems, moving into the blockchain tech and tackling a multitude of projects ranging from NFTs to DeFi and beyond.",
+    avatarSrc: "images/team/avatar/artur_m.png",
+    pastProjectsLogosArr: [
+      "./images/team/past_projects_logos/ALGEM.png",
+      "./images/team/past_projects_logos/Defimoon.png",
+      "./images/team/past_projects_logos/Tulipdao.png",
+    ],
+    desc: "An industrial designer and a developer with a vast experience in algorithms and embedded systems, moving into the blockchain tech and tackling a multitude of projects ranging from NFTs to DeFi and beyond.",
   },
   {
     nickName: "SHR",
