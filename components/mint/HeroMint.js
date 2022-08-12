@@ -7,7 +7,7 @@ const HeroMint = () => {
                        font-Grotesk tracking-[-2%] text-white-1"
     >
       {/*HEADING*/}
-      <h1 className="text-[100px] font-bold">YCLUB dNFT</h1>
+      <h1 className="lg:text-[100px] text-[46px] font-bold">YCLUB dNFT</h1>
       <p
         className="mt-[-10px]
                           text-[20px] font-medium"
@@ -38,10 +38,10 @@ const HeroMint = () => {
           className="flex
                                 space-x-[20px]"
         >
-          <img src="./images/Mint/discord_Icon.svg" />
-          <img src="./images/Mint/twitter_Icon.svg" />
-          <img src="./images/Mint/inst_Icon.svg" />
-          <img src="./images/Mint/reddit_Icon.svg" />
+          <img className="max-w-[26px]" src="./images/Mint/discord_Icon.svg" />
+          <img className="max-w-[26px]" src="./images/Mint/twitter_Icon.svg" />
+          <img className="max-w-[26px]" src="./images/Mint/inst_Icon.svg" />
+          <img className="max-w-[26px]" src="./images/Mint/reddit_Icon.svg" />
         </div>
       </div>
     </div>

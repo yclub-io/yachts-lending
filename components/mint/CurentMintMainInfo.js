@@ -25,7 +25,7 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
           <button
             disabled
             style={{ backgroundColor: "gray" }}
-            className={`h-[52px] lg:w-[660px] w-[342px] m-auto rounded-[26px]  bg-pink-1 text-base font-Grotesk font-semibold text-white-1 `}
+            className={`h-[52px] lg:w-[660px] w-[342px] mx-auto  rounded-[26px]  bg-pink-1 text-base font-Grotesk font-semibold text-white-1 `}
             onClick={() => connectMetamask(setCurrentAccount)}
           >
             Connect your wallet
@@ -33,7 +33,7 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
           <button
             disabled
             style={{ backgroundColor: "gray" }}
-            className=" mx-auto mt-[30px] h-[72px] w-[304px] rounded-[36px] bg-blue-3"
+            className=" mx-auto mt-[30px] lg:h-[72px] h-[69px] lg:w-[304px] w-[343px] rounded-[36px] bg-blue-3"
           >
             <span className="text-2xl font-semibold text-white-1">
               Pay with Credit Card
