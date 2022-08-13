@@ -48,7 +48,7 @@ const MintIndex = () => {
   }, [currentDate]);
 
   return (
-    <div className="relative m-auto max-w-[1440px]">
+    <div className="relative m-auto min-w-[750px] max-w-[1440px]">
       <Header />
       <div className="relative flex w-full flex-col-reverse lg:flex-row lg:pt-10">
         <div className="lg:w-1/2 ">
@@ -73,7 +73,7 @@ const MintIndex = () => {
           </div>
           <div>{infos[currentInfo]}</div>
         </div>
-        <div className="mt-[30px] w-1/2 lg:fixed lg:right-0 lg:top-[120px]">
+        <div className="mt-[30px] w-full lg:w-1/2 lg:fixed lg:right-0 lg:top-[120px]">
           <CurentMintMainInfo
             currentMintContractIndex={currentMintContractIndex}
             currentDate={currentDate}

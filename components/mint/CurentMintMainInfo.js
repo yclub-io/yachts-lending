@@ -12,7 +12,7 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
     <div>
       <img
         src="./images/HeroSection/yachts_animation.gif"
-        className="max-h-[660px] max-w-[660px]"
+        className="max-h-[750px] max-w-[750px] lg:max-w-[660px]"
       />
       <CurrentMintProgressBar contractInfo={contractInfo} />
       {currentAccont ? (
@@ -21,11 +21,11 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
           currentDate={currentDate}
         />
       ) : (
-        <div className="mt-[30px] flex w-[660px] flex-col">
+        <div className="mt-[30px] px-4 lg:p-0 flex lg:w-[660px] flex-col">
           <button
             disabled
             style={{ backgroundColor: "gray" }}
-            className={`h-[52px] lg:w-[660px] w-[342px] mx-auto  rounded-[26px]  bg-pink-1 text-base font-Grotesk font-semibold text-white-1 `}
+            className={`h-[52px] lg:w-[660px] w-full mx-auto  rounded-[26px]  bg-pink-1 text-base font-Grotesk font-semibold text-white-1 `}
             onClick={() => connectMetamask(setCurrentAccount)}
           >
             Connect your wallet
@@ -33,7 +33,7 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
           <button
             disabled
             style={{ backgroundColor: "gray" }}
-            className=" mx-auto mt-[30px] lg:h-[72px] h-[69px] lg:w-[304px] w-[343px] rounded-[36px] bg-blue-3"
+            className=" mx-auto mt-[30px] lg:h-[72px] h-[69px] lg:w-[304px] w-full rounded-[36px] bg-blue-3"
           >
             <span className="text-2xl font-semibold text-white-1">
               Pay with Credit Card
