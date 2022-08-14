@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import secondsToTime from "../../utils/secondsToTime";
 import contractsData from "../../data/contractsData";
-import Round from "../../abi/round";
+import Round from "../../abi/Round";
 
 const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
   const [mintAmount, setMintAmount] = useState(0);
