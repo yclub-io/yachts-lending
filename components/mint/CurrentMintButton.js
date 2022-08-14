@@ -5,8 +5,9 @@ import Round from "../../abi/round";
 
 const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
   const [mintAmount, setMintAmount] = useState(0);
-  const [numberOfRoundUserCanMint, setNumberOfRoundUserCanMint] = useState(5)
-  const [numberNftAvaliableToMint, setNumberNftAvaliableToMint] = useState(0)
+  const [numberOfRoundUserCanMint, setNumberOfRoundUserCanMint] = useState(5);
+  const [numberNftAvaliableToMint, setNumberNftAvaliableToMint] = useState(0);
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     console.log("contractInfo: ", contractInfo);
@@ -15,20 +16,31 @@ const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
         try {
           const round = Round(contractsData[i].address);
           const isInWhiteList = await round.checkWhitelist(currentAccont);
-          if(isInWhiteList && contractInfo?.address === contractsData[i].address){
+          if (
+            isInWhiteList &&
+            contractInfo?.address === contractsData[i].address
+          ) {
             console.log("in round " + i);
             setNumberNftAvaliableToMint(1);
+            setLoading(false);
+            return;
           }
-          if(isInWhiteList && contractsData[i].start > currentDate){
+          if (isInWhiteList && contractsData[i].start > currentDate) {
             setNumberOfRoundUserCanMint(i);
+            setLoading(false);
             return;
           }
         } catch (error) {
           console.error(error);
         }
       }
+      setLoading(false);
     })();
   }, [contractInfo]);
+
+  if (isLoading) {
+    return <img className="m-auto mt-6" src="/images/loading.gif"/>;
+  }
 
   if (!contractInfo || numberNftAvaliableToMint === 0) {
     return (
