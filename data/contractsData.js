@@ -1,4 +1,4 @@
-const start = 1660485000;
+const start = 1660487300;
 
 const contractsData = [
   {
@@ -58,7 +58,7 @@ const contractsData = [
   },
   {
     address: "44444444444",
-    name: "Rare",
+    name: "Rare + Common",
     start: start+3500,
     end: start+4100,
     totalSupply: 5000,

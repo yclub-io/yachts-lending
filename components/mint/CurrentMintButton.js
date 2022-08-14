@@ -5,32 +5,39 @@ import Round from "../../abi/round";
 
 const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
   const [mintAmount, setMintAmount] = useState(0);
+  const [numberOfRoundUserCanMint, setNumberOfRoundUserCanMint] = useState(5)
+  const [numberNftAvaliableToMint, setNumberNftAvaliableToMint] = useState(0)
 
   useEffect(() => {
-    console.log("uef");
+    console.log("contractInfo: ", contractInfo);
     (async () => {
       for (let i = 0; i < contractsData.length - 1; i++) {
         try {
           const round = Round(contractsData[i].address);
           const isInWhiteList = await round.checkWhitelist(currentAccont);
-          console.log(
-            `in whitelist of contract ${contractsData[i].address}: ${isInWhiteList}`
-          );
+          if(isInWhiteList && contractInfo?.address === contractsData[i].address){
+            console.log("in round " + i);
+            setNumberNftAvaliableToMint(1);
+          }
+          if(isInWhiteList && contractsData[i].start > currentDate){
+            setNumberOfRoundUserCanMint(i);
+            return;
+          }
         } catch (error) {
           console.error(error);
         }
       }
     })();
-  }, []);
+  }, [contractInfo]);
 
-  if (!contractInfo) {
+  if (!contractInfo || numberNftAvaliableToMint === 0) {
     return (
       <button
         className={`mt-[30px] h-[52px] w-[660px] rounded-[26px] bg-pink-1 text-base font-semibold text-white-1`}
         disabled
       >
         {`You can mint in ${secondsToTime(
-          contractsData[5].start - currentDate
+          contractsData[numberOfRoundUserCanMint].start - currentDate
         )} `}
       </button>
     );
