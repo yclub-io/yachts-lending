@@ -39,7 +39,11 @@ const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
   }, [contractInfo]);
 
   if (isLoading) {
-    return <img className="m-auto mt-6" src="/images/loading.gif"/>;
+    return (
+      <div className="lg:w-[660px]">
+        <img className="m-auto mt-6" src="/images/loading.gif" />
+      </div>
+    );
   }
 
   if (!contractInfo || numberNftAvaliableToMint === 0) {
