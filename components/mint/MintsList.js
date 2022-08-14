@@ -23,18 +23,22 @@ const MintsList = ({ currentDate, currentMintContractIndex }) => {
             <p className=" text-[13px] text-pink-1">
               Starts in:
             </p>
-              <span className="text-[13px] lg:ml-[21px] w-[107px] text-white-1">
+              <span className="text-[13px] lg:ml-[21px] lg:mr-[-45px]  w-[107px] text-white-1">
                 {secondsToTime(contract.start - currentDate)}
               </span>
             
             </div>
           ) : currentDate < contract.end ? (
+            <div className="flex lg:flex-row flex-col"> 
             <p className="text-[13px] text-pink-1">
               Ends in:
-              <span className="pl-[21px] text-white-1">{secondsToTime(contract.end - currentDate)}</span>
             </p>
+              <span className="text-[13px] lg:ml-[21px] lg:mr-[-40px] w-[107px] text-white-1">
+                {secondsToTime(contract.end - currentDate)}
+              </span>
+            </div> 
           ) : (
-            <p className="text-[13px] text-pink-1">ENDED</p>
+            <p className="text-[13px] mr-[15px] text-pink-1">ENDED</p>
           )}
         </div>
       </div>
