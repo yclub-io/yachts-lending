@@ -48,14 +48,14 @@ const MintIndex = () => {
   }, [currentDate]);
 
   return (
-    <div className="relative m-auto min-w-[750px] max-w-[1440px]">
+    <div className="relative m-auto min-w-[375px] max-w-[1440px]">
       <Header />
-      <div className="relative flex w-full flex-col-reverse lg:flex-row lg:pt-10">
+      <div className="relative flex flex-col-reverse lg:flex-row lg:pt-10">
         <div className="lg:w-1/2 ">
           <HeroMint />
           <div
-            className="mx-[60px] mt-[42px] mb-[40px] space-x-[65px]
-                         font-Grotesk text-[18px] font-bold text-white-1"
+            className="flex justify-center lg:mx-[60px] mx-[16px] mt-[42px] mb-[40px] lg:space-x-[65px] space-x-[37px]
+                         font-Grotesk lg:text-[18px] text-[14px]  font-bold text-white-1"
           >
             {Object.keys(infos).map((info) => (
               <span

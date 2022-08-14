@@ -12,7 +12,7 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
     <div>
       <img
         src="./images/HeroSection/yachts_animation.gif"
-        className="max-h-[750px] max-w-[750px] lg:max-w-[660px]"
+        className="lg:mt-0 mt-[100px] lg:border-none border-[15px] lg:max-h-[750px] lg:max-w-[660px]"
       />
       <CurrentMintProgressBar contractInfo={contractInfo} />
       {currentAccont ? (
@@ -33,7 +33,7 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
           <button
             disabled
             style={{ backgroundColor: "gray" }}
-            className=" mx-auto mt-[30px] lg:h-[72px] h-[69px] lg:w-[304px] w-full rounded-[36px] bg-blue-3"
+            className=" mx-auto lg:mt-[30px] mt-[20px] font-Grotesk lg:h-[72px] h-[69px] lg:w-[304px] w-full rounded-[36px] bg-blue-3"
           >
             <span className="text-2xl font-semibold text-white-1">
               Pay with Credit Card
