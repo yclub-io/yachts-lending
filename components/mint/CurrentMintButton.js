@@ -48,14 +48,16 @@ const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
 
   if (!contractInfo || numberNftAvaliableToMint === 0) {
     return (
+      <div className="flex lg:mx-[0px] mx-[16px]">
       <button
-        className={`mt-[30px] h-[52px] w-[660px] rounded-[26px] bg-pink-1 text-base font-semibold text-white-1`}
+        className={`mt-[30px] w-[660px] h-[52px] rounded-[26px] bg-pink-1 text-base font-semibold text-white-1`}
         disabled
       >
         {`You can mint in ${secondsToTime(
           contractsData[numberOfRoundUserCanMint].start - currentDate
         )} `}
       </button>
+      </div>
     );
   }
 
