@@ -1,6 +1,6 @@
 const InfoInMint = () => {
     return (
-        <div className="mx-[60px] space-y-[38px] text-gray-1 text-[20px] font-normal leading-[25.52pxro] font-Grotesk">
+        <div className="lg:mx-[60px] mx-[16px] lg:space-y-[38px] space-y-[30px] text-gray-1 lg:text-[20px] text-[16px] font-normal leading-[25.52pxro] font-Grotesk">
             <p> 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Interdum aliquet at phasellus lacus a viverra vulputate purus. 
