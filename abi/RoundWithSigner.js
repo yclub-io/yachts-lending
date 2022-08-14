@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
-import metamskProvider from "../metamskProvider";
+import metamskProvider from "./metamskProvider";
 import abi from "./abi";
 
 let RoundWithSigner;

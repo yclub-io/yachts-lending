@@ -10,7 +10,7 @@ const connectMetamask = async (setCurrentAccount) => {
           return;
         }
         const chainId = await ethereum.request({ method: "eth_chainId" });
-        if (chainId !== "0x1") {
+        if (chainId !== "0x4") {
           await ethereum.request({
             method: "wallet_switchEthereumChain",
             params: [{ chainId: "0x1" }],

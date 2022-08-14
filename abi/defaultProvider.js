@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
 
-const defaultProvider = new ethers.providers.JsonRpcProvider(process.env.rpc);
+const defaultProvider = new ethers.providers.InfuraProvider("rinkeby");
 
 export default defaultProvider;
