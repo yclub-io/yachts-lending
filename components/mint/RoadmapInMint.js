@@ -2,12 +2,12 @@
 
 const RoadmapInMint = () => {
     return ( 
-   <div className="relative flex flex-row mx-[60px] mt-[45px] pb-[86px]"> 
+   <div className="relative flex flex-row lg:mx-[60px] mx-[16px] mt-[45px] pb-[86px]"> 
 
    {/*Line*/}
     <div>
         <img src="./images/Mint/Mint_RoadMap_line.svg"
-             className="mt-[85px]"/>
+             className="mt-[85px] min-w-[7px]"/>
     </div>
 
     {/*Text*/}
@@ -114,7 +114,7 @@ const RoadmapInMint = () => {
               QUARTER 3-4 OF 2023
               </p>
               <p className="pb-4 font-Grotesk text-[24px] font-bold tracking-[5%]">Clipper</p>
-              <ul className="w-[380px] list-inside list-disc pl-[14px] text-[16px] font-normal text-gray-1 leading-[20.42px]">
+              <ul className="lg:w-[380px] list-inside list-disc pl-[14px] text-[16px] font-normal text-gray-1 leading-[20.42px]">
                 <li>
                   {" "}
                   Mega Party For Launching IRL the first Crowdfunded Yacht
