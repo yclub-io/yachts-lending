@@ -1,5 +1,7 @@
 import { ethers } from "ethers";
 
-const defaultProvider = new ethers.providers.InfuraProvider("rinkeby");
+const defaultProvider = new ethers.providers.InfuraProvider(
+  process.env.targetChainName
+);
 
 export default defaultProvider;
