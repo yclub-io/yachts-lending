@@ -1,26 +1,29 @@
 const InfoInMint = () => {
     return (
-        <div className="lg:mx-[60px] mx-[16px] lg:space-y-[38px] space-y-[30px] text-gray-1 lg:text-[20px] text-[16px] font-normal leading-[25.52pxro] font-Grotesk">
+        <div className="lg:mx-[60px] mb-[50px] mx-[16px] lg:space-y-[38px] space-y-[30px] text-gray-1 lg:text-[20px] text-[16px] font-normal leading-[25.52pxro] font-Grotesk">
             <p> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Interdum aliquet at phasellus lacus a viverra vulputate purus. 
-                Tincidunt consectetur viverra nunc condimentum. Pharetra diam massa, 
-                enim lobortis integer pellentesque. Cursus ac sit lorem enim, varius placerat 
-                habitant turpis etiam. Vitae ullamcorper neque, vestibulum diam cursus velit, quis. 
-                Ut in sed pharetra, senectus orci diam rhoncus. 
+                Gain access to a world of extravagance through the premier YCLUB collection.
+                The first digital collection of the breath taking Benetti Super Yacht “Lana”
+                will be the dNFT that unlocks the unending benefits for holders, from rewards,
+                metaverse experiences, and a complete DeFi suite, to once in a lifetime IRL
+                experiences.
             </p>
             <p> 
-                Commodo sed risus erat diam sollicitudin. Nibh velit iaculis egestas posuere. 
-                Senectus ultrices sit nam ornare. Justo commodo adipiscing fermentum, consequat
-                eleifend rhoncus nibh sagittis. Suspendisse ut arcu elementum sagittis tristique non mollis.
-                Rhoncus, dignissim id ut nullam nisl, tellus augue. Aliquet porttitor quis aliquet nec etiam
-                quam lorem nunc. 
+                Having access to the YCLUB metaverse experience means enjoying a world rich
+                with opportunity and entertainment hosted on our one of a kind Super Yacht.
+                This virtual social club for the community also acts as a non-expiring revenue
+                stream; supporting an eCommerce marketplace and events platform where users can
+                spend, invest, trade, and be rewarded in Bitcoin, Ethereum, USDC, or our native
+                coin SYC.
             </p>
             <p> 
-                Dolor consequat praesent dictumst in magna donec interdum.
-                Eu a ipsum morbi id sociis arcu volutpat id mauris. Neque, id magna arcu nam massa vitae,
-                scelerisque. Tempus, proin semper mi sit sociis ac senectus. Mauris felis ut ut tellus lobortis.
-                Tellus lacus, scelerisque pulvinar vitae tortr congue morbi amet.   
+                The metaverse Super Yacht that holders of the “Lana” dNFT will have access to
+                will have an entertainment suite to match the real Super Yacht’s extravagance.
+                Holders will have access to, and gain revenue from the concerts, fashion shows,
+                hosted meetings, casinos, karaoke, and gallery experiences for artists
+                to showcase their NFTs in ways for guests to purchase live.
+                Your charter into a one of a kind metaverse experience begins here, with YCLUB.
+
             </p>
         </div>
      );
