@@ -28,19 +28,27 @@ const HeroMint = () => {
 
           <h1>
             Price From
-            <span className="font-medium"> 0.25 </span>
+            <span className="font-medium"> 0.12 </span>
             ETH
           </h1>
         </div>
 
         {/*ICONs*/}
         <div
-          className="flex space-x-[20px] lg:mt-[0] mt-[30px] lg:mb-0 mb-[-10px]"
+          className="flex space-x-[20px] lg:mt-[0] mt-[30px] lg:mb-0 mb-[-10px] items-center"
         >
-          <img className="max-w-[26px]" src="./images/Mint/discord_Icon.svg" />
-          <img className="max-w-[26px]" src="./images/Mint/twitter_Icon.svg" />
-          <img className="max-w-[26px]" src="./images/Mint/inst_Icon.svg" />
-          <img className="max-w-[26px]" src="./images/Mint/reddit_Icon.svg" />
+          <a href="https://discord.gg/yclub" target="_blank">
+          <img className="max-w-[26px] hover:opacity-70 duration-700" src="./images/Mint/discord_Icon.svg" />
+          </a>
+          <a href="https://twitter.com/yclub_io" target="_blank">
+          <img className="max-w-[26px] hover:opacity-70 duration-700" src="./images/Mint/twitter_Icon.svg" />
+          </a>
+          <a href="https://www.instagram.com/yclub.io" target="_blank">
+          <img className="max-w-[26px] hover:opacity-70 duration-700" src="./images/Mint/inst_Icon.svg" />
+          </a>
+          <a href="https://medium.com/@yclub/welcome-to-yclub-fb8b2e4af351" target="_blank">
+          <img className="max-w-[26px] hover:opacity-70 duration-700" src="./images/Mint/reddit_Icon.svg" />
+          </a>
         </div>
       </div>
     </div>
