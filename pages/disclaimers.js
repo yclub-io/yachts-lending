@@ -17,7 +17,6 @@ const data = [
 ];
 
 const Disclaimers = () => {
-  console.log("data: ", data);
   const renderList = data.map((text) => (
     <li className="ml-5 pb-4 text-white-1">{text}</li>
   ));

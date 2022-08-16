@@ -45,7 +45,7 @@ const Header = () => {
         <div className="hidden w-[120px] text-[16px] font-semibold lg:flex">
           <Link href="mint">
             <button
-              className="hidden rounded-[50px] border
+              className="rounded-[50px] border
                              border-pink-1 bg-pink-1 px-[51px] py-[16px] shadow-headerButton"
             >
               Mint

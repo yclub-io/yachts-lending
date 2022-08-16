@@ -14,7 +14,7 @@ const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
   const router = useRouter();
 
   useEffect(() => {
-    console.log("contractInfo: ", contractInfo);
+
 
     (async () => {
       for (let i = 0; i < contractsData.length - 1; i++) {

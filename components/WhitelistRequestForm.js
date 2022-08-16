@@ -11,8 +11,7 @@ const WhitelistRequestForm = ({ status, message, onValidated }) => {
     status === "success" && setThanksDivVisible(true);
   }, [status]);
 
-  console.log("status: ", status);
-  console.log("message: ", message);
+
 
   const handleSubmit = (event) => {
     event.preventDefault();

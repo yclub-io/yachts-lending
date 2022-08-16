@@ -25,27 +25,23 @@ const MobileMenu = (props) => {
             >
               Docs
             </a>
-            <a
-              href="#roadmap"
-              onClick={() => props.setMobileMenuVisible(false)}
-            >
-              RoadMap
-            </a>
-            
-              <Link href="/team" className="transition-all duration-700 hover:text-white-1"
-              onClick={() => props.setMobileMenuVisible(false)}>
-                 <a>Team</a>
-              </Link>
-
-            <a href="#vision" onClick={() => props.setMobileMenuVisible(false)}>
-              The Vision
-            </a>
-            <a href="#faq" onClick={() => props.setMobileMenuVisible(false)}>
-              FAQ
-            </a>
+            <Link href="/#roadmap">
+              <a onClick={() => props.setMobileMenuVisible(false)}>RoadMap</a>
+            </Link>
+            <Link href="/team">
+              <a onClick={() => props.setMobileMenuVisible(false)}>Team</a>
+            </Link>
+            <Link href="/#vision">
+              <a onClick={() => props.setMobileMenuVisible(false)}>
+                The Vision
+              </a>
+            </Link>
+            <Link href="/#faq">
+              <a onClick={() => props.setMobileMenuVisible(false)}>FAQ</a>
+            </Link>
           </div>
 
-          <div className="mt-[55px] flex flex-col space-y-[35px] font-Grotesk  text-base font-normal">
+          <div className="mt-[25px] flex flex-col space-y-[35px] font-Grotesk  text-base font-normal">
             <a target="_blank" href="https://discord.gg/yclub">
               Discord
             </a>
@@ -56,20 +52,15 @@ const MobileMenu = (props) => {
               Instagram
             </a>
           </div>
+          <div className="mt-[20px] text-[16px]  font-semibold">
+            <Link href="/mint">
+              <button className="rounded-[50px] border border-pink-1 bg-pink-1 px-[100px] py-[16px] shadow-headerButton">
+                Mint
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
-      {/*MINT button*/}
-      <div className="hidden text-[16px] font-semibold justify-center mt-[40px]">
-          <Link href="mint">
-            <button
-              className="rounded-[50px] border
-                             border-pink-1 bg-pink-1 px-[100px] py-[16px] shadow-headerButton"
-            >
-              Mint
-            </button>
-          </Link>
-        </div>
-
     </div>
   );
 };
