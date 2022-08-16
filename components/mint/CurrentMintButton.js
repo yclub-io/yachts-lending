@@ -19,17 +19,13 @@ const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
     (async () => {
       for (let i = 0; i < contractsData.length - 1; i++) {
         try {
-          console.log("contract address: ", contractsData[i].address);
           const round = Round(contractsData[i].address);
           const isInWhiteList = await round.whiteList(currentAccont);
-          console.log(`In round ${i}: ${isInWhiteList}`);
           if (
             isInWhiteList &&
             contractInfo?.address === contractsData[i].address
           ) {
-            console.log("in round " + i);
             const alreadyBought = await round.userPurchasedNum(currentAccont);
-            console.log("alreadyBought: ", alreadyBought);
             setNumberNftAvaliableToMint(
               contractsData[i].max - alreadyBought.toNumber()
             );
