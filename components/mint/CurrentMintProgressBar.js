@@ -15,9 +15,10 @@ const CurrentMintProgressBar = ({ contractInfo, setAvailableToMint }) => {
         if(realSupplay.toNumber() === 0){
           setAvailableToMint(false);
         }
+        setLoading(false);
       })();
     }
-    setLoading(false)
+    
   }, [contractInfo?.address]);
 
   if (!contractInfo || isLoading) {

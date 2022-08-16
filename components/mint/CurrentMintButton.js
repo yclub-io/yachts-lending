@@ -21,6 +21,7 @@ const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
         try {
           const round = Round(contractsData[i].address);
           const isInWhiteList = await round.whiteList(currentAccont);
+          console.log(`in round ${i} is ${isInWhiteList}`);
           if (
             isInWhiteList &&
             contractInfo?.address === contractsData[i].address
