@@ -2,26 +2,37 @@ import { useState, useEffect } from "react";
 import secondsToTime from "../../utils/secondsToTime";
 import contractsData from "../../data/contractsData";
 import Round from "../../abi/Round";
+import RoundWithSigner from "../../abi/RoundWithSigner";
+import { ethers } from "ethers";
+import { useRouter } from "next/router";
 
 const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
-  const [mintAmount, setMintAmount] = useState(0);
-  const [numberOfRoundUserCanMint, setNumberOfRoundUserCanMint] = useState(5);
+  const [mintAmount, setMintAmount] = useState(1);
+  const [numberOfRoundUserCanMint, setNumberOfRoundUserCanMint] = useState(4);
   const [numberNftAvaliableToMint, setNumberNftAvaliableToMint] = useState(0);
   const [isLoading, setLoading] = useState(true);
+  const router = useRouter();
 
   useEffect(() => {
     console.log("contractInfo: ", contractInfo);
+
     (async () => {
       for (let i = 0; i < contractsData.length - 1; i++) {
         try {
+          console.log("contract address: ", contractsData[i].address);
           const round = Round(contractsData[i].address);
-          const isInWhiteList = await round.checkWhitelist(currentAccont);
+          const isInWhiteList = await round.whiteList(currentAccont);
+          console.log(`In round ${i}: ${isInWhiteList}`);
           if (
             isInWhiteList &&
             contractInfo?.address === contractsData[i].address
           ) {
             console.log("in round " + i);
-            setNumberNftAvaliableToMint(1);
+            const alreadyBought = await round.userPurchasedNum(currentAccont);
+            console.log("alreadyBought: ", alreadyBought);
+            setNumberNftAvaliableToMint(
+              contractsData[i].max - alreadyBought.toNumber()
+            );
             setLoading(false);
             return;
           }
@@ -48,21 +59,35 @@ const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
 
   if (!contractInfo || numberNftAvaliableToMint === 0) {
     return (
-      <div className="flex lg:mx-[0px] mx-[16px]">
-      <button
-        className={`mt-[30px] w-[660px] h-[52px] rounded-[26px] bg-pink-1 text-base font-semibold text-white-1`}
-        disabled
-      >
-        {`You can mint in ${secondsToTime(
-          contractsData[numberOfRoundUserCanMint].start - currentDate
-        )} `}
-      </button>
+      <div className="mx-[16px] flex lg:mx-[0px]">
+        <button
+          className={`mt-[30px] h-[52px] w-[660px] rounded-[26px] bg-pink-1 text-base font-semibold text-white-1`}
+          disabled
+        >
+          {`You can mint in ${secondsToTime(
+            contractsData[numberOfRoundUserCanMint].start - currentDate
+          )} `}
+        </button>
       </div>
     );
   }
 
-  const handleMintClick = () => {
-    console.log("Mint with account ", contractInfo.address);
+  const handleMintClick = async () => {
+    setLoading(true);
+    try {
+      const roundWithSigner = RoundWithSigner(contractInfo.address);
+      const price = await roundWithSigner.mintPrice();
+      console.log("price: ", ethers.utils.formatEther(price));
+      const tx = await roundWithSigner.paidMint(mintAmount, {value: price.mul(mintAmount)});
+      console.log("tx: ", tx);
+      const responce = await tx.wait();
+      console.log("responce: ", responce);
+      router.reload();
+    } catch (error) {
+      console.error(error);
+    }finally{
+      setLoading(false);
+    }
   };
 
   return (
@@ -78,14 +103,17 @@ const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
         <span>{mintAmount}</span>
         <button
           className="mr-10"
-          disabled={false}
+          disabled={mintAmount >= numberNftAvaliableToMint}
           onClick={() => setMintAmount(mintAmount + 1)}
         >
           +
         </button>
       </div>
       <button
-        className={`h-[52px] w-[55%] rounded-[26px] bg-pink-1 text-base font-semibold text-white-1`}
+        className={`h-[52px] w-[55%] rounded-[26px] text-base font-semibold text-white-1 ${
+          numberNftAvaliableToMint > 0 ? "bg-pink-1" : "bg-gray-1"
+        }`}
+        disabled={numberNftAvaliableToMint === 0}
         onClick={handleMintClick}
       >
         Mint
