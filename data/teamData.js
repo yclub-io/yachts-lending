@@ -1,12 +1,5 @@
 const teamData = [
   {
-    fullName: "Deniz Karakurt",
-    nickName: "TerpHeadRick",
-    role: "Community Manager",
-    avatarSrc: "./images/team/avatar/deniz_karakurt.png",
-    desc: "Have been in crypto since 2019 and first got into Discord and community building/managing for stock signals groups. Naturally as I got more into crypto I shifted into that and haven’t looked back since.",
-  },
-  {
     fullName: "Denis Suka",
     nickName: "The Yacht Mogul",
     role: "Partner",
@@ -15,6 +8,13 @@ const teamData = [
     socialNetworkLink: "https://www.instagram.com/theyachtmogul/",
     pastProjectsLogosArr: ["./images/team/past_projects_logos/MY.png"],
     desc: "All passion and love for yachts and their ability to inspire people all around the world. A chosen “Influencial figure in the yachting world” by some of the press such as Forbes, CNN, BOAT, Robb Report.",
+  },
+  {
+    fullName: "Deniz Karakurt",
+    nickName: "TerpHeadRick",
+    role: "Community Manager",
+    avatarSrc: "./images/team/avatar/deniz_karakurt.png",
+    desc: "Have been in crypto since 2019 and first got into Discord and community building/managing for stock signals groups. Naturally as I got more into crypto I shifted into that and haven’t looked back since.",
   },
   {
     fullName: "Valentina Tronova",
