@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Round from "../../abi/Round";
 
-const CurrentMintProgressBar = ({ contractInfo }) => {
+const CurrentMintProgressBar = ({ contractInfo, setAvailableToMint }) => {
   const [realSupplay, setRealSupply] = useState(0);
   const [isLoading, setLoading] = useState(true);
 
@@ -11,7 +11,10 @@ const CurrentMintProgressBar = ({ contractInfo }) => {
       (async () => {
         const realSupplay = await round.roundTotalSupply();
         console.log("realSupplay: ", realSupplay.toNumber());
-        setRealSupply(realSupplay.toNumber())
+        setRealSupply(realSupplay.toNumber());
+        if(realSupplay.toNumber() === 0){
+          setAvailableToMint(false);
+        }
       })();
     }
     setLoading(false)

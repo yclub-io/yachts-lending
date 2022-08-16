@@ -8,8 +8,24 @@ import CurrentMintProgressBar from "./CurrentMintProgressBar";
 
 const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
   const [currentAccont, setCurrentAccount] = useState();
+  const [isAvailableToMint, setAvailableToMint] = useState(true);
   const [isAlert, setAlert] = useState(false);
   const contractInfo = contractsData[currentMintContractIndex];
+
+  if (!isAvailableToMint) {
+    return (
+      <div>
+        <img
+          src="./images/HeroSection/yachts_animation.gif"
+          className="mt-[100px] border-[15px] lg:mt-0 lg:max-h-[750px] lg:max-w-[660px] lg:border-none"
+        />
+        <CurrentMintProgressBar
+          contractInfo={contractInfo}
+          setAvailableToMint={setAvailableToMint}
+        />
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -17,7 +33,10 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
         src="./images/HeroSection/yachts_animation.gif"
         className="mt-[100px] border-[15px] lg:mt-0 lg:max-h-[750px] lg:max-w-[660px] lg:border-none"
       />
-      <CurrentMintProgressBar contractInfo={contractInfo} />
+      <CurrentMintProgressBar
+        contractInfo={contractInfo}
+        setAvailableToMint={setAvailableToMint}
+      />
       {currentAccont ? (
         <CurrentMintButton
           currentAccont={currentAccont}
