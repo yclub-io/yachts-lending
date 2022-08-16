@@ -47,7 +47,7 @@ const HeroMint = () => {
           <img className="max-w-[26px] hover:opacity-70 duration-700" src="./images/Mint/inst_Icon.svg" />
           </a>
           <a href="https://medium.com/@yclub/welcome-to-yclub-fb8b2e4af351" target="_blank">
-          <img className="max-w-[26px] hover:opacity-70 duration-700" src="./images/Mint/reddit_Icon.svg" />
+          <img className="max-w-[30px] min-w-[30px] hover:opacity-70 duration-700" src="./images/Mint/medium_Icon.svg" />
           </a>
         </div>
       </div>
