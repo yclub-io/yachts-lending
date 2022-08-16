@@ -1,6 +1,6 @@
 const contractsData = [
   {
-    address: "0xBFDc2C9B07269aE2245173Df4aE0a85B46760f88",
+    address: "0x199bC7373dAb0f19daBf6CABe31eee4aEe4347b3",
     name: "Legendary",
     start: 1660672800,
     end: 1660680000,
