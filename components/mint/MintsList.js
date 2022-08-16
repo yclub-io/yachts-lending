@@ -23,7 +23,7 @@ const MintsList = ({ currentDate, currentMintContractIndex }) => {
             <p className=" text-[13px] text-pink-1">
               Starts in:
             </p>
-              <span className="text-[13px] lg:ml-[21px] lg:mr-[-45px]  w-[107px] text-white-1">
+              <span className="text-[13px] lg:ml-[21px]  w-[107px] text-white-1">
                 {secondsToTime(contract.start - currentDate)}
               </span>
             
@@ -33,7 +33,7 @@ const MintsList = ({ currentDate, currentMintContractIndex }) => {
             <p className="text-[13px] text-pink-1">
               Ends in:
             </p>
-              <span className="text-[13px] lg:ml-[21px] lg:mr-[-40px] w-[107px] text-white-1">
+              <span className="text-[13px] lg:ml-[21px]  w-[107px] text-white-1">
                 {secondsToTime(contract.end - currentDate)}
               </span>
             </div> 
