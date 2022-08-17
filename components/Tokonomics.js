@@ -46,8 +46,6 @@ const Tokonomics = () => {
             {/*MOBILE DIV PIE*/}
               <div className="flex md:m-auto lg:hidden mt-[47px] mx-auto">
                     <img src="./images/Tokonomics/pie_chart_plus_info.svg"/>
-                    {/* <img src="./images/Tokonomics/chart_mobile.png"/> */}
-
               </div>            
              </div>
         </div>
