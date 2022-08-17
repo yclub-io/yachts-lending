@@ -8,6 +8,7 @@ import TeamInMint from "../components/mint/TeamInMint";
 import MintsList from "../components/mint/MintsList";
 import contractsData from "../data/contractsData";
 import Layout from "../components/Layout";
+import Head from "next/head";
 
 const MintIndex = () => {
   const [currentInfo, setCurrentInfo] = useState("whitelists");
@@ -50,6 +51,9 @@ const MintIndex = () => {
 
   return (
     <Layout>
+      <Head>
+        <title>YCLUB - MINT</title>
+      </Head>
       <div className="relative flex flex-col-reverse lg:flex-row lg:pt-10">
         <div className="lg:w-1/2 ">
           <HeroMint />

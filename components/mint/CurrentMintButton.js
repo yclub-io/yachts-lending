@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 
 const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
   const [mintAmount, setMintAmount] = useState(1);
-  const [numberOfRoundUserCanMint, setNumberOfRoundUserCanMint] = useState(2);
+  const [numberOfRoundUserCanMint, setNumberOfRoundUserCanMint] = useState(-1);
   const [numberNftAvaliableToMint, setNumberNftAvaliableToMint] = useState(0);
   const [isLoading, setLoading] = useState(true);
   const router = useRouter();
