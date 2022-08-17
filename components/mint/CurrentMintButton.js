@@ -27,9 +27,12 @@ const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
             contractInfo?.address === contractsData[i].address
           ) {
             const alreadyBought = await round.userPurchasedNum(currentAccont);
+            console.log("already bought: ", alreadyBought.toNumber());
+            console.log("can bought: ", contractsData[i].max - alreadyBought.toNumber());
             setNumberNftAvaliableToMint(
               contractsData[i].max - alreadyBought.toNumber()
             );
+            setNumberOfRoundUserCanMint(i);
             setLoading(false);
             return;
           }
