@@ -1,9 +1,12 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
+  const router = useRouter();
+  console.log(router.pathname);
   return (
     <nav className="fixed z-50 w-full  bg-black-1 font-Grotesk text-white-1  lg:w-[1440px]">
       <div
@@ -42,11 +45,12 @@ const Header = () => {
         </div>
 
         {/*MINT button*/}
-        <div className="hidden w-[120px] text-[16px] font-semibold lg:flex">
+        <div className={`hidden w-[120px] text-[16px] font-semibold lg:flex  `}>
           <Link href="mint">
             <button
-              className="rounded-[50px] border
-                             border-pink-1 bg-pink-1 px-[51px] py-[16px] shadow-headerButton"
+              className={`rounded-[50px] border border-pink-1 bg-pink-1 px-[51px] py-[16px] shadow-headerButton ${
+                router.pathname === "/mint" && "hidden"
+              }`}
             >
               Mint
             </button>
@@ -54,7 +58,7 @@ const Header = () => {
         </div>
 
         {isMobileMenuVisible && (
-          <MobileMenu setMobileMenuVisible={setMobileMenuVisible} />
+          <MobileMenu setMobileMenuVisible={setMobileMenuVisible}  hiddenMint={router.pathname === "/mint"}/>
         )}
       </div>
     </nav>

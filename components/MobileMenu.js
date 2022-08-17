@@ -54,7 +54,11 @@ const MobileMenu = (props) => {
           </div>
           <div className="mt-[20px] text-[16px]  font-semibold">
             <Link href="/mint">
-              <button className="rounded-[50px] border border-pink-1 bg-pink-1 px-[100px] py-[16px] shadow-headerButton">
+              <button
+                className={`rounded-[50px] border border-pink-1 bg-pink-1 px-[100px] py-[16px] shadow-headerButton ${
+                  props.hiddenMint && "hidden"
+                }`}
+              >
                 Mint
               </button>
             </Link>
