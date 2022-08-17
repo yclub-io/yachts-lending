@@ -27,7 +27,7 @@ const contractsData = [
     start: 1660770000,
     end: 1660791600,
     totalSupply: 5000,
-    deltaSupply: 0,
+    deltaSupply: -119,
     max: 10,
     price: "0.15",
   },
