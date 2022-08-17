@@ -22,7 +22,7 @@ const teamData = [
     role: "Creative Director",
     avatarSrc: "images/team/avatar/valentina_tronova.png",
     pastProjectsLogosArr: ["./images/team/past_projects_logos/Netflix.png"],
-    desc: "Creative mastermind! She is the best there is in our eyes and we love what she does. She was the screen writer for FlixPatrol that reached the TOP 10 movies on Netflix in the World in 2021.",
+    desc: "Creative mastermind! She is the best there is in our eyes and we love what she does. She was the screen writer for Major Grom: Plague Doctor that reached the TOP 10 movies on Netflix in the World in 2021.",
   },
   {
     fullName: "Yuval Hollander",
