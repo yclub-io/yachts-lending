@@ -28,13 +28,16 @@ const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
           ) {
             const alreadyBought = await round.userPurchasedNum(currentAccont);
             console.log("already bought: ", alreadyBought.toNumber());
-            console.log("can bought: ", contractsData[i].max - alreadyBought.toNumber());
+            const availableToMint = contractsData[i].max - alreadyBought.toNumber();
+            console.log("can buy: ", availableToMint);
             setNumberNftAvaliableToMint(
-              contractsData[i].max - alreadyBought.toNumber()
+              availableToMint
             );
-            setNumberOfRoundUserCanMint(i);
-            setLoading(false);
-            return;
+            if(availableToMint > 0){
+              setNumberOfRoundUserCanMint(i);
+              setLoading(false);
+              return;
+            }
           }
           if (isInWhiteList && contractsData[i].start > currentDate) {
             setNumberOfRoundUserCanMint(i);
