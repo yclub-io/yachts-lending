@@ -7,6 +7,7 @@ import RoadmapInMint from "../components/mint/RoadmapInMint";
 import TeamInMint from "../components/mint/TeamInMint";
 import MintsList from "../components/mint/MintsList";
 import contractsData from "../data/contractsData";
+import Layout from "../components/Layout";
 
 const MintIndex = () => {
   const [currentInfo, setCurrentInfo] = useState("whitelists");
@@ -48,14 +49,13 @@ const MintIndex = () => {
   }, [currentDate]);
 
   return (
-    <div className="relative m-auto min-w-[375px] max-w-[1440px]">
-      <Header />
+    <Layout>
       <div className="relative flex flex-col-reverse lg:flex-row lg:pt-10">
         <div className="lg:w-1/2 ">
           <HeroMint />
           <div
-            className="flex justify-center lg:mx-[60px] mx-[16px] mt-[42px] mb-[40px] lg:space-x-[65px] space-x-[37px]
-                         font-Grotesk lg:text-[18px] text-[14px]  font-bold text-white-1"
+            className="mx-[16px] mt-[42px] mb-[40px] flex justify-center space-x-[37px] font-Grotesk text-[14px]
+                         font-bold text-white-1 lg:mx-[60px]  lg:space-x-[65px] lg:text-[18px]"
           >
             {Object.keys(infos).map((info) => (
               <span
@@ -73,14 +73,14 @@ const MintIndex = () => {
           </div>
           <div>{infos[currentInfo]}</div>
         </div>
-        <div className="mt-[30px] w-full lg:w-1/2 lg:fixed lg:right-0 lg:top-[120px]">
+        <div className="mt-[120px] min-h-screen w-full lg:w-1/2">
           <CurentMintMainInfo
             currentMintContractIndex={currentMintContractIndex}
             currentDate={currentDate}
           />
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
