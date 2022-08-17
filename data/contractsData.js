@@ -1,9 +1,9 @@
 const contractsData = [
   {
-    address: "0x199bC7373dAb0f19daBf6CABe31eee4aEe4347b3",
+    address: "0xe27969820B3F24f192c774a19AdFaeAAF73A0556",
     name: "Legendary",
     start: 1660672800,
-    end: 1660680000,
+    end: 1660759200,
     whitelist: 150,
     totalSupply: 150,
     paddingSupply: 100,
@@ -14,12 +14,22 @@ const contractsData = [
     address: "0x1Ab06e833B8fe1e4A5bEb186f26B904CD0f3B5b2",
     name: "Rare",
     start: 1660759200,
-    end: 1660766400,
+    end: 1660770000,
     whitelist: 5000,
     totalSupply: 5000,
     paddingSupply: 1000,
     max: 3,
     price: "0.12",
+  },
+  {
+    address: "0x43588Dd7676782aAeB77b9f7033eC08D2Fd7a86D",
+    name: "Rare",
+    start: 1660770000,
+    end: 1660791600,
+    totalSupply: 5000,
+    paddingSupply: 1000,
+    max: 10,
+    price: "0.15",
   },
   {
     address: "0x69C113702b55f3785c3C13458Fd31605CD79Fd81",
@@ -42,16 +52,6 @@ const contractsData = [
     paddingSupply: 240,
     max: 3,
     price: "0.28",
-  },
-  {
-    address: "0x43588Dd7676782aAeB77b9f7033eC08D2Fd7a86D",
-    name: "Rare",
-    start: 1660939200,
-    end: 1661198400,
-    totalSupply: 5000,
-    paddingSupply: 1000,
-    max: 10,
-    price: "0.15",
   },
 ];
 

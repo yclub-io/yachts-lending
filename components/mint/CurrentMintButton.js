@@ -8,19 +8,19 @@ import { useRouter } from "next/router";
 
 const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
   const [mintAmount, setMintAmount] = useState(1);
-  const [numberOfRoundUserCanMint, setNumberOfRoundUserCanMint] = useState(4);
+  const [numberOfRoundUserCanMint, setNumberOfRoundUserCanMint] = useState(2);
   const [numberNftAvaliableToMint, setNumberNftAvaliableToMint] = useState(0);
   const [isLoading, setLoading] = useState(true);
   const router = useRouter();
 
   useEffect(() => {
-
-
     (async () => {
-      for (let i = 0; i < contractsData.length - 1; i++) {
+      for (let i = 0; i < contractsData.length; i++) {
         try {
           const round = Round(contractsData[i].address);
-          const isInWhiteList = await round.whiteList(currentAccont);
+          const isWhitelistInThisRound = await round.enableWhitelist();
+          console.log("isWhitelistInThisRound: ", isWhitelistInThisRound)
+          const isInWhiteList = isWhitelistInThisRound ? await round.whiteList(currentAccont) : true;
           console.log(`in round ${i} is ${isInWhiteList}`);
           if (
             isInWhiteList &&
@@ -52,6 +52,10 @@ const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
         <img className="m-auto mt-6" src="/images/loading.gif" />
       </div>
     );
+  }
+
+  if(numberOfRoundUserCanMint === -1){
+    return null;
   }
 
   if (!contractInfo || numberNftAvaliableToMint === 0) {

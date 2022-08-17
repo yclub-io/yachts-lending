@@ -6,7 +6,6 @@ import MobileMenu from "./MobileMenu";
 const Header = () => {
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
   const router = useRouter();
-  console.log(router.pathname);
   return (
     <nav className="fixed z-50 w-full  bg-black-1 font-Grotesk text-white-1  lg:w-[1440px]">
       <div
