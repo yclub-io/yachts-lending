@@ -26,54 +26,25 @@ const Roadmap = () => {
   };
 
   return (
-    <div id="roadmap" className="mt-[90px] lg:mt-52  font-Grotesk">
+    <div id="roadmap" className="mt-[90px] font-Grotesk  lg:mt-52">
       <p className=" ml-4 text-left font-Plus text-4xl font-extrabold text-white-1 lg:ml-14 lg:text-8xl lg:font-semibold">
         The Roadmap
       </p>
       <div
         ref={useHorizontalScroll()}
-        className="relative mt-10 h-[700px] overflow-y-hidden overflow-x-scroll lg:h-[800px]"
+        className="relative h-[700px] overflow-y-hidden overflow-x-scroll lg:h-[800px]"
       >
         <div>
-          <img
-            className="absolute z-40 mt-[45px] min-w-[2594px]"
-            src="./images/RoadMap/road_map_line_3.svg"
-            alt="roadmap-line"
-          />
-            <img
-            className="absolute left-[110px] z-40 mt-[40px] min-w-[2200px]"
-            src="./images/RoadMap/road_map_dots_3.svg"
-            alt="roadmap-line"
-          />
-          <div className="absolute top-[-150px] mx-28 flex flex-row">
-            {/*one*/}
-            <div className="flex basis-[14.2%] flex-col pt-[300px] pr-[70px] text-white-1">
-              <p className="pb-8 font-Grotesk text-sm font-normal text-gray-1">
-                QUARTER 1 OF 2022
-              </p>
-              <p className="pb-4 font-Grotesk text-[32px] font-bold">Drakar</p>
-              <ul className="w-[300px] list-inside list-disc pl-3 text-xl font-normal text-gray-1">
-                <li> Research &amp; Development </li>
-                <li> Concept development</li>
-              </ul>
-            </div>
 
-            {/*two*/}
+          <div className="absolute top-[-150px] ml-10 flex flex-row">
             <div className="flex basis-[14.2%] flex-col pt-[300px] pr-[70px] text-white-1">
               <p className="pb-8 font-Grotesk text-sm font-normal text-gray-1">
                 QUARTER 2 OF 2022
               </p>
               <p className="pb-4 font-Grotesk text-[32px] font-bold">Cog</p>
               <ul className="w-[300px] list-inside list-disc pl-3 text-xl font-normal text-gray-1">
-                <li> Roadmap </li>
-                <li> Funding </li>
-                <li> Tokenomics </li>
-                <li> Whitepaper </li>
-                <li> Website </li>
-                <li> NFT Art </li>
-                <li> Video </li>
-                <li> Smart Contract </li>
-                <li> Audit </li>
+                <li> Establishment of corporation in Dubai & BVI </li>
+                <li> Partnership Established </li>
               </ul>
             </div>
             {/*three*/}
@@ -82,14 +53,17 @@ const Roadmap = () => {
                 QUARTER 3 OF 2022
               </p>
               <p className="pb-4 font-Grotesk text-[32px] font-bold">Caravel</p>
-              <ul className="w-[300px] font-Grotesk list-outside list-disc pl-3 text-xl font-normal text-gray-1">
-                <li> Lana Collection Mint </li>
-                <li> Token Launch </li>
-                <li> Decentraland YCLUB </li>
-                <li> NFT Airdrop </li>
-                <li> Token Airdrop </li>
-                <li> Sandbox YCLUB </li>
-                <li> Yacht charter/sales Marketplace Development </li>
+              <ul className="w-[300px] list-outside list-disc pl-3 font-Grotesk text-xl font-normal text-gray-1">
+                <li> Funding from Private Investors (YCLUB)</li>
+                <li> Tokenomics for $SYC </li>
+                <li> Whitepaper </li>
+                <li> Smart Contract Audit</li>
+                <li> 7000 NFT mint</li>
+                <li>
+                  *dNFT mint Super Yacht Lana Launch, Genesis Collection Aug 16
+                  (exclusive rights to Lana in the Metaverse)
+                </li>
+                <li> Networking events around the globe for YCLUB members </li>
               </ul>
             </div>
             {/*four*/}
@@ -98,60 +72,24 @@ const Roadmap = () => {
                 QUARTER 4 OF 2022
               </p>
               <p className="pb-4 font-Grotesk text-[32px] font-bold">Carrack</p>
-              <ul className="pl-8 w-[270px] list-outside list-disc text-xl font-normal text-gray-1">
-                <li> $100 Million Mega Yacht Crowdfunding Mint </li>
-                <li> Live From Monaco Yacht Show </li>
-                <li> Monaco YCLUB Megaparty </li>
-                <li> DEX </li>
-                <li> Liquidity Pools </li>
-                <li> NFT Marketplace </li>
-                <li> Yacht charter/sales Marketplace launch </li>
-                <li> Web3.0 eCommerce marketplace launch </li>
+              <ul className="w-[270px] list-outside list-disc pl-8 text-xl font-normal text-gray-1">
+                <li> $SYC Coin Launch </li>
+                <li>Token airdrop for dNFT minters (From 25% value of mint)</li>
+                <li> Sandbox YCLUB</li>
+                <li> DEX</li>
+                <li> Monaco Event YCLUB</li>
+                <li>Super Yacht Marketplace Development (first of its kind)</li>
               </ul>
             </div>
             {/*five*/}
-            <div className="flex basis-[14.2%] flex-col pt-[300px] pr-[70px] text-white-1">
+            <div className="flex basis-[14.2%] flex-col pt-[300px] pr-[70px] lg:pr-0 text-white-1">
               <p className="pb-8 font-Grotesk text-sm font-normal text-gray-1">
                 QUARTER 1 OF 2023
               </p>
               <p className="pb-4 font-Grotesk text-[32px] font-bold">Galleon</p>
-              <ul className="pl-8 w-[300px] list-outside list-disc text-xl font-normal text-gray-1">
-                <li> YCLUB Wallet </li>
-                <li> Debit Visa to cash rewards</li>
-                <li> Mega Yacht Collection Mint</li>
-                <li> PFP Collection Airdrop</li>
-                
-                {/* 
-                <li> 2ND dNFT Collection Mint  </li>
-                <li> YCLUB Metaverse BETA </li>
-                */}
-              </ul>
-            </div>
-            {/*six*/}
-            <div className="flex basis-[14.2%] flex-col pt-[300px] pr-[70px] text-white-1">
-              <p className="pb-8 font-Grotesk text-sm font-normal text-gray-1">
-                QUARTER 2 OF 2023
-              </p>
-              <p className="pb-4 font-Grotesk text-[32px] font-bold">Frigate</p>
-              <ul className="pl-8 w-[300px] list-outside list-disc text-xl font-normal text-gray-1">
-                <li> 2ND Super Yacht Crowdfunding mint</li>
-                <li> YCLUB Metaverse Beta launch </li>
-                <li> PFP Collection Airdrop </li>
-              </ul>
-            </div>
-            {/*seven*/}
-            <div className="flex basis-[14.2%] flex-col pt-[300px] pr-[70px] text-white-1">
-              <p className="pb-8 font-Grotesk text-sm font-normal text-gray-1">
-                QUARTER 3-4 OF 2023
-              </p>
-              <p className="pb-4 font-Grotesk text-[32px] font-bold">Clipper</p>
-              <ul className="w-[300px] list-outside list-disc pl-3 text-xl font-normal text-gray-1">
-                <li>
-                  {" "}
-                  Mega Party For Launching IRL the first Crowdfunded Yacht
-                  (Provide Construction Update and Delivery Date){" "}
-                </li>
-                <li> Creation of the Mega Yacht Owner’s Club </li>
+              <ul className="w-[300px] list-outside list-disc pl-8 text-xl font-normal text-gray-1">
+                <li> Super Yacht Crowdfunding Mint </li>
+                <li> YCLUB Metaverse BETA</li>
               </ul>
             </div>
           </div>
