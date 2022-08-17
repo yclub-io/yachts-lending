@@ -9,10 +9,10 @@ const CurrentMintProgressBar = ({ contractInfo, setAvailableToMint }) => {
     if (contractInfo?.address) {
       const round = Round(contractInfo.address);
       (async () => {
-        const realSupplay = await round.roundTotalSupply();
-        console.log("supplay: ", realSupplay.toNumber());
-        setRealSupply(realSupplay.toNumber());
-        if(realSupplay.toNumber() === 0){
+        const realSupplay = (await round.roundTotalSupply()).toNumber() - 7;
+        console.log("supplay: ", realSupplay);
+        setRealSupply(realSupplay);
+        if(realSupplay === 0){
           setAvailableToMint(false);
         }
         setLoading(false);

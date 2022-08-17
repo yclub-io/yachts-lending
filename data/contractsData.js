@@ -6,7 +6,7 @@ const contractsData = [
     end: 1660759200,
     whitelist: 150,
     totalSupply: 150,
-    paddingSupply: 100,
+    paddingSupply: 110,
     max: 3,
     price: "1.5",
   },
