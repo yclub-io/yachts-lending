@@ -18,12 +18,7 @@ const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
       for (let i = 0; i < contractsData.length; i++) {
         try {
           const round = Round(contractsData[i].address);
-          const isWhitelistInThisRound = await round.enableWhitelist();
-          console.log("isWhitelistInThisRound: ", isWhitelistInThisRound)
-          const isInWhiteList = isWhitelistInThisRound ? await round.whiteList(currentAccont) : true;
-          console.log(`in round ${i} is ${isInWhiteList}`);
           if (
-            isInWhiteList &&
             contractInfo?.address === contractsData[i].address
           ) {
             const alreadyBought = await round.userPurchasedNum(currentAccont);
@@ -39,7 +34,7 @@ const CurrentMintButton = ({ currentAccont, contractInfo, currentDate }) => {
               return;
             }
           }
-          if (isInWhiteList && contractsData[i].start > currentDate) {
+          if ( contractsData[i].start > currentDate) {
             setNumberOfRoundUserCanMint(i);
             setLoading(false);
             return;
