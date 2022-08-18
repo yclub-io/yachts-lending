@@ -1,8 +1,9 @@
-const connectMetamask = async (setCurrentAccount) => {
+const connectMetamask = async (setCurrentAccount, setMetamaskAlert) => {
   try {
     const { ethereum } = window;
     if (!ethereum) {
       console.log("No metamask!");
+      setMetamaskAlert(true);
       return;
     }
     if (!ethereum.isConnected()) {

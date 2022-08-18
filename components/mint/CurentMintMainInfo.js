@@ -3,6 +3,7 @@ import contractsData from "../../data/contractsData";
 import connectMetamask from "../../utils/connectMetamask";
 import ConnectMetamask from "./alerts/ConnectMetamask";
 import ModalWindowsWrapper from "./alerts/ModalWindowsWrapper";
+import NoMetamask from "./alerts/NoMetamask";
 import CurrentMintButton from "./CurrentMintButton";
 import CurrentMintProgressBar from "./CurrentMintProgressBar";
 
@@ -10,6 +11,7 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
   const [currentAccont, setCurrentAccount] = useState();
   const [isAvailableToMint, setAvailableToMint] = useState(true);
   const [isAlert, setAlert] = useState(false);
+  const [isMetamaskAlert, setMetamaskAlert] = useState(false);
   const contractInfo = contractsData[currentMintContractIndex];
 
   if (!isAvailableToMint) {
@@ -51,17 +53,6 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
           >
             Connect your wallet
           </button>
-          {/* <button
-            className=" mx-auto lg:mt-[30px] mt-[20px] font-Grotesk lg:h-[72px] h-[69px] lg:w-[304px] w-full rounded-[36px] bg-blue-3"
-          >
-            <span className="text-2xl font-semibold text-white-1">
-              Pay with Credit Card
-            </span>
-            <br />
-            <span className="text-base font-light text-white-1">
-              No Wallet Needed
-            </span>
-          </button> */}
         </div>
       )}
       {isAlert && (
@@ -69,9 +60,16 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
           <ConnectMetamask
             close={() => setAlert(false)}
             connect={() => {
-              connectMetamask(setCurrentAccount);
+              connectMetamask(setCurrentAccount, setMetamaskAlert);
               setAlert(false);
             }}
+          />
+        </ModalWindowsWrapper>
+      )}
+      {isMetamaskAlert && (
+        <ModalWindowsWrapper closeWindow={() => setMetamaskAlert(false)}>
+        <NoMetamask
+            close={() => setMetamaskAlert(false)}
           />
         </ModalWindowsWrapper>
       )}
