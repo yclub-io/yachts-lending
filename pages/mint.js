@@ -55,7 +55,7 @@ const MintIndex = () => {
       });
     }, 1000);
     return () => clearTimeout(timeout);
-  }, []);
+  }, [currentDate]);
 
   return (
     <Layout>
