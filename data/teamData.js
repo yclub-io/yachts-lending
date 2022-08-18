@@ -81,8 +81,6 @@ const teamData = [
     socialNetworkImageSrc: "images/team/social_networks/linkedin.svg",
     socialNetworkLink: "https://www.linkedin.com/in/cyrill-minyaev",
     pastProjectsLogosArr: [
-      "./images/team/past_projects_logos/ALGEM.png",
-      "./images/team/past_projects_logos/Defimoon.png",
       "./images/team/past_projects_logos/Tulipdao.png",
     ],
     desc: "Project manager with 4 years experience in crypto projects. Tutor in business development and finance.",
@@ -104,7 +102,7 @@ const teamData = [
   {
     fullName: "David Shnaiderman",
     nickName: "De Vinchi",
-    role: "Co-Founder / Financial Analyst",
+    role: "Financial Analyst",
     avatarSrc: "images/team/avatar/david_shnaiderman.jpeg",
     socialNetworkImageSrc: "images/team/social_networks/linkedin.svg",
     socialNetworkLink: "https://www.linkedin.com/in/david-shnaiderman-81172111",
@@ -115,9 +113,6 @@ const teamData = [
     nickName: "Poseidon",
     role: "Co-Founder / COO",
     avatarSrc: "images/team/avatar/sagi_mazur.png",
-    pastProjectsLogosArr: [
-      "./images/team/past_projects_logos/IDF.png",
-    ],
     desc: "Chief Operations Officer in many successful start ups. I always say there is no bad business there is a bad operation.",
   },
   {
@@ -131,8 +126,6 @@ const teamData = [
     role: "Chief Technical Officer",
     avatarSrc: "images/team/avatar/artur_m.png",
     pastProjectsLogosArr: [
-      "./images/team/past_projects_logos/ALGEM.png",
-      "./images/team/past_projects_logos/Defimoon.png",
       "./images/team/past_projects_logos/Tulipdao.png",
     ],
     desc: "An industrial designer and a developer with a vast experience in algorithms and embedded systems, moving into the blockchain tech and tackling a multitude of projects ranging from NFTs to DeFi and beyond.",
