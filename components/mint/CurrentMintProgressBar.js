@@ -9,16 +9,22 @@ const CurrentMintProgressBar = ({ contractInfo, setAvailableToMint }) => {
     if (contractInfo?.address) {
       const round = Round(contractInfo.address);
       (async () => {
-        const realSupplay = (await round.roundTotalSupply()).toNumber() + contractInfo.deltaSupply;
-        console.log("supplay: ", realSupplay);
-        setRealSupply(realSupplay);
-        if(realSupplay === 0){
-          setAvailableToMint(false);
+        try {
+          const realSupplay =
+            (await round.roundTotalSupply()).toNumber() +
+            contractInfo.deltaSupply;
+          console.log("supplay: ", realSupplay);
+          setRealSupply(realSupplay);
+          if (realSupplay === 0) {
+            setAvailableToMint(false);
+          }
+        } catch (error) {
+          console.error(error);
+        } finally {
+          setLoading(false);
         }
-        setLoading(false);
       })();
     }
-    
   }, [contractInfo?.address]);
 
   if (!contractInfo || isLoading) {
@@ -41,7 +47,8 @@ const CurrentMintProgressBar = ({ contractInfo, setAvailableToMint }) => {
           <span className="text-sm font-light text-white-1">Total Minted</span>
           <span className="text-sm font-light text-white-1">
             <span className="font-semibold">{Math.floor(progress)}% </span>
-            {contractInfo.totalSupply - realSupplay} / {contractInfo.totalSupply}
+            {contractInfo.totalSupply - realSupplay} /{" "}
+            {contractInfo.totalSupply}
           </span>
         </div>
       </>

@@ -1,17 +1,18 @@
 import contractsData from "../../data/contractsData";
 import secondsToTime from "../../utils/secondsToTime";
 
-const MintsList = ({ currentDate, currentMintContractIndex }) => {
+const MintsList = ({ currentDate, currentMintContractIndex , setCurrentMintContractIndex}) => {
   const renderMints = contractsData.map((contract, index) => (
     <div
       key={index}
+      onClick={currentDate > contract.start && currentDate < contract.end ? () => {setCurrentMintContractIndex(index)} : null}
       className={`flex flex-col
     rounded-[10px] border
       lg:pt-[20px] lg:pb-[20px] pt-[20px] pb-[15px] lg:pl-[20px] lg:pr-[28px] pl-[10px] pr-[16px] font-Grotesk text-white-1 ${
      currentMintContractIndex === index
        ? "border-pink-1 shadow-mintGlow"
        : "border-white-1"
-   } `}
+   } ${currentDate > contract.start && currentDate < contract.end && "cursor-pointer"} `}
     >
       <div className="mb-[19px] flex justify-between font-semibold">
         <div>

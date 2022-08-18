@@ -20,6 +20,7 @@ const MintIndex = () => {
       <MintsList
         currentDate={currentDate}
         currentMintContractIndex={currentMintContractIndex}
+        setCurrentMintContractIndex={setCurrentMintContractIndex}
       />
     ),
     info: <InfoInMint />,
@@ -39,6 +40,13 @@ const MintIndex = () => {
 
       setCurrentMintContractIndex(-1);
 
+      for(let i = 0; i < contractsData.length; i++) {
+        if (contractsData[i].start <= currentDate && contractsData[i].end > currentDate) {
+          setCurrentMintContractIndex(i);
+          return;
+        }
+      }
+
       contractsData.forEach((contract, index) => {
         if (contract.start <= currentDate && contract.end > currentDate) {
           setCurrentMintContractIndex(index);
@@ -47,7 +55,7 @@ const MintIndex = () => {
       });
     }, 1000);
     return () => clearTimeout(timeout);
-  }, [currentDate]);
+  }, []);
 
   return (
     <Layout>
