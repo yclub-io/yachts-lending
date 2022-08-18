@@ -34,8 +34,8 @@ const contractsData = [
   {
     address: "0x69C113702b55f3785c3C13458Fd31605CD79Fd81",
     name: "Epic",
-    start: 1660845600,
-    end: 1660852800,
+    start: 16608456000,
+    end: 16608528000,
     whitelist: 650,
     totalSupply: 650,
     deltaSupply: 0,
@@ -45,8 +45,8 @@ const contractsData = [
   {
     address: "0x70959716f53b1a4FaC931360a21c991C6e62c98A",
     name: "Super Rare",
-    start: 1660932000,
-    end: 1660939200,
+    start: 16609320000,
+    end: 16609392000,
     whitelist: 1200,
     totalSupply: 1200,
     deltaSupply: 0,

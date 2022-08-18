@@ -20,7 +20,7 @@ const MintsList = ({ currentDate, currentMintContractIndex , setCurrentMintContr
         </div>
         <div>
           {currentDate < contract.start ? (
-            <div className="flex lg:flex-row flex-col">
+            <div className="hidden flex lg:flex-row flex-col">
             <p className=" text-[13px] text-pink-1">
               Starts in:
             </p>
