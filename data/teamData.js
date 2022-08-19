@@ -131,9 +131,11 @@ const teamData = [
     desc: "An industrial designer and a developer with a vast experience in algorithms and embedded systems, moving into the blockchain tech and tackling a multitude of projects ranging from NFTs to DeFi and beyond.",
   },
   {
+    fullName: "Shumov Roman",
     nickName: "SHR",
     role: "Art Director (NFT)",
-    desc: "Digital Art artist | Grafic designer | Matte Painting | CGI designer.",
+    avatarSrc: "images/team/avatar/shumov_roman.jpg",
+    desc: "Digital Art artist | Grafic designer | Matte Painting | CGI designer. Digital is a partner of the leading retail chains of household appliances in the Russian Federation. CGI designer in the film industry / video games for consoles and PC.",
   },
   {
     nickName: "David",
