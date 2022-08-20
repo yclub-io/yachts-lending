@@ -46,7 +46,7 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
           currentDate={currentDate}
         />
       ) : (
-        <div className="mt-[30px] flex flex-col px-4 lg:w-[660px] lg:p-0">
+        currentMintContractIndex >= 0  && <div className="mt-[30px] flex flex-col px-4 lg:w-[660px] lg:p-0">
           <button
             className={`mx-auto h-[52px] w-full rounded-[26px]  bg-pink-1  font-Grotesk text-base font-semibold text-white-1 lg:w-[660px] `}
             onClick={() => setAlert(true)}

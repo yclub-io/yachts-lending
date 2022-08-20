@@ -33,6 +33,10 @@ const MintIndex = () => {
       const currentDate = Math.floor(new Date() / 1000);
       setCurrentDate(currentDate);
 
+      if(currentMintContractIndex >= 0){
+        return;
+      }
+
       if (currentDate > contractsData[contractsData.length - 1].end) {
         setCurrentMintContractIndex(-2);
         return;
