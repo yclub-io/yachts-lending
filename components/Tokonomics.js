@@ -22,7 +22,7 @@ const Tokonomics = () => {
                 </p>
 
                 <p className="lg:text-[64px] text-[48px] font-bold text-white-1 bg-gradient-to-r from-blue-2 to-pink-2 bg-clip-text text-opacity-[0%]">
-                 100 000 000
+                  TBA
                 </p>
 
                 <div className="lg:mt-[80px] mt-[60px]">
@@ -31,7 +31,7 @@ const Tokonomics = () => {
                 </p>
 
                 <p className="lg:text-[64px] text-[48px] font-bold">
-                 13 100 000
+                  13.1%
                 </p>
                 </div>
 
@@ -39,13 +39,13 @@ const Tokonomics = () => {
             
             {/*DESKTOP DIV PIE*/}
                 <div className="lg:flex hidden basis-1/2">
-                    <img src="./images/Tokonomics/tokonomics_chart.svg"/>
+                    <img src="./images/Tokonomics/tokonomics_chart2.svg"/>
 
                 </div> 
 
             {/*MOBILE DIV PIE*/}
               <div className="flex md:m-auto lg:hidden mt-[47px] mx-auto">
-                    <img src="./images/Tokonomics/pie_chart_plus_info.svg"/>
+                    <img src="./images/Tokonomics/pie_chart_plus_info3.svg"/>
               </div>            
              </div>
         </div>
