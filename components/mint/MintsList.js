@@ -39,7 +39,7 @@ const MintsList = ({ currentDate, currentMintContractIndex , setCurrentMintContr
               </span>
             </div> 
           ) : (
-            <p className="text-[13px] mr-[15px] text-pink-1">ENDED</p>
+            <p className="text-[13px] mr-[15px] text-pink-1">SOLD OUT</p>
           )}
         </div>
       </div>
