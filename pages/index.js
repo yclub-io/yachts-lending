@@ -32,6 +32,14 @@ const Index = () => {
           gtag('config', 'G-9NXP8WEGK8');
         `}
       </Script>
+      <Script> 
+        {`
+          (function(d,u,ac)
+          {var s=d.createElement('script');
+          s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';
+          s.async=true;s.dataset.user=u;s.dataset.account=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,197891,213314);
+        `}
+      </Script>
       <BackgroundVideo />
       <Hero />
       {/* <WhatYouNeedToKnow /> */}
