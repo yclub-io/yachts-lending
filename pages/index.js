@@ -46,10 +46,11 @@ const Index = () => {
       <FAQ />
       <Roadmap />
       <Tokonomics />
+      <YclubCommunity />
       <CrowdfundMint />
       {/* <Team /> */}
       <Vision />
-      <YclubCommunity />
+     
 
     </Layout>
   );

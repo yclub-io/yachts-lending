@@ -23,12 +23,12 @@ const Header = () => {
           </a>
         </Link>
         <img
-          className="absolute right-[20px] w-[40px] cursor-pointer lg:hidden"
+          className="absolute right-[20px] w-[40px] cursor-pointer "
           src="/images/mobileMenu.svg"
           onClick={() => setMobileMenuVisible(true)}
         />
         {/*--menu-items--*/}
-        <div className="hidden space-x-8 pl-[40px] text-sm lg:flex">
+        <div className="hidden space-x-8 pl-[40px] text-sm ">
           <a href="https://docs.yclub.io" target="_blank">
             Whitepaper
           </a>
@@ -44,7 +44,7 @@ const Header = () => {
         </div>
 
         {/*MINT button*/}
-        <div className={`hidden w-[120px] text-[16px] font-semibold lg:flex  `}>
+        <div className={`hidden w-[120px] text-[16px] font-semibold`}>
           <Link href="mint">
             <button
               className={`rounded-[50px] border border-pink-1 bg-pink-1 px-[51px] py-[16px] shadow-headerButton ${

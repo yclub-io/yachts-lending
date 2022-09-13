@@ -14,17 +14,18 @@ const MintsList = ({ currentDate, currentMintContractIndex , setCurrentMintContr
        : "border-white-1"
    } ${currentDate > contract.start && currentDate < contract.end && "cursor-pointer"} `}
     >
-      <div className="mb-[19px] flex justify-between font-semibold">
+      <div className="relative mb-[19px] flex justify-between font-semibold">
+        
         <div>
           <p className="text-[16px]">{contract.name}</p>
         </div>
         <div>
           {currentDate < contract.start ? (
-            <div className="hidden flex lg:flex-row flex-col">
+            <div className=" flex lg:flex-row flex-col">
             <p className=" text-[13px] text-pink-1">
-              Starts in:
+              Coming Soon
             </p>
-              <span className="text-[13px] lg:ml-[21px]  w-[107px] text-white-1">
+              <span className="hidden text-[13px] lg:ml-[21px]  w-[107px] text-white-1">
                 {secondsToTime(contract.start - currentDate)}
               </span>
             
@@ -42,6 +43,7 @@ const MintsList = ({ currentDate, currentMintContractIndex , setCurrentMintContr
             <p className="text-[13px] mr-[15px] text-pink-1">SOLD OUT</p>
           )}
         </div>
+        
       </div>
 
       <div className="flex lg:flex-row flex-col lg:space-x-[15px]">
@@ -63,7 +65,7 @@ const MintsList = ({ currentDate, currentMintContractIndex , setCurrentMintContr
   ));
 
   return (
-    <div className="lg:mx-[60px] mx-[16px] mb-[56px] space-y-[20px]">{renderMints}</div>
+    <div className="lg:mx-[60px] mx-[16px] mb-[56px] space-y-[20px]">{renderMints} </div>
   );
 };
 

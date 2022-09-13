@@ -1,7 +1,7 @@
 const CrowdfundMint = () => {
     return (
-      <div className="flex lg:flex-row flex-col relative 
-                      lg:mt-[270px] mt-[110px] lg:pb-[70px] pb-[200px]
+      <div className="hidden lg:flex lg:flex-row flex-col relative 
+                      lg:mt-[600px] mt-[110px] lg:pb-[70px] pb-[200px]
                       text-white-1 font-Plus lg:m-none m-[16px]">
         {/*DESKTOP-PICTURE*/}
             <div className="lg:flex hidden basis-1/2"/> 
@@ -17,9 +17,9 @@ const CrowdfundMint = () => {
                     Super Yacht Crowdfund Mint
                 </h1>
                 <h2 className="lg:text-[40px] text-[28px] font-bold font-Grotesk leading-[40.5px] tracking-[-2%] lg:w-auto w-[340px]">
-                    WINTER&#160; 
+                    Q1&#160; 
                     <span className="bg-gradient-to-r from-blue-2 to-pink-2 bg-clip-text text-white-1 text-opacity-[0%]">
-                         2022-2023, DUBAI 
+                         2023, DUBAI 
                     </span>
                 </h2>
                 <p className="lg:text-[18px] text-[16px] font-normal">

@@ -5,7 +5,7 @@ const Hero = () => {
     <>
       <div
         id="hero"
-        className="relative lg:mx-8 mx-[16px] lg:mt-[146px] mt-[78px] flex font-Grotesk tracking-[-2%] text-white-1">
+        className="hidden relative lg:mx-8 mx-[16px] lg:mt-[146px] mt-[78px] font-Grotesk tracking-[-2%] text-white-1">
         
         {/*DIV TEXT*/}
         <div className="mt-[-70px] mr-2 flex lg:basis-1/2 flex-col text-left">

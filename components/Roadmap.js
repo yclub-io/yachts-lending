@@ -26,7 +26,7 @@ const Roadmap = () => {
   };
 
   return (
-    <div id="roadmap" className="mt-[90px] font-Grotesk  lg:mt-52">
+    <div id="roadmap" className="hidden mt-[90px] font-Grotesk  lg:mt-52">
       <p className=" ml-4 text-left font-Plus text-4xl font-extrabold text-white-1 lg:ml-14 lg:text-8xl lg:font-semibold">
         The Roadmap
       </p>

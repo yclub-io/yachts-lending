@@ -2,7 +2,7 @@ import FAQitem from "./FAQitem";
 
 const FAQ = () => {
   return (
-    <div className="lg:mx-14 mx-4 lg:mt-[185px] mt-[100px] lg:mb-[150px] mb-[100px]  text-white-1">
+    <div className="hidden lg:mx-14 mx-4 lg:mt-[185px] mt-[100px] lg:mb-[150px] mb-[100px]  text-white-1">
       <p id="faq" className="lg:mb-[125px] mb-[40px] flex justify-center text-center font-Plus lg:text-5xl text-[26px] font-extrabold">
         What you need to know
       </p>

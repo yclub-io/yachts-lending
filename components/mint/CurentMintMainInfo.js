@@ -46,14 +46,24 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
           currentDate={currentDate}
         />
       ) : (
-        currentMintContractIndex >= 0  && <div className="mt-[30px] flex flex-col px-4 lg:w-[660px] lg:p-0">
-          <button
-            className={`mx-auto h-[52px] w-full rounded-[26px]  bg-pink-1  font-Grotesk text-base font-semibold text-white-1 lg:w-[660px] `}
-            onClick={() => setAlert(true)}
-          >
-            Connect your wallet
-          </button>
-        </div>
+        currentMintContractIndex >= 0 && (
+          <div className="mt-[30px] flex flex-col px-4 lg:w-[660px] lg:p-0">
+            <button
+              className={`mx-auto h-[52px] w-full rounded-[26px]  bg-pink-1  font-Grotesk text-base font-semibold text-white-1 lg:w-[660px] `}
+              onClick={() => setAlert(true)}
+            >
+              Connect your wallet
+            </button>
+            <button
+              className={`mt-[30px] mx-auto h-[72px] w-[304px] rounded-[36px]  bg-blue-3  font-Grotesk text-base font-semibold text-white-1 `}
+              onClick={() => setCurrentAccount("card")}
+            >
+              <span className={"text-2xl"}>Pay with Credit Card</span>
+              <br/>
+              <span>No Wallet Needed</span>
+            </button>
+          </div>
+        )
       )}
       {isAlert && (
         <ModalWindowsWrapper closeWindow={() => setAlert(false)}>
@@ -68,9 +78,7 @@ const CurentMintMainInfo = ({ currentMintContractIndex, currentDate }) => {
       )}
       {isMetamaskAlert && (
         <ModalWindowsWrapper closeWindow={() => setMetamaskAlert(false)}>
-        <NoMetamask
-            close={() => setMetamaskAlert(false)}
-          />
+          <NoMetamask close={() => setMetamaskAlert(false)} />
         </ModalWindowsWrapper>
       )}
     </div>

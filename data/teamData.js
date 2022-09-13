@@ -74,18 +74,6 @@ const teamData = [
     desc: "Engineered for several Fortune 500 companies in a variety of technology related roles while building his website into the top 1000 most visited websites in the world.",
   },
   {
-    fullName: "Cyrill Minyaev",
-    nickName: "Cyrill",
-    role: "Technical Project Manager",
-    avatarSrc: "images/team/avatar/cyrill_minyaev.png",
-    socialNetworkImageSrc: "images/team/social_networks/linkedin.svg",
-    socialNetworkLink: "https://www.linkedin.com/in/cyrill-minyaev",
-    pastProjectsLogosArr: [
-      "./images/team/past_projects_logos/Tulipdao.png",
-    ],
-    desc: "Project manager with 4 years experience in crypto projects. Tutor in business development and finance.",
-  },
-  {
     fullName: "Ber Mitchell",
     nickName: "Cobra",
     role: "Product Advisor",
@@ -119,16 +107,6 @@ const teamData = [
     nickName: "CryptoDon",
     role: "Advisor",
     desc: "Early investor in many projects like BAYC and in the ethereum blockchain. Dedicated curator in owned Web3 investment communities.",
-  },
-  {
-    fullName: "Artur Makhnach",
-    nickName: "j00mb",
-    role: "Chief Technical Officer",
-    avatarSrc: "images/team/avatar/artur_m.png",
-    pastProjectsLogosArr: [
-      "./images/team/past_projects_logos/Tulipdao.png",
-    ],
-    desc: "An industrial designer and a developer with a vast experience in algorithms and embedded systems, moving into the blockchain tech and tackling a multitude of projects ranging from NFTs to DeFi and beyond.",
   },
   {
     fullName: "Shumov Roman",

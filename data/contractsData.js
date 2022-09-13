@@ -22,10 +22,10 @@ const contractsData = [
     price: "0.12",
   },
   {
-    address: "0x899F45Ab00a1002E6B4f2613B6F2aE4149Fa4478",
+    address: "0x1bc2Cb2168B00170B3bE4b280F230DbC58D502a3",
     name: "Rare",
-    start: 1660770000,
-    end: 1662008400,
+    start: 166200840,
+    end: 1664496000,
     totalSupply: 5000,
     deltaSupply: 0,
     max: 10,
